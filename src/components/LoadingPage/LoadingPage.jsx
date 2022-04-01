@@ -3,8 +3,16 @@ import React from 'react';
 const LoadingPage = () => {
   return (
     <div className="loadingPage">
-      <div className="text">Igoris Ivanovas</div>
-      <div className="loadingAnimaition">animaition</div>
+      <p>Igoris Ivanovas</p>
+      <div className="loadingAnimation">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   );
 };

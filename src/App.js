@@ -1,7 +1,9 @@
+import LoadingPage from "./components/LoadingPage/LoadingPage";
+
 function App() {
   return (
     <div className="App">
-      New project
+      <LoadingPage />
     </div>
   );
 }

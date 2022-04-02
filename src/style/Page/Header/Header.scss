@@ -1,0 +1,21 @@
+.header  {
+    background-color: $background-dark;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 10px;
+    p {
+        text-transform: uppercase;
+        font-family: $headerFont;
+        font-size: 28px;
+        font-weight: 100;
+        letter-spacing: 1.5px;
+    }
+    .hamburger {
+       position: absolute;
+       right: 0;
+       top: 0;
+    }
+}

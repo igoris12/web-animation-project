@@ -10,6 +10,7 @@
     flex-direction: column;
     color: $color-light;
     transition: 1s;
+    z-index: 2;
     &.hidden {
        
         display: none;

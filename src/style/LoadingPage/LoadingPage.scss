@@ -9,14 +9,21 @@
     justify-content: center;
     flex-direction: column;
     color: $color-light;
+    transition: 1s;
+    &.hidden {
+       
+        display: none;
+    }
     p {
         text-transform: uppercase;
         font-family: $headerFont,serif;
         font-size: 24px;
         font-weight: 700;
         letter-spacing: 1.4px;
+        transition: 1s;
     }
     .loadingAnimation {
+        transition: 1s;
         display: flex;
         gap: 10px;
         span  {
@@ -70,4 +77,20 @@
     }
   
    
+}
+
+@keyframes hidde {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+
 }

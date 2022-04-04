@@ -6,7 +6,6 @@
     justify-content: center;
     position: relative;
     padding: 10px;
-    overflow: hidden;
     height: 40px;
     width: auto;
     
@@ -33,5 +32,56 @@
        svg {
            font-size: 22px;
        }
+    }
+    .navigation {
+        background-color: $background-dark;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: auto;
+        height: 100vh;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .image {
+        width: 200px;
+        height: 200px;
+        background-color: orange;
+    }
+    .butList {
+        padding-top: 15px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        
+        a {
+            width: 200px;
+            height: auto;
+            text-decoration: none;
+            color: #777777;
+            padding: 10px 0;
+            padding-left: 50px;
+            display: flex;
+            gap: 5px;
+            cursor: pointer;
+            border-bottom: 1px solid #777777;
+           
+            svg {
+               
+                font-size: 20px;
+                text-align: right;
+            }
+            p {
+                // width: 60%;
+                display: inline-block;
+                font-size: 15px;
+                text-transform: uppercase;
+            }
+            &.active {
+            color: $color-light;
+            }
+        }
     }
 }

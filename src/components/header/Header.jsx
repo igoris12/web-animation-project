@@ -6,6 +6,8 @@ import {
   BsNewspaper,
   BsBriefcase,
   BsLayoutTextWindowReverse,
+  BsLinkedin,
+  BsGithub,
 } from 'react-icons/bs';
 import { AiOutlineMail } from 'react-icons/ai';
 import avatar from '../../images/navigation/avatar.png';
@@ -47,26 +49,16 @@ const Header = () => {
             <p>Contact</p>
           </a>
         </nav>
-        <ul className="socialsList">
-          <a href="#" className="socialsList-item">
-            icon
-          </a>
-
-          <a href="#" className="socialsList-item">
-            icon
-          </a>
-          <a href="#" className="socialsList-item">
-            icon
-          </a>
-          <a href="#" className="socialsList-item">
-            icon
-          </a>
-          <a href="#" className="socialsList-item">
-            icon
-          </a>
-          <p>2022/04/01 start</p>
-        </ul>
       </div>
+      <ul className="socialsList">
+        <a href="#" className="socialsList-item">
+          <BsLinkedin />
+        </a>
+        <a href="#" className="socialsList-item">
+          <BsGithub />
+        </a>
+        <p>2022/04/01 start</p>
+      </ul>
     </header>
   );
 };

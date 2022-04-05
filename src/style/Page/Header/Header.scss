@@ -45,48 +45,60 @@
         flex-direction: column;
         align-items: center;
         border-right: 1px solid black;
-    }
-    .image {
-        width: 200px;
-        height: 200px;
-        background-color: orange;
-        
-        img {
-            object-fit: cover;
+
+        .image {
             width: 200px;
             height: 200px;
-        }
-    }
-    .butList {
-        padding-top: 15px;
-        list-style: none;
-        display: flex;
-        flex-direction: column;
+            background-color: orange;
         
-        a {
-            width: 200px;
-            height: auto;
-            text-decoration: none;
-            color: #777777;
-            padding: 10px 0;
-            padding-left: 50px;
+            img {
+                object-fit: cover;
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+        .butList {
+            padding-top: 15px;
+            list-style: none;
             display: flex;
-            gap: 5px;
-            cursor: pointer;
-            border-bottom: 1px solid #777777;
-           
+            flex-direction: column;
+
+            a {
+                width: 200px;
+                height: auto;
+                text-decoration: none;
+                color: #777777;
+                padding: 10px 0;
+                padding-left: 50px;
+                display: flex;
+                gap: 5px;
+                cursor: pointer;
+                border-bottom: 1px solid #777777;
+
             svg {
                 font-size: 20px;
                 text-align: right;
             }
+
             p {
                 display: inline-block;
                 font-size: 18px;
                 text-transform: uppercase;
             }
+
             &.active {
-            color: $color-light;
+                color: $color-light;
+                }
             }
         }
+    }
+    
+    
+    .socialsList {
+        position: absolute;
+        background-color: red;
+        bottom: 0;
+        left: 0;
     }
 }

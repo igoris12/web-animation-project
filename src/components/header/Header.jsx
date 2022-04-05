@@ -8,6 +8,7 @@ import {
   BsLayoutTextWindowReverse,
 } from 'react-icons/bs';
 import { AiOutlineMail } from 'react-icons/ai';
+import avatar from '../../images/navigation/avatar.png';
 
 const Header = () => {
   return (
@@ -18,9 +19,9 @@ const Header = () => {
       </div>
       <div className="navigation">
         <div className="image">
-          <img src="@" alt="My foto" />
+          <img src={avatar} alt="My foto" />
         </div>
-        <ul className="butList">
+        <nav className="butList">
           <a href="#" className="butList-item active">
             <BsHouse />
             <p>Home</p>
@@ -45,7 +46,7 @@ const Header = () => {
             <AiOutlineMail />
             <p>Contact</p>
           </a>
-        </ul>
+        </nav>
         <ul className="socialsList">
           <a href="#" className="socialsList-item">
             icon

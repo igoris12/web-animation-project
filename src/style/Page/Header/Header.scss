@@ -44,11 +44,18 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        border-right: 1px solid black;
     }
     .image {
         width: 200px;
         height: 200px;
         background-color: orange;
+        
+        img {
+            object-fit: cover;
+            width: 200px;
+            height: 200px;
+        }
     }
     .butList {
         padding-top: 15px;
@@ -69,14 +76,12 @@
             border-bottom: 1px solid #777777;
            
             svg {
-               
                 font-size: 20px;
                 text-align: right;
             }
             p {
-                // width: 60%;
                 display: inline-block;
-                font-size: 15px;
+                font-size: 18px;
                 text-transform: uppercase;
             }
             &.active {

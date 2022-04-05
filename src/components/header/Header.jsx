@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import HeaderContent from './HeaderContent';
 
 const Header = () => {
+  const [active, setActive] = useState(false);
+
+  const activeHandler = () => {
+    setActive(!active);
+  };
+
   return (
     <>
-      <HeaderContent />
+      <HeaderContent active={active} activeHandler={activeHandler} />
     </>
   );
 };

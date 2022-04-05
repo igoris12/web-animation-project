@@ -12,14 +12,14 @@ import {
 import { AiOutlineMail } from 'react-icons/ai';
 import avatar from '../../images/navigation/avatar.png';
 
-const HeaderContent = () => {
+const HeaderContent = ({ active, activeHandler }) => {
   return (
     <header className="header">
       <h2>Igoris Ivanovas</h2>
-      <div className="hamburger">
+      <div className="hamburger" onClick={activeHandler}>
         <GiHamburgerMenu />
       </div>
-      <div className="navigation">
+      <div className={active ? 'navigation active' : 'navigation'}>
         <div className="image">
           <img src={avatar} alt="My foto" />
         </div>

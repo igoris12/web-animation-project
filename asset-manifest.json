@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/web-animation-project/static/css/main.c5c45d91.css",
-    "main.js": "/web-animation-project/static/js/main.edae53a8.js",
+    "main.css": "/web-animation-project/static/css/main.f34d48f4.css",
+    "main.js": "/web-animation-project/static/js/main.9487704d.js",
+    "static/media/avatar.png": "/web-animation-project/static/media/avatar.e3cc57bdb67d61d2da9b.png",
     "index.html": "/web-animation-project/index.html",
-    "main.c5c45d91.css.map": "/web-animation-project/static/css/main.c5c45d91.css.map",
-    "main.edae53a8.js.map": "/web-animation-project/static/js/main.edae53a8.js.map"
+    "main.f34d48f4.css.map": "/web-animation-project/static/css/main.f34d48f4.css.map",
+    "main.9487704d.js.map": "/web-animation-project/static/js/main.9487704d.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5c45d91.css",
-    "static/js/main.edae53a8.js"
+    "static/css/main.f34d48f4.css",
+    "static/js/main.9487704d.js"
   ]
 }

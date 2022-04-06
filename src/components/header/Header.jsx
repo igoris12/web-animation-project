@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import HeaderContent from './HeaderContent';
 
 const Header = () => {
   const [active, setActive] = useState(false);
 
+  useEffect(() => {
+    window.innerWidth > 765 && setActive(true);
+  }, []);
+
   window.addEventListener('resize', (e) => {
-    console.log(e.target.innerWidth);
     if (e.target.innerWidth > 765) {
       setActive(true);
     }

@@ -51,10 +51,18 @@ const HeaderContent = ({ active, activeHandler }) => {
         </nav>
         <ul className="socialsList">
           <div className="links">
-            <a href="#" className="socialsList-item">
+            <a
+              href="https://www.linkedin.com/in/igoris-ivanovas-839645194/"
+              target="_blank"
+              className="socialsList-item"
+            >
               <BsLinkedin />
             </a>
-            <a href="#" className="socialsList-item">
+            <a
+              href="https://github.com/igoris12"
+              target="_blank"
+              className="socialsList-item"
+            >
               <BsGithub />
             </a>
           </div>

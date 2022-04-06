@@ -75,6 +75,7 @@
                 padding: 10px 0;
                 padding-left: 50px;
                 display: flex;
+                align-items: center;
                 gap: 5px;
                 cursor: pointer;
                 border-bottom: 1px solid #777777;
@@ -115,8 +116,13 @@
        .links {
            display: flex;
            gap: 10px;
+        
            a {
                color: #777777;
+               transition: 0.2s;
+                    &:hover {
+                        color: $color-light;
+                    }
                svg {
                    font-size: 20px;
                }
@@ -128,5 +134,32 @@
             sans-serif;
             font-size: 12px;
        }
+    }
+}
+
+// desktop 
+
+@media (min-width: 765px) {
+    .header {
+        background-color: transparent;
+        h2 {
+            display: none;
+        }
+        .hamburger {
+           display: none; 
+        }
+        .navigation {
+            
+            .butList {
+                a {
+                    svg {
+                        font-size: 21px;  
+                    }
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
     }
 }

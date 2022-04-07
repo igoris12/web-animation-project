@@ -1,9 +1,19 @@
 .blog-page {
     background-color: orange;
     position: absolute;
-    top: 40;
+    top: 40px;
     left: 0;
     width: 100%;
     height: calc(100% - 40px);
     z-index: 1;
+}
+
+// desktop
+@media (min-width: 765px) {
+    .blog-page {
+       top: 0;
+       left: 200px;
+       height:100%;
+       width: calc(100% - 200px)   
+    }
 }

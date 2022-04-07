@@ -6,6 +6,10 @@
     width: 100%;
     height: calc(100% - 40px);
     z-index: 1;
+    perspective: 1000px;
+    transition: 2s;
+
+    animation: flip 2s infinite ease-in-out;
 }
 
 // desktop
@@ -15,5 +19,21 @@
        left: 200px;
        height:100%;
        width: calc(100% - 200px)   
+    }
+}
+
+@keyframes flip {
+    0% {
+    transform: rotateY(0deg) scale(1);
+   
+    }
+
+    50% {
+        transform: rotateY(90deg) scale(0.75);
+    }
+
+    100% {
+        transform: rotateY(0deg) scale(1);
+  
     }
 }

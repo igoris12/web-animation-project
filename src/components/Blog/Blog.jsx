@@ -17,7 +17,7 @@ const Blog = () => {
         dolorem officia, doloribus, pariatur fugit veniam enim doloremque
         debitis quos nobis eveniet?
       </div>
-      {/* <div className="test2">
+      <div className="test2">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed vitae
         obcaecati id exercitationem veritatis vel nobis voluptatum dolores vero!
         Quisquam, dolore illo necessitatibus fuga aut dolorum sint iste totam
@@ -30,7 +30,7 @@ const Blog = () => {
         voluptates. Atque est quibusdam similique maxime suscipit eligendi
         dolorem officia, doloribus, pariatur fugit veniam enim doloremque
         debitis quos nobis eveniet?
-      </div> */}
+      </div>
     </section>
   );
 };

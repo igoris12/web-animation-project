@@ -3,7 +3,7 @@ import React from 'react';
 const Blog = () => {
   return (
     <section className="blog-page">
-      <div className="test1">
+      <div className="test1 ">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed vitae
         obcaecati id exercitationem veritatis vel nobis voluptatum dolores vero!
         Quisquam, dolore illo necessitatibus fuga aut dolorum sint iste totam

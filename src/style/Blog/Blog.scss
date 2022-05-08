@@ -10,24 +10,27 @@
     perspective: 1200px;
     transition: 2s;
     overflow: hidden;
+ 
     .test1 {
         position: absolute;
         width: 100%;
         height: 100%;
         background-color: red;
-        animation: flip 3s  ease-in-out ;
-    
+        animation: flipFront 2s  ease-in-out ;
         opacity: 0;
     }
-                .test2 {
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    background-color: blue;
-                    animation: flip2 3s ease-in-out ;
-                    animation-delay: 3s;
-                    opacity: 0;
-                }
+    .test2 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: blue;
+        animation: flipBack 2s ease-in-out ;
+        animation-delay: 2s;
+        opacity: 0;
+    }
+           .active {
+               opacity: 1;
+           }
 }
 
 // desktop
@@ -40,21 +43,21 @@
     }
 }
 
-@keyframes flip {
+@keyframes flipFront {
     0% {
         transform: rotateY(0deg) scale(1);
         opacity: 1;
    
     }
     100% {
-        transform: rotateY(100deg) scale(0.60);
+        transform: rotateY(90deg) scale(0.60);
         opacity: 0;
     }
 }
 
-@keyframes flip2{
+@keyframes flipBack{
     0% {
-        transform: rotateY(-90deg) scale(0.40);
+        transform: rotateY(-90deg) scale(0.60);
         opacity: 0;
 
     }

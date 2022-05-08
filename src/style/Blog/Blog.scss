@@ -10,8 +10,16 @@
     perspective: 1200px;
     transition: 2s;
     overflow: hidden;
+
+    .test {
+        position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            background-color: red;
+    }
  
-    .test1 {
+    .flip {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -19,7 +27,7 @@
         animation: flipFront 2s  ease-in-out ;
         opacity: 0;
     }
-    .test2 {
+    .flipBack{
         position: absolute;
         width: 100%;
         height: 100%;

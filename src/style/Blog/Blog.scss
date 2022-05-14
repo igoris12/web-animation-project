@@ -1,6 +1,6 @@
 .blog-page {
    
-    background-color: gray;
+    background-color: $background-dark;
     position: absolute;
     top: 40px;
     left: 0;
@@ -8,37 +8,37 @@
     height: calc(100% - 40px);
     z-index: 1;
     perspective: 1200px;
-    transition: 2s;
+    // transition: 1s;
     overflow: hidden;
 
-    .test {
-        position: absolute;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            background-color: red;
-    }
+    // .test {
+    //     position: absolute;
+    //         width: 100%;
+    //         height: 100%;
+    //         opacity: 0;
+    //         background-color: red;
+    // }
  
-    .flip {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: red;
-        animation: flipFront 2s  ease-in-out ;
-        opacity: 0;
-    }
-    .flipBack{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background-color: blue;
-        animation: flipBack 2s ease-in-out ;
-        animation-delay: 2s;
-        opacity: 0;
-    }
-           .active {
-               opacity: 1;
-           }
+    // .flip {
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 100%;
+    //     background-color: red;
+    //     animation: flipFront 2s  ease-in-out ;
+    //     opacity: 0;
+    // }
+    // .flipBack{
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 100%;
+    //     background-color: blue;
+    //     animation: flipBack 2s ease-in-out ;
+    //     animation-delay: 2s;
+    //     opacity: 0;
+    // }
+    //        .active {
+    //            opacity: 1;
+    //        }
 }
 
 // desktop

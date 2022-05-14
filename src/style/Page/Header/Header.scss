@@ -8,7 +8,6 @@
     padding: 10px;
     height: 40px;
     width: auto;
-    
     h2 {
         display: inline-block;
         text-transform: uppercase;
@@ -46,6 +45,7 @@
         align-items: center;
         transition:0.4s;
         z-index:2;
+        border-right: 1px solid black;
         &.active {
         left: 0;
         }

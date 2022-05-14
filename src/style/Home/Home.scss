@@ -10,5 +10,27 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-   
+   .homepageContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1 {
+            font-size: 60px;
+            color: white;
+            text-transform: uppercase;
+            font-family: $headerFont, sans-serif;
+            font-weight: 500;
+            span {
+                color: #00A3E1;
+                font-family: $headerFont, sans-serif;
+                font-size: 60px;
+            }
+        }
+        .title {
+            color: white;
+            font-size: 36px;
+        }
+
+   }
 }

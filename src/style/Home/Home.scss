@@ -1,5 +1,5 @@
 .homeSection {
-    background-color: red;
+    background-color: $background-dark;
     width: 100%;
     height: 100%;
     display: flex;
@@ -16,21 +16,88 @@
         align-items: center;
         justify-content: center;
         h1 {
-            font-size: 60px;
+            text-align: center;
+            font-size: 50px;
             color: white;
             text-transform: uppercase;
             font-family: $headerFont, sans-serif;
             font-weight: 500;
+            letter-spacing: 2px;
+            word-wrap: break-word;
+            outline: none;
             span {
+                display: inline-block;
                 color: #00A3E1;
                 font-family: $headerFont, sans-serif;
-                font-size: 60px;
+                font-size: 50px;
+                font-weight: 600;
+                letter-spacing: 3px;
+                word-break: keep-all;
+                
             }
         }
+
         .title {
             color: white;
             font-size: 36px;
-        }
+            font-family: $secondaryFont, sans-serif;
+            position: relative;
+            .animatedText {
+                        width: auto;
+                        height: auto;                
+                    span { 
+                        border-bottom: 2px solid #00A3E1;
+                        overflow: hidden;
+                        width: auto;
+                        height: auto;              
+                    }
+                    .visible {
+                        display: inline-block;
+                        background-color: red;
+                        
+                    }
+                    .hidden {
+                        // display: none;
+                        background-color: #00A3E1;
+                    }
+                    ::after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        right: -8px;
+                        width: 3px;
+                        height: 100%;
+                        background-color: #aebcb9;
+                    }
+                }
+            }
 
    }
+}
+
+@media (min-width: 765px) {
+    .homeSection {
+        .homepageContent {
+            h1 {
+            font-size: 60px;
+                span {
+                font-size: 60px;
+                }
+            }
+        }
+    }
+  
+}
+
+// animtions
+@keyframes typing  {
+    from {
+    //    width: auto;
+       background-color: red;
+    }
+
+    to {
+       width: 50px;
+       background-color: #00A3E1;
+    }
 }

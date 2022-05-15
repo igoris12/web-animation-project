@@ -42,31 +42,35 @@
             font-size: 36px;
             font-family: $secondaryFont, sans-serif;
             position: relative;
-            b { 
-                transition: 1s;
-                border-bottom: 2px solid #00A3E1;
-                overflow: hidden;
-                width: 0;
-                height: 40px;
-                // word-break: keep-all;
-
+            .animatedText {
+                        width: auto;
+                        height: auto;                
+                    span { 
+                        border-bottom: 2px solid #00A3E1;
+                        overflow: hidden;
+                        width: auto;
+                        height: auto;              
+                    }
+                    .visible {
+                        display: inline-block;
+                        background-color: red;
+                        
+                    }
+                    .hidden {
+                        // display: none;
+                        background-color: #00A3E1;
+                    }
+                    ::after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        right: -8px;
+                        width: 3px;
+                        height: 100%;
+                        background-color: #aebcb9;
+                    }
+                }
             }
-           .visible {
-               display: inline-block;
-           }
-           .hidden {
-               display: none;
-           }
-           ::after {
-               content: '';
-               position: absolute;
-               top: 0;
-               right: -8px;
-               width: 3px;
-               height: 100%;
-               background-color: #aebcb9;
-           }
-        }
 
    }
 }
@@ -86,3 +90,14 @@
 }
 
 // animtions
+@keyframes typing  {
+    from {
+    //    width: auto;
+       background-color: red;
+    }
+
+    to {
+       width: 50px;
+       background-color: #00A3E1;
+    }
+}

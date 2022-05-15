@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Home = () => {
+  const [state, setState] = useState(false);
+
+  // setInterval(() => {
+  //   setState(!state);
+  //   // console.log(state);
+  // }, 1000);
+
   return (
     <section className="homeSection">
       <div className="homepageContent">
@@ -10,8 +17,8 @@ const Home = () => {
         <div className="title">
           I am a{' '}
           <span className="animatedText">
-            <b className="visible">Web developer</b>
-            <b className="hidden">Freelancer</b>
+            <span className={state ? 'visible' : 'hidden'}>Web developer</span>
+            <span className="hidden">Freelancer</span>
           </span>
         </div>
       </div>

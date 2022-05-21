@@ -36,41 +36,49 @@
                 
             }
         }
-
         .title {
             color: white;
             font-size: 36px;
-            font-family: $secondaryFont, sans-serif;
             position: relative;
-            .animatedText {
-                        width: auto;
-                        height: auto;                
-                    span { 
-                        border-bottom: 2px solid #00A3E1;
-                        overflow: hidden;
-                        width: auto;
-                        height: auto;              
-                    }
-                    .visible {
-                        display: inline-block;
-                        background-color: red;
-                        
-                    }
-                    .hidden {
-                        // display: none;
-                        background-color: #00A3E1;
+            display: flex;
+            align-items: center;
+            .staticText {
+            font-family: $secondaryFont, sans-serif;
+            font-size: 36px;
+            }
+            .dynamicText {
+                list-style: none;
+                margin-left: 15px;
+                height: 60px;
+                line-height: 60px;
+                overflow: hidden;
+                li {
+                    position: relative;
+                    animation: sliding 4.5s steps(3) infinite;
+                    top: 0;
+                    
+                    span {
+                        position: relative;
+                        font-family:$secondaryFont,sans-serif;
                     }
                     ::after {
                         content: '';
                         position: absolute;
                         top: 0;
-                        right: -8px;
-                        width: 3px;
+                        left:0;
                         height: 100%;
-                        background-color: #aebcb9;
+                        width: 100%;
+                            background-image: url('../../images/homepage/home-bg.jpg');
+                            background-position: center;
+                            // // background-size: cover;
+                            // background-repeat: no-repeat;
+                        border-left: 2px solid $color-light;
+                        animation: typing 1.5s steps(14)  infinite;
+                        
                     }
                 }
             }
+        }
 
    }
 }
@@ -91,13 +99,14 @@
 
 // animtions
 @keyframes typing  {
-    from {
-    //    width: auto;
-       background-color: red;
+    100% {
+        left: calc(100% + 5px);
+        margin: 0 -35px 0 35px;
     }
+}
 
-    to {
-       width: 50px;
-       background-color: #00A3E1;
+@keyframes sliding {
+    100% {
+        top: -180px;
     }
 }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const Home = () => {
-  const [state, setState] = useState(false);
+  // const [state, setState] = useState(false);
 
   // setInterval(() => {
   //   setState(!state);
@@ -14,12 +14,20 @@ const Home = () => {
         <h1>
           Igoris <span>Ivanovas</span>
         </h1>
+
         <div className="title">
-          I am a{' '}
-          <span className="animatedText">
-            <span className={state ? 'visible' : 'hidden'}>Web developer</span>
-            <span className="hidden">Freelancer</span>
-          </span>
+          <div className="staticText"> I am a</div>
+          <ul className="dynamicText">
+            <li>
+              <span>Freelancer</span>
+            </li>
+            <li>
+              <span>Web Programmer</span>
+            </li>
+            <li>
+              <span>Developer</span>
+            </li>
+          </ul>
         </div>
       </div>
     </section>

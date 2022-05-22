@@ -17,7 +17,7 @@
         justify-content: center;
         h1 {
             text-align: center;
-            font-size: 50px;
+            font-size: 36px;
             color: white;
             text-transform: uppercase;
             font-family: $headerFont, sans-serif;
@@ -25,11 +25,12 @@
             letter-spacing: 2px;
             word-wrap: break-word;
             outline: none;
+            margin-bottom: 20px;
             span {
                 display: inline-block;
                 color: #00A3E1;
                 font-family: $headerFont, sans-serif;
-                font-size: 50px;
+                font-size: 36px;
                 font-weight: 600;
                 letter-spacing: 3px;
                 word-break: keep-all;
@@ -38,49 +39,31 @@
         }
         .title {
             color: white;
-            font-size: 36px;
+            font-size: 22px;
             position: relative;
             display: flex;
             align-items: center;
+          
             .staticText {
-            font-family: $secondaryFont, sans-serif;
-            font-size: 36px;
-            }
-            .dynamicText {
-                list-style: none;
-                margin-left: 15px;
-                height: 60px;
-                line-height: 60px;
-                overflow: hidden;
-                li {
-                    position: relative;
-                    animation: sliding 4.5s steps(3) infinite;
-                    top: 0;
-                    
+                font-family: $secondaryFont, sans-serif;
+                font-size: 22px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                .dynamicText {
+                    margin-left: 10px;
+                    padding-right: 5px;
+                    border-right: 2px solid gainsboro;
                     span {
-                        position: relative;
-                        font-family:$secondaryFont,sans-serif;
-                    }
-                    ::after {
-                        content: '';
-                        position: absolute;
-                        top: 0;
-                        left:0;
-                        height: 100%;
-                        width: 100%;
-                            background-image: url('../../images/homepage/home-bg.jpg');
-                            background-position: center;
-                            // // background-size: cover;
-                            // background-repeat: no-repeat;
-                        border-left: 2px solid $color-light;
-                        animation: typing 1.5s steps(14)  infinite;
-                        
+                        border-bottom: 2px solid #00A3E1;
+                        font-family: $secondaryFont, sans-serif;
+                        font-weight: bolder;
                     }
                 }
             }
         }
-
-   }
+    }
 }
 
 @media (min-width: 765px) {
@@ -89,24 +72,19 @@
             h1 {
             font-size: 60px;
                 span {
-                font-size: 60px;
+                    font-size: 60px;
                 }
             }
+             .title {
+                 .staticText {
+                        font-size: 30px;
+                    .dynamicText{
+                        font-size: 30px;
+                    }
+                }
+             }
         }
     }
   
 }
 
-// animtions
-@keyframes typing  {
-    100% {
-        left: calc(100% + 5px);
-        margin: 0 -35px 0 35px;
-    }
-}
-
-@keyframes sliding {
-    100% {
-        top: -180px;
-    }
-}

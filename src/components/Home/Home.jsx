@@ -16,8 +16,8 @@ const Home = () => {
               <Typewriter
                 words={[' Freelancer', ' Web Developer', ' Frontend Developer']}
                 loop
-                typeSpeed={30}
-                deleteSpeed={20}
+                typeSpeed={60}
+                deleteSpeed={50}
                 delaySpeed={2000}
               />
             </span>

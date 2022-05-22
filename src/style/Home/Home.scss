@@ -17,7 +17,7 @@
         justify-content: center;
         h1 {
             text-align: center;
-            font-size: 50px;
+            font-size: 36px;
             color: white;
             text-transform: uppercase;
             font-family: $headerFont, sans-serif;
@@ -25,11 +25,12 @@
             letter-spacing: 2px;
             word-wrap: break-word;
             outline: none;
+            margin-bottom: 20px;
             span {
                 display: inline-block;
                 color: #00A3E1;
                 font-family: $headerFont, sans-serif;
-                font-size: 50px;
+                font-size: 36px;
                 font-weight: 600;
                 letter-spacing: 3px;
                 word-break: keep-all;
@@ -38,20 +39,26 @@
         }
         .title {
             color: white;
-            font-size: 36px;
+            font-size: 22px;
             position: relative;
             display: flex;
             align-items: center;
+          
             .staticText {
                 font-family: $secondaryFont, sans-serif;
-                font-size: 36px;
+                font-size: 22px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
                 .dynamicText {
+                    margin-left: 10px;
                     padding-right: 5px;
                     border-right: 2px solid gainsboro;
                     span {
                         border-bottom: 2px solid #00A3E1;
                         font-family: $secondaryFont, sans-serif;
-                        font-weight: bold;
+                        font-weight: bolder;
                     }
                 }
             }
@@ -65,9 +72,17 @@
             h1 {
             font-size: 60px;
                 span {
-                font-size: 60px;
+                    font-size: 60px;
                 }
             }
+             .title {
+                 .staticText {
+                        font-size: 30px;
+                    .dynamicText{
+                        font-size: 30px;
+                    }
+                }
+             }
         }
     }
   

@@ -17,17 +17,6 @@ const Home = () => {
 
         <div className="title">
           <div className="staticText"> I am a</div>
-          <ul className="dynamicText">
-            <li>
-              <span>Freelancer</span>
-            </li>
-            <li>
-              <span>Web Programmer</span>
-            </li>
-            <li>
-              <span>Developer</span>
-            </li>
-          </ul>
         </div>
       </div>
     </section>

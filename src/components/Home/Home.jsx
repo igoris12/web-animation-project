@@ -4,13 +4,10 @@ import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 const Home = () => {
   const particlesInit = async (main) => {
-    console.log(main);
     await loadFull(main);
   };
 
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
+  const particlesLoaded = (container) => {};
   return (
     <section className="homeSection">
       <div className="homepageContent">
@@ -19,73 +16,65 @@ const Home = () => {
           init={particlesInit}
           loaded={particlesLoaded}
           options={{
-            background: {
-              color: {
-                // value: '#0d47a1',
-              },
+            backgroundMode: {
+              enable: true,
+              zIndex: 0,
             },
-            fpsLimit: 120,
+            fpsLimit: 60,
             interactivity: {
+              detectsOn: 'canvas',
               events: {
-                onClick: {
-                  enable: true,
-                  mode: 'push',
-                },
+                onClick: { enable: true, mode: 'push' },
                 onHover: {
-                  enable: true,
-                  mode: 'repulse',
+                  enable: false,
+                  mode: 'trail',
+                  parallax: { enable: false, force: 2, smooth: 10 },
                 },
                 resize: true,
               },
               modes: {
-                push: {
-                  quantity: 4,
+                bubble: {
+                  distance: 400,
+                  duration: 0.3,
+                  opacity: 1,
+                  size: 4,
+                  speed: 3,
                 },
-                repulse: {
-                  distance: 200,
-                  duration: 0.4,
-                },
+                grab: { distance: 400, line_linked: { opacity: 0.5 } },
+                push: { particles_nb: 1 },
+                remove: { particles_nb: 0 },
+                repulse: { distance: 200, duration: 0.4 },
               },
             },
             particles: {
-              color: {
-                value: '#ffffff',
-              },
+              color: { value: '#fff' },
               links: {
                 color: '#ffffff',
-                distance: 150,
-                enable: true,
-                opacity: 0.5,
-                width: 1,
-              },
-              collisions: {
-                enable: true,
+                distance: 500,
+                enable: false,
+                opacity: 0.4,
+                width: 2,
               },
               move: {
-                direction: 'none',
+                direction: 'top',
                 enable: true,
-                outModes: {
-                  default: 'bounce',
-                },
-                random: false,
-                speed: 6,
-                straight: false,
+                outMode: 'out',
+                random: true,
+                size: true,
+                speed: 3,
+                straight: true,
               },
-              number: {
-                density: {
-                  enable: true,
-                  area: 800,
-                },
-                value: 80,
-              },
+              number: { density: { enable: true, area: 800 }, value: 100 },
               opacity: {
+                random: true,
                 value: 0.5,
               },
               shape: {
                 type: 'circle',
               },
               size: {
-                value: { min: 1, max: 5 },
+                random: true,
+                value: 6,
               },
             },
             detectRetina: true,

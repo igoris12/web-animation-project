@@ -1,0 +1,59 @@
+.ThemeOptions {
+    background-color: #fff;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 60px;
+    width: 150px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .icon {
+        position: absolute;
+        top: 0;
+        left: -35px;
+        width: 35px;
+        height: 35px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #6B6C6D;
+        svg {
+            font-size: 25px;
+            animation: spin 1.5s infinite linear;
+        }
+    }
+    h4 {
+        margin: 15px 0;
+        text-transform: uppercase;
+        font-family: $secondaryFont, sans-serif;
+        color: black;
+    }
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 5px;
+        width: 130px;
+        flex-wrap: wrap;
+        span {
+            cursor: pointer;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

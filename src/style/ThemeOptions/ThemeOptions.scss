@@ -26,12 +26,25 @@
             animation: spin 1.5s infinite linear;
         }
     }
+    h4 {
+        margin: 15px 0;
+        text-transform: uppercase;
+        font-family: $secondaryFont, sans-serif;
+        color: black;
+    }
     ul {
-        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        gap: 5px;
+        width: 130px;
+        flex-wrap: wrap;
         span {
+            cursor: pointer;
             display: inline-block;
-            width: 20px;
-            height: 20px;
+            width: 40px;
+            height: 40px;
         }
     }
 }

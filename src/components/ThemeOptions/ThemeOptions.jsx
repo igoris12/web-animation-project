@@ -4,7 +4,7 @@ import { FaCog } from 'react-icons/fa';
 function ThemeOptions() {
   return (
     <div className="ThemeOptions">
-      <span>
+      <span className="icon">
         <FaCog />
       </span>
       <h4>Page animation</h4>

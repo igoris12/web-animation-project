@@ -1,9 +1,12 @@
 import React from 'react';
+import { FaCog } from 'react-icons/fa';
 
 function ThemeOptions() {
   return (
     <div className="ThemeOptions">
-      <span>icon</span>
+      <span>
+        <FaCog />
+      </span>
       <h4>Page animation</h4>
       <select>
         <option disabled>choose</option>

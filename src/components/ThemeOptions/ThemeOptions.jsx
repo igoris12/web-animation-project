@@ -14,12 +14,12 @@ function ThemeOptions() {
       </select>
       <h4>Colors</h4>
       <ul>
-        <span datatype="#00A3E1"></span>
-        <span datatype="#E82A2A"></span>
-        <span datatype="#6ac045"></span>
-        <span datatype="#D1A71D"></span>
-        <span datatype="#FF1493"></span>
-        <span datatype="#5078FF"></span>
+        <span style={{ 'background-color': '#00A3E1' }}></span>
+        <span style={{ 'background-color': '#E82A2A' }}></span>
+        <span style={{ 'background-color': '#6ac045' }}></span>
+        <span style={{ 'background-color': '#D1A71D' }}></span>
+        <span style={{ 'background-color': '#FF1493' }}></span>
+        <span style={{ 'background-color': '#5078FF' }}></span>
       </ul>
     </div>
   );

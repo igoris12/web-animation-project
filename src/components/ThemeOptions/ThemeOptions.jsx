@@ -7,23 +7,49 @@ function ThemeOptions() {
       <span className="icon">
         <FaCog />
       </span>
-      <h4>Page animation</h4>
-      <select>
-        <option disabled>choose</option>
-        <option>Random</option>
-        <option>1</option>
-        <option>2</option>
-        <option>3</option>
-      </select>
-      <h4>Colors</h4>
-      <ul>
-        <span style={{ 'background-color': '#00A3E1' }}></span>
-        <span style={{ 'background-color': '#E82A2A' }}></span>
-        <span style={{ 'background-color': '#6ac045' }}></span>
-        <span style={{ 'background-color': '#D1A71D' }}></span>
-        <span style={{ 'background-color': '#FF1493' }}></span>
-        <span style={{ 'background-color': '#5078FF' }}></span>
-      </ul>
+      <div className="optionsContent">
+        <h4>Page animation</h4>
+        <select>
+          <option>Choose</option>
+          <option value={0}>Random</option>
+          <option value={1}>1</option>
+          <option value={2}>2</option>
+          <option value={3}>3</option>
+          <option value={1}>1</option>
+          <option value={2}>2</option>
+          <option value={3}>3</option>
+          <option value={1}>1</option>
+          <option value={2}>2</option>
+          <option value={3}>3</option>
+          <option value={1}>1</option>
+          <option value={2}>2</option>
+          <option value={3}>3</option>
+          <option value={1}>1</option>
+          <option value={2}>2</option>
+          <option value={3}>3</option>
+          <option value={1}>1</option>
+          <option value={2}>2</option>
+          <option value={3}>3</option>
+          <option value={1}>1</option>
+          <option value={2}>2</option>
+          <option value={3}>3</option>
+          <option value={1}>1</option>
+          <option value={2}>2</option>
+          <option value={3}>3</option>
+          <option value={1}>1</option>
+          <option value={2}>2</option>
+          <option value={3}>3</option>
+        </select>
+        <h4>Colors</h4>
+        <ul>
+          <span style={{ 'background-color': '#00A3E1' }}></span>
+          <span style={{ 'background-color': '#E82A2A' }}></span>
+          <span style={{ 'background-color': '#6ac045' }}></span>
+          <span style={{ 'background-color': '#D1A71D' }}></span>
+          <span style={{ 'background-color': '#FF1493' }}></span>
+          <span style={{ 'background-color': '#5078FF' }}></span>
+        </ul>
+      </div>
     </div>
   );
 }

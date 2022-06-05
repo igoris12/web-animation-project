@@ -4,12 +4,13 @@
     z-index: 2;
     right: 0;
     top: 60px;
-    width: 150px;
-    padding: 10px;
+    width: 190px;
+    padding:10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
     .icon {
         position: absolute;
         top: 0;
@@ -26,13 +27,32 @@
             animation: spin 1.5s infinite linear;
         }
     }
-    h4 {
+    .optionsContent {
+        margin-bottom: 40px;
+        h4 {
         margin: 15px 0;
         text-transform: uppercase;
         font-family: $secondaryFont, sans-serif;
+        font-size: 14px;
         color: black;
-    }
-    ul {
+        }
+        select {
+            font-size: 16px;
+            border-radius: 0;
+            padding: 5px 10px;
+            border-color:#ced4da;
+            font-family: $secondaryFont, sans-serif;
+            font-weight: 600;
+            color: #6B6C6D;
+            text-align: left;
+            outline: none;
+            &:focus {
+
+                outline: outset 3px #00a1e141;
+            }
+        }
+
+        ul {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -40,13 +60,16 @@
         gap: 5px;
         width: 130px;
         flex-wrap: wrap;
-        span {
-            cursor: pointer;
-            display: inline-block;
-            width: 40px;
-            height: 40px;
+
+            span {
+                cursor: pointer;
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+            }
         }
     }
+    
 }
 
 @keyframes spin {

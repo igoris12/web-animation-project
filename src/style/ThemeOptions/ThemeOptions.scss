@@ -1,7 +1,7 @@
 .ThemeOptions {
     background-color: #fff;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     right: 0;
     top: 60px;
     width: 190px;
@@ -11,6 +11,10 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+    transition: 0.5s;
+    &.hiden {
+        right: -190px;
+    }
     .icon {
         position: absolute;
         top: 0;
@@ -22,6 +26,7 @@
         align-items: center;
         justify-content: center;
         color: #6B6C6D;
+        cursor: pointer;
         svg {
             font-size: 25px;
             animation: spin 1.5s infinite linear;
@@ -48,7 +53,7 @@
             outline: none;
             &:focus {
 
-                outline: outset 3px #00a1e141;
+                outline: solid 3px #80bdff;
             }
         }
 
@@ -57,7 +62,8 @@
         align-items: center;
         justify-content: center;
         flex-direction: row;
-        gap: 5px;
+        column-gap: 5px;
+        row-gap: 10px;
         width: 130px;
         flex-wrap: wrap;
 
@@ -69,7 +75,6 @@
             }
         }
     }
-    
 }
 
 @keyframes spin {

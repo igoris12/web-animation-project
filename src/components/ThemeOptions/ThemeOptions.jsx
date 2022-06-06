@@ -26,7 +26,14 @@ function ThemeOptions() {
         <h4>Page animation {options.optionsState.animation} </h4>
         <select>
           <option>Choose</option>
-          <option value={0}>Random</option>
+          <option
+            onClick={() =>
+              options.optionsDispatch({ type: 'change', deploy: 0 })
+            }
+            value={0}
+          >
+            Random
+          </option>
           <option value={1}>1</option>
           <option value={2}>2</option>
           <option value={3}>3</option>

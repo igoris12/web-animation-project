@@ -1,8 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { FaCog } from 'react-icons/fa';
+import OptionsContext from '../../reducers/OptionsContext';
 
 function ThemeOptions() {
   const [active, setActive] = useState(true);
+  const options = useContext(OptionsContext);
+  console.log(options.optionsState.animation);
 
   useEffect(() => {
     setTimeout(() => {
@@ -20,7 +23,7 @@ function ThemeOptions() {
         <FaCog />
       </span>
       <div className="optionsContent">
-        <h4>Page animation</h4>
+        <h4>Page animation {options.optionsState.animation} </h4>
         <select>
           <option>Choose</option>
           <option value={0}>Random</option>

@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { FaCog } from 'react-icons/fa';
+import OptionsContext from '../../reducers/OptionsContext';
 
 function ThemeOptions() {
   const [active, setActive] = useState(true);
+  const options = useContext(OptionsContext);
 
   useEffect(() => {
     setTimeout(() => {
@@ -21,8 +23,15 @@ function ThemeOptions() {
       </span>
       <div className="optionsContent">
         <h4>Page animation</h4>
-        <select>
-          <option>Choose</option>
+        <select
+          onChange={(e) => {
+            options.optionsDispatch({
+              type: 'CHANGE_ANIMATION',
+              deploy: e.target.value,
+            });
+          }}
+        >
+          <option disabled>Choose</option>
           <option value={0}>Random</option>
           <option value={1}>1</option>
           <option value={2}>2</option>
@@ -30,12 +39,60 @@ function ThemeOptions() {
         </select>
         <h4>Colors</h4>
         <ul>
-          <span style={{ backgroundColor: '#00A3E1' }}></span>
-          <span style={{ backgroundColor: '#E82A2A' }}></span>
-          <span style={{ backgroundColor: '#6ac045' }}></span>
-          <span style={{ backgroundColor: '#D1A71D' }}></span>
-          <span style={{ backgroundColor: '#FF1493' }}></span>
-          <span style={{ backgroundColor: '#5078FF' }}></span>
+          <span
+            onClick={() =>
+              options.optionsDispatch({
+                type: 'CHANGE_COLOR',
+                deploy: '#00A3E1',
+              })
+            }
+            style={{ backgroundColor: '#00A3E1' }}
+          ></span>
+          <span
+            onClick={() =>
+              options.optionsDispatch({
+                type: 'CHANGE_COLOR',
+                deploy: '#E82A2A',
+              })
+            }
+            style={{ backgroundColor: '#E82A2A' }}
+          ></span>
+          <span
+            onClick={() =>
+              options.optionsDispatch({
+                type: 'CHANGE_COLOR',
+                deploy: '#6ac045',
+              })
+            }
+            style={{ backgroundColor: '#6ac045' }}
+          ></span>
+          <span
+            onClick={() =>
+              options.optionsDispatch({
+                type: 'CHANGE_COLOR',
+                deploy: '#D1A71D',
+              })
+            }
+            style={{ backgroundColor: '#D1A71D' }}
+          ></span>
+          <span
+            onClick={() =>
+              options.optionsDispatch({
+                type: 'CHANGE_COLOR',
+                deploy: '#FF1493',
+              })
+            }
+            style={{ backgroundColor: '#FF1493' }}
+          ></span>
+          <span
+            onClick={() =>
+              options.optionsDispatch({
+                type: 'CHANGE_COLOR',
+                deploy: '#5078FF',
+              })
+            }
+            style={{ backgroundColor: '#5078FF' }}
+          ></span>
         </ul>
       </div>
     </div>

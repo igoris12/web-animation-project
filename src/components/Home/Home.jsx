@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
+import OptionsContext from '../../reducers/OptionsContext';
 const Home = () => {
+  const { optionsDispatch, optionsState } = useContext(OptionsContext);
   const particlesInit = async (main) => {
     await loadFull(main);
   };
@@ -81,18 +83,21 @@ const Home = () => {
           }}
         />
         <h1>
-          Igoris <span>Ivanovas</span>
+          Igoris <span style={{ color: optionsState.color }}>Ivanovas</span>
         </h1>
 
         <div className="title">
           <div className="staticText">
             I am a
-            <span className="dynamicText">
+            <span
+              className="dynamicText"
+              style={{ borderBottomColor: optionsState.color }}
+            >
               <Typewriter
-                words={[' Freelancer', ' Web Developer', ' Frontend Developer']}
+                words={['Freelancer', 'Web Developer', 'Frontend Developer']}
                 loop
-                typeSpeed={60}
-                deleteSpeed={50}
+                typeSpeed={30}
+                deleteSpeed={20}
                 delaySpeed={2000}
               />
             </span>

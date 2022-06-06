@@ -5,7 +5,7 @@ import OptionsReducer from "./reducers/OptionsReducer";
 import OptionsContext from "./reducers/OptionsContext";
 
 function App() {
-  const [opotions, dispatch] = useReducer(OptionsReducer, { animation: 1 })
+  const [opotions, dispatch] = useReducer(OptionsReducer, { animation: 1, color: '#00A3E1' })
   return (
     <OptionsContext.Provider value={{ optionsState: opotions, optionsDispatch: dispatch }}>
       <div className="App">

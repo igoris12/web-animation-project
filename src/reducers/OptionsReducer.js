@@ -1,9 +1,8 @@
 
 const OptionsReducer = (state, action) => {
     switch (action.type) {
-        case 'change':
-            console.log(state);
-            return state = action.deploy;
+        case 'CHANGE_COLOR':
+            return { ...state, color: action.deploy }
         default:
             return state
     }

@@ -91,13 +91,13 @@ const Home = () => {
             I am a
             <span
               className="dynamicText"
-              style={{ borderBottomStyle: optionsState.color }}
+              style={{ borderBottomColor: optionsState.color }}
             >
               <Typewriter
-                words={['']}
+                words={['Freelancer', 'Web Developer', 'Frontend Developer']}
                 loop
-                typeSpeed={60}
-                deleteSpeed={50}
+                typeSpeed={30}
+                deleteSpeed={20}
                 delaySpeed={2000}
               />
             </span>

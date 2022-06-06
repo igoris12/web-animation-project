@@ -5,8 +5,6 @@ import OptionsContext from '../../reducers/OptionsContext';
 function ThemeOptions() {
   const [active, setActive] = useState(true);
   const options = useContext(OptionsContext);
-  const color = options.optionsState.color;
-  console.log(color);
 
   useEffect(() => {
     setTimeout(() => {
@@ -25,8 +23,15 @@ function ThemeOptions() {
       </span>
       <div className="optionsContent">
         <h4>Page animation</h4>
-        <select>
-          <option>Choose</option>
+        <select
+          onChange={(e) => {
+            options.optionsDispatch({
+              type: 'CHANGE_ANIMATION',
+              deploy: e.target.value,
+            });
+          }}
+        >
+          <option disabled>Choose</option>
           <option value={0}>Random</option>
           <option value={1}>1</option>
           <option value={2}>2</option>

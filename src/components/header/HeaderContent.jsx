@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import {
   BsHouse,
@@ -11,8 +11,11 @@ import {
 } from 'react-icons/bs';
 import { AiOutlineMail } from 'react-icons/ai';
 import avatar from '../../images/navigation/avatar.png';
+import OptionsContext from '../../reducers/OptionsContext';
 
 const HeaderContent = ({ active, activeHandler }) => {
+  const { optionsDispatch, optionsState } = useContext(OptionsContext);
+
   return (
     <header className="header">
       <h2>Igoris Ivanovas</h2>
@@ -22,6 +25,8 @@ const HeaderContent = ({ active, activeHandler }) => {
       <div className={active ? 'navigation active' : 'navigation'}>
         <div className="image">
           <img src={avatar} alt="My foto" />
+          <span style={{ backgroundColor: optionsState.color }}></span>
+          <p>Igoris Ivanovas</p>
         </div>
         <nav className="butList">
           <a href="#" className="butList-item active">

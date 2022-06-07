@@ -53,12 +53,41 @@
         .image {
             width: 200px;
             height: 200px;
-            background-color: orange;
-        
+            position: relative;
             img {
                 object-fit: cover;
                 width: 200px;
                 height: 200px;
+            }
+            span {
+                position: absolute;
+                text-align: center;
+                display: inline-block;
+                width: 100%;
+                padding: 22px 0;
+                bottom: 0;
+                left: 0;
+                font-family: $headerFont, sans-serif;
+                text-transform: uppercase;
+                font-size: 20px;
+                background-color: $background-dark;
+                opacity: 0.8;
+                display: none;
+            }
+            p {
+                position: absolute;
+                text-align: center;
+                display: inline-block;
+                width: 100%;
+                bottom: calc(22px / 2);
+                left: 0;
+                font-family: $headerFont, sans-serif;
+                text-transform: uppercase;
+                font-size: 20px;
+                background-color: inherit;
+                display: none;
+                font-weight: 700;
+                letter-spacing: 1px;
             }
         }
 
@@ -149,15 +178,12 @@
            display: none; 
         }
         .navigation {
-            
-            .butList {
-                a {
-                    svg {
-                        font-size: 21px;  
-                    }
-                    p {
-                        font-size: 12px;
-                    }
+            .image {
+                span {
+                    display: inline-block;
+                }
+                p {
+                    display: inline-block;
                 }
             }
         }

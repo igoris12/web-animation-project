@@ -62,17 +62,32 @@
             span {
                 position: absolute;
                 text-align: center;
+                display: inline-block;
                 width: 100%;
-                padding: 10px 0;
+                padding: 25px 0;
                 bottom: 0;
                 left: 0;
                 font-family: $headerFont, sans-serif;
                 text-transform: uppercase;
                 font-size: 20px;
-                background-color: rebeccapurple;
-                opacity: 0.7;
+                background-color: $background-dark;
+                opacity: 0.8;
                 display: none;
-                
+            }
+            p {
+                position: absolute;
+                text-align: center;
+                display: inline-block;
+                width: 100%;
+                bottom: calc(25px / 2);
+                left: 0;
+                font-family: $headerFont, sans-serif;
+                text-transform: uppercase;
+                font-size: 20px;
+                background-color: inherit;
+                display: none;
+                font-weight: 700;
+                letter-spacing: 1px;
             }
         }
 
@@ -165,6 +180,9 @@
         .navigation {
             .image {
                 span {
+                    display: inline-block;
+                }
+                p {
                     display: inline-block;
                 }
             }

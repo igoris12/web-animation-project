@@ -3,9 +3,9 @@ import React from 'react';
 const AboutMe = () => {
   return (
     <section className="aboutMe ">
-      <div className="header row">
+      <h1 className="header row">
         About me <span> icon</span>
-      </div>
+      </h1>
     </section>
   );
 };

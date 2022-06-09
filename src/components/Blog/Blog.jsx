@@ -4,7 +4,7 @@ import Home from '../Home/Home';
 
 const Blog = () => {
   return (
-    <section className="blog-page container">
+    <section className="blog-page ">
       {/* <Home /> */}
       <AboutMe />
     </section>

@@ -7,11 +7,26 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: red;
-    div {
-        background-color: rebeccapurple;
-        p {
-            background-color: yellow;
+    background-color: $background-dark;
+    padding: 0 30px;
+    .header {
+        padding: 0;
+        h1 {
+            font-size: 36px;
+            font-family: $headerFont, sans-serif;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+            font-weight: lighter;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+            outline: none;
+           span {
+               float: right;
+               font-size: 45px;
+           }
         }
     }
+    .about {
+
+    }
+    
 }

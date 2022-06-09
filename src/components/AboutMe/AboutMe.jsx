@@ -15,7 +15,7 @@ const AboutMe = () => {
         </h1>
       </div>
       <div className="about row">
-        <div>
+        <div className="col-12">
           <h2>UI/UX Developer</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
@@ -35,7 +35,7 @@ const AboutMe = () => {
           </p>
           <img src="#" alt="signature" />
         </div>
-        <aside>
+        <aside className="col-12">
           <h2>Personal information</h2>
           <ul className="infoList">
             <li className="item">

@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import OptionsContext from '../../reducers/OptionsContext';
 import { HiOutlineUser } from 'react-icons/hi';
+import signatureImage from '../../images/AboutMe/signature-white.png';
 
 const AboutMe = () => {
   const { optionsState } = useContext(OptionsContext);
@@ -15,9 +16,9 @@ const AboutMe = () => {
         </h1>
       </div>
       <div className="about row">
-        <div className="col-12">
-          <h2>UI/UX Developer</h2>
-          <p>
+        <div className="col-12 row">
+          <h2 className="col-12">UI/UX Developer</h2>
+          <p className="col-12">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
             corporis doloremque facere in porro quaerat? Dolore quibusdam saepe
             magnam sequi aliquid consectetur voluptates animi et, illum
@@ -25,7 +26,7 @@ const AboutMe = () => {
             Blanditiis, laudantium rem. Architecto modi ut, non atque neque
             tempora ipsum numquam commodi ex?
           </p>
-          <p>
+          <p className="col-12">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
             corporis doloremque facere in porro quaerat? Dolore quibusdam saepe
             magnam sequi aliquid consectetur voluptates animi et, illum
@@ -33,7 +34,9 @@ const AboutMe = () => {
             Blanditiis, laudantium rem. Architecto modi ut, non atque neque
             tempora ipsum numquam commodi ex?
           </p>
-          <img src="#" alt="signature" />
+          <div className="image col-9">
+            <img src={signatureImage} alt="signature" />
+          </div>
         </div>
         <aside className="col-12">
           <h2>Personal information</h2>

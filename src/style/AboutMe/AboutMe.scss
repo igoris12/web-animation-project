@@ -9,6 +9,7 @@
     left: 0;
     background-color: $background-dark;
     padding: 0 30px;
+    overflow:auto;
     .header {
         padding: 0;
         h1 {
@@ -26,7 +27,25 @@
         }
     }
     .about {
-
+        h2, p {
+            font-family: $headerFont, sans-serif;
+            font-size: 22px;
+            color: white;
+            margin-bottom: 20px;
+        }
+        p {
+            font-family: $secondaryFont, sans-serif;
+            font-size: 16px;
+            color: $color-light;
+            word-break: break-word;
+        }
+        .image {
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
     }
     
 }

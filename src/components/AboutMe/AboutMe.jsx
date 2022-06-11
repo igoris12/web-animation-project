@@ -18,7 +18,7 @@ const AboutMe = () => {
       <article className="about row">
         <div className="description col-12 row">
           <h2 className="sectionSecondaryHeader col-12">UI/UX Developer</h2>
-          <p className="col-12">
+          <p className="sectionParagraph col-12">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
             corporis doloremque facere in porro quaerat? Dolore quibusdam saepe
             magnam sequi aliquid consectetur voluptates animi et, illum
@@ -26,7 +26,7 @@ const AboutMe = () => {
             Blanditiis, laudantium rem. Architecto modi ut, non atque neque
             tempora ipsum numquam commodi ex?
           </p>
-          <p className="col-12">
+          <p className="sectionParagraph col-12">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
             corporis doloremque facere in porro quaerat? Dolore quibusdam saepe
             magnam sequi aliquid consectetur voluptates animi et, illum

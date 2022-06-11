@@ -1,17 +1,20 @@
 .sectionHeader {
-    font-size: 36px;
-    font-family: $headerFont, sans-serif;
-    text-transform: capitalize;
-    letter-spacing: 2px;
-    font-weight: lighter;
-    outline: none;
-    h1 {
-        border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
-           span {
-               float: right;
-               font-size: 45px;
-           }
-        }
+    
+    .sectionHeaderContainer {
+        h1 {
+            font-size: 36px;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+            font-weight: lighter;
+            outline: none;
+            font-family: $headerFont, sans-serif;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+               span {
+                   float: right;
+                   font-size: 45px;
+               }
+            }
+    }
 }
 
 .sectionSecondaryHeader {

@@ -7,10 +7,10 @@ const AboutMe = () => {
   const { optionsState } = useContext(OptionsContext);
   return (
     <section className="aboutMe container-fluid">
-      <div className="header row  col-12">
-        <h1 className="row col-12" style={{ color: optionsState.color }}>
+      <div className="sectionHeader row">
+        <h1 className="col-12 " style={{ color: optionsState.color }}>
           About me.
-          <span className="reverse col-1">
+          <span className="col-1">
             <HiOutlineUser />
           </span>
         </h1>

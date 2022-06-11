@@ -10,22 +10,6 @@
     background-color: $background-dark;
     padding-top: 0;
     overflow:auto;
-    .header {
-        padding:0 10px;
-        h1 {
-            font-size: 36px;
-            font-family: $headerFont, sans-serif;
-            text-transform: capitalize;
-            letter-spacing: 2px;
-            font-weight: lighter;
-            border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
-            outline: none;
-           span {
-               float: right;
-               font-size: 45px;
-           }
-        }
-    }
     .about {
         .description {
             h2, p {

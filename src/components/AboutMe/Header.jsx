@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import OptionsContext from '../../reducers/OptionsContext';
 import { HiOutlineUser } from 'react-icons/hi';
-
 const Header = () => {
   const { optionsState } = useContext(OptionsContext);
   return (

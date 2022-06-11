@@ -28,14 +28,14 @@
     --ml10: calc(var(--ml9) + var(--cg));
     --ml11: calc(var(--ml10) + var(--cg));
 
-    --container-padding: 40px;
+    --container-padding: 25px;
 }
 
 .container,
 .container-fluid {
     display: inline-block;
     width: 100%;
-    padding: var(--container-padding) 10px;
+    padding: var(--container-padding) 15px;
 }
 
 .container>.row,
@@ -282,7 +282,7 @@
 @media (min-width: 767px) {
     :root {
         --half-gap: 15px;
-        --container-padding: 50px;
+        --container-padding: 25px;
     }
 
     .container>.row {
@@ -406,7 +406,7 @@
 
 @media (min-width: 991px) {
     :root {
-        --container-padding: 60px;
+        --container-padding: 25px;
     }
 
     .container>.row {
@@ -531,7 +531,7 @@
 @media (min-width: 1199px) {
     :root {
         --half-gap: 20px;
-        --container-padding: 70px;
+        --container-padding: 25px;
     }
 
     .container>.row {
@@ -655,7 +655,7 @@
 
 @media (min-width: 1399px) {
     :root {
-        --container-padding: 80px;
+        --container-padding: 25px;
     }
 
     .container>.row {

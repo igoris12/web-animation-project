@@ -6,19 +6,19 @@ import signatureImage from '../../images/AboutMe/signature-white.png';
 const AboutMe = () => {
   const { optionsState } = useContext(OptionsContext);
   return (
-    <section className="aboutMe container-fluid">
-      <div className="sectionHeader row">
-        <h1 className="col-12 " style={{ color: optionsState.color }}>
+    <section id="aboutMe">
+      <div className="sectionHeader container">
+        <h1 className="" style={{ color: optionsState.color }}>
           About me.
-          <span className="col-1">
+          <span>
             <HiOutlineUser />
           </span>
         </h1>
       </div>
-      <article className="about row">
-        <div className="description col-12 row">
-          <h2 className="sectionSecondaryHeader col-12">UI/UX Developer</h2>
-          <p className="sectionParagraph col-12">
+      <article className="about  ">
+        <div className="description col-12 col-lg-7 ">
+          <h2 className="sectionSecondaryHeader ">UI/UX Developer</h2>
+          <p className="sectionParagraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
             corporis doloremque facere in porro quaerat? Dolore quibusdam saepe
             magnam sequi aliquid consectetur voluptates animi et, illum
@@ -34,11 +34,11 @@ const AboutMe = () => {
             Blanditiis, laudantium rem. Architecto modi ut, non atque neque
             tempora ipsum numquam commodi ex?
           </p>
-          <div className="image col-9">
+          <div className="image col-9 col-sm-7">
             <img src={signatureImage} alt="signature" />
           </div>
         </div>
-        <aside className="info row col-12">
+        <aside className="info  col-12 col-lg-5">
           <h2 className="sectionSecondaryHeader col-12">
             Personal information
           </h2>

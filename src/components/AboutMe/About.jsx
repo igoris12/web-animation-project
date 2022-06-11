@@ -7,7 +7,7 @@ const About = () => {
   return (
     <article className="about container-fluid">
       <div className="row">
-        <div className="description  col-12">
+        <div className="description  col-12 col-lg-8">
           <h2 className="sectionSecondaryHeader ">UI/UX Developer</h2>
           <p className="sectionParagraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
@@ -30,7 +30,7 @@ const About = () => {
           </div>
         </div>
 
-        <aside className="info col-12">
+        <aside className="info col-12 col-lg-4">
           <h2 className="sectionSecondaryHeader ">Personal information</h2>
           <ul className="infoList ">
             <li className="item">

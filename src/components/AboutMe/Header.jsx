@@ -5,7 +5,7 @@ const Header = () => {
   const { optionsState } = useContext(OptionsContext);
   return (
     <div className="sectionHeader container">
-      <h1 className="" style={{ color: optionsState.color }}>
+      <h1 style={{ color: optionsState.color }}>
         About me.
         <span>
           <HiOutlineUser />

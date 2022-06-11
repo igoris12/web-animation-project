@@ -16,7 +16,7 @@ const AboutMe = () => {
         </h1>
       </div>
       <article className="about row">
-        <div className="col-12 row">
+        <div className="description col-12 row">
           <h2 className="col-12">UI/UX Developer</h2>
           <p className="col-12">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis

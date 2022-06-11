@@ -17,7 +17,7 @@ const AboutMe = () => {
       </div>
       <article className="about row">
         <div className="description col-12 row">
-          <h2 className="col-12">UI/UX Developer</h2>
+          <h2 className="sectionSecondaryHeader col-12">UI/UX Developer</h2>
           <p className="col-12">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
             corporis doloremque facere in porro quaerat? Dolore quibusdam saepe
@@ -39,7 +39,9 @@ const AboutMe = () => {
           </div>
         </div>
         <aside className="info row col-12">
-          <h2 className="col-12">Personal information</h2>
+          <h2 className="sectionSecondaryHeader col-12">
+            Personal information
+          </h2>
           <ul className="infoList col-12">
             <li className="item">
               <span

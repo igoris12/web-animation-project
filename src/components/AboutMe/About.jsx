@@ -48,7 +48,7 @@ const About = () => {
                 className="title"
                 style={{ borderColor: optionsState.color }}
               >
-                Age26
+                Age
               </span>
               <span className="value">22 Years</span>
             </li>

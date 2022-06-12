@@ -2,7 +2,11 @@ import React from 'react';
 
 const Button = ({ type = 'button', text, color }) => {
   return (
-    <button className="button" type={type}>
+    <button
+      style={{ color: color, borderColor: color }}
+      className="button"
+      type={type}
+    >
       {text}
     </button>
   );

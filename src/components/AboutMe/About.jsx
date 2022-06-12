@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import signatureImage from '../../images/AboutMe/signature-white.png';
 import OptionsContext from '../../reducers/OptionsContext';
+import Button from '../Base/Button';
 
 const About = () => {
   const { optionsState } = useContext(OptionsContext);
@@ -79,7 +80,7 @@ const About = () => {
               <span className="value">Available</span>
             </li>
           </ul>
-          <button className="">Download resume</button>
+          <Button text={'Download resume'} color={optionsState.color} />
         </aside>
       </div>
     </article>

@@ -1,0 +1,36 @@
+.button {
+    font-size: 14px;
+    font-family: $secondaryFont, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: 2px solid #00A3E1;
+    color: #00A3E1;
+    cursor: pointer;
+    background-color: transparent;
+    position: relative;
+    transition: 0.5s;
+    z-index: 1;
+    .after {
+        position:absolute;
+        top: 0;
+        right: 50%;
+        left: 50%;
+        height: 100%;
+        background-color: #00A3E1;
+        transition: 0.5s;
+        opacity: 0;
+        z-index: -1;
+    }
+
+    &:hover {
+        color: black !important;
+        .after {
+            left: 0%; 
+            right: 0%;
+            opacity: 1;
+        }
+                    
+    }
+}

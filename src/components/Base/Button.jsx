@@ -8,6 +8,7 @@ const Button = ({ type = 'button', text, color }) => {
       type={type}
     >
       {text}
+      <span className="after" style={{ background: color }}></span>
     </button>
   );
 };

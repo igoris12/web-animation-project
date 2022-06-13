@@ -1,11 +1,14 @@
 import React from 'react';
-import Header from './Header';
+import Header from '../Base/Header';
+import { HiOutlineUser } from 'react-icons/hi';
 import About from './About';
+import Services from './Services';
 const AboutMe = () => {
   return (
     <section id="aboutMe">
-      <Header />
+      <Header text={'About Me.'} icon={<HiOutlineUser />} />
       <About />
+      <Services />
     </section>
   );
 };

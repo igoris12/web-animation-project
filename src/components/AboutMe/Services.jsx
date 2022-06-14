@@ -13,25 +13,25 @@ const Services = () => {
       </div>
       <ul className="row">
         <ServicesItem
-          col="col-12"
+          col="col-12 col-sm-6 col-lg-3"
           icon={<MdComputer />}
           title="Web Development"
           text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto itaque accusamus ullam dolorem quibusdam, necessitatibus perferendis doloribus quo placeat incidunt, porro amet nisi deleniti nemo assumenda repudiandae blanditiis dolore! Aut!"
         />
         <ServicesItem
-          col="col-12"
+          col="col-12 col-sm-6 col-lg-3"
           icon={<ImEye />}
           title="Web Design"
           text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto itaque accusamus ullam dolorem quibusdam, necessitatibus perferendis doloribus quo placeat incidunt, porro amet nisi deleniti nemo assumenda repudiandae blanditiis dolore! Aut!"
         />
         <ServicesItem
-          col="col-12"
+          col="col-12 col-sm-6 col-lg-3"
           icon={<MdPhonelink />}
           title="Responsive Design"
           text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto itaque accusamus ullam dolorem quibusdam, necessitatibus perferendis doloribus quo placeat incidunt, porro amet nisi deleniti nemo assumenda repudiandae blanditiis dolore! Aut!"
         />
         <ServicesItem
-          col="col-12"
+          col="col-12 col-sm-6 col-lg-3"
           icon={<VscDebug />}
           title="Debugging"
           text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto itaque accusamus ullam dolorem quibusdam, necessitatibus perferendis doloribus quo placeat incidunt, porro amet nisi deleniti nemo assumenda repudiandae blanditiis dolore! Aut!"

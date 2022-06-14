@@ -1,0 +1,20 @@
+.ServicesItem {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    text-align: center;
+    
+    .icon {
+        font-size: 50px;
+        color: $color-light;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 14.5px;
+    }
+}

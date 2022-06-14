@@ -1,11 +1,11 @@
 import React from 'react';
 
-const ServicesItem = ({ col, icon }) => {
+const ServicesItem = ({ col, icon, title, text }) => {
   return (
     <div className={'ServicesItem' + ' ' + col}>
-      <span>{icon}</span>
-      <h3>header</h3>
-      <p>text</p>
+      <span className="icon">{icon}</span>
+      <h3 className="sectionSecondaryHeader">{title}</h3>
+      <p className="sectionParagraph">{text}</p>
     </div>
   );
 };

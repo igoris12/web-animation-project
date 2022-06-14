@@ -12,10 +12,30 @@ const Services = () => {
         <SectionHeader text={'Services'} />
       </div>
       <ul className="row">
-        <ServicesItem col="col-12" icon={<MdComputer />} />
-        <ServicesItem col="col-12" icon={<ImEye />} />
-        <ServicesItem col="col-12" icon={<MdPhonelink />} />
-        <ServicesItem col="col-12" icon={<VscDebug />} />
+        <ServicesItem
+          col="col-12"
+          icon={<MdComputer />}
+          title="Web Development"
+          text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto itaque accusamus ullam dolorem quibusdam, necessitatibus perferendis doloribus quo placeat incidunt, porro amet nisi deleniti nemo assumenda repudiandae blanditiis dolore! Aut!"
+        />
+        <ServicesItem
+          col="col-12"
+          icon={<ImEye />}
+          title="Web Design"
+          text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto itaque accusamus ullam dolorem quibusdam, necessitatibus perferendis doloribus quo placeat incidunt, porro amet nisi deleniti nemo assumenda repudiandae blanditiis dolore! Aut!"
+        />
+        <ServicesItem
+          col="col-12"
+          icon={<MdPhonelink />}
+          title="Responsive Design"
+          text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto itaque accusamus ullam dolorem quibusdam, necessitatibus perferendis doloribus quo placeat incidunt, porro amet nisi deleniti nemo assumenda repudiandae blanditiis dolore! Aut!"
+        />
+        <ServicesItem
+          col="col-12"
+          icon={<VscDebug />}
+          title="Debugging"
+          text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto itaque accusamus ullam dolorem quibusdam, necessitatibus perferendis doloribus quo placeat incidunt, porro amet nisi deleniti nemo assumenda repudiandae blanditiis dolore! Aut!"
+        />
       </ul>
     </section>
   );

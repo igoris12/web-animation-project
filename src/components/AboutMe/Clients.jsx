@@ -10,27 +10,27 @@ const Clients = () => {
       </div>
       <Swiper spaceBetween={50} slidesPerView={3} loop={true}>
         <SwiperSlide>
-          <a>
+          <a href="#">
             <img src="#" alt="logo" />
           </a>
         </SwiperSlide>
         <SwiperSlide>
-          <a>
+          <a href="#">
             <img src="#" alt="logo" />
           </a>
         </SwiperSlide>
         <SwiperSlide>
-          <a>
+          <a href="#">
             <img src="#" alt="logo" />
           </a>
         </SwiperSlide>
         <SwiperSlide>
-          <a>
+          <a href="#">
             <img src="#" alt="logo" />
           </a>
         </SwiperSlide>
         <SwiperSlide>
-          <a>
+          <a href="#">
             <img src="#" alt="logo" />
           </a>
         </SwiperSlide>

@@ -1,7 +1,9 @@
 import React from 'react';
 import SectionHeader from '../Base/SectionHeader';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper';
 import 'swiper/css';
+import 'swiper/css/bundle';
 import client1 from '../../images/AboutMe/Clients/client-01.png';
 import client2 from '../../images/AboutMe/Clients/client-02.png';
 import client3 from '../../images/AboutMe/Clients/client-03.png';
@@ -18,7 +20,17 @@ const Clients = () => {
       <div className="row">
         <SectionHeader text={'Clients'} />
       </div>
-      <Swiper className="row" spaceBetween={50} slidesPerView={2} loop={true}>
+      <Swiper
+        modules={[Autoplay]}
+        className="row"
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        spaceBetween={50}
+        slidesPerView={2}
+        loop={true}
+      >
         <SwiperSlide>
           <a href="#">
             <img src={client1} alt="logo-1" />

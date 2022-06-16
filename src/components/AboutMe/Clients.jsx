@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import SectionHeader from '../Base/SectionHeader';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper';
@@ -15,6 +15,22 @@ import client8 from '../../images/AboutMe/Clients/client-08.png';
 import client9 from '../../images/AboutMe/Clients/client-09.png';
 
 const Clients = () => {
+  const [perView, setPerView] = useState(2);
+  // useEffect(() => {
+  //   window.addEventListener('resize', (e) => {
+  //     if (e.target.innerWidth < 500) {
+  //       setPerView(2);
+  //     }
+  //     if (e.target.innerWidth > 500) {
+  //       setPerView(3);
+  //     }
+
+  //     if (e.target.innerWidth > 700) {
+  //       setPerView(4);
+  //     }
+  //   });
+  // }, []);
+
   return (
     <section className="Clients container-fluid">
       <div className="row">
@@ -28,8 +44,9 @@ const Clients = () => {
           disableOnInteraction: false,
         }}
         spaceBetween={50}
-        slidesPerView={2}
+        slidesPerView={perView}
         loop={true}
+        res
       >
         <SwiperSlide>
           <a href="#">

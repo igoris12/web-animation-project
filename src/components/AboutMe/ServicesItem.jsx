@@ -3,7 +3,7 @@ import OptionsContext from '../../reducers/OptionsContext';
 
 const ServicesItem = ({ col, icon, title, text }) => {
   const { optionsState } = useContext(OptionsContext);
-  console.log(optionsState);
+
   return (
     <div className={'ServicesItem' + ' ' + col}>
       <span className="icon" style={{ color: optionsState.color }}>

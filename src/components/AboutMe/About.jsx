@@ -47,7 +47,9 @@ const About = () => {
               >
                 Age
               </span>
-              <span className="value">22 Years</span>
+              <span className="value">
+                {new Date().getFullYear() - 2000} Years
+              </span>
             </li>
             <li className="item">
               <span

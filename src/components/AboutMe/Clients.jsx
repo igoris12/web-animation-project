@@ -16,20 +16,12 @@ import client9 from '../../images/AboutMe/Clients/client-09.png';
 
 const Clients = () => {
   const [perView, setPerView] = useState(2);
-  // useEffect(() => {
-  //   window.addEventListener('resize', (e) => {
-  //     if (e.target.innerWidth < 500) {
-  //       setPerView(2);
-  //     }
-  //     if (e.target.innerWidth > 500) {
-  //       setPerView(3);
-  //     }
-
-  //     if (e.target.innerWidth > 700) {
-  //       setPerView(4);
-  //     }
-  //   });
-  // }, []);
+  useEffect(() => {
+    window.innerWidth < 500 && setPerView(2);
+    window.innerWidth > 500 && setPerView(3);
+    window.innerWidth > 700 && setPerView(4);
+    window.innerWidth > 1000 && setPerView(6);
+  }, []);
 
   return (
     <section className="Clients container-fluid">
@@ -43,7 +35,7 @@ const Clients = () => {
           delay: 2500,
           disableOnInteraction: false,
         }}
-        spaceBetween={50}
+        spaceBetween={0}
         slidesPerView={perView}
         loop={true}
         res

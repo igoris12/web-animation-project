@@ -19,8 +19,10 @@ const TestimonialsItem = () => {
           src="https://watson-vcard.netlify.app/img/testimonials/author-3.jpg"
           alt="Client avatar"
         />
-        <h4>Randopme name</h4>
-        <p>randome duty</p>
+        <span>
+          <h4 className="sectionSecondaryHeader">Randopme name</h4>
+          <p className="sectionParagraph">randome duty</p>
+        </span>
       </div>
     </div>
   );

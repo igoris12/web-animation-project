@@ -15,7 +15,10 @@ const TestimonialsItem = () => {
         </p>
       </div>
       <div className="clientInfo">
-        <img src="#" alt="Client avatar" />
+        <img
+          src="https://watson-vcard.netlify.app/img/testimonials/author-3.jpg"
+          alt="Client avatar"
+        />
         <h4>Randopme name</h4>
         <p>randome duty</p>
       </div>

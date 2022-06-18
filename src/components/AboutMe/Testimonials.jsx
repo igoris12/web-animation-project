@@ -11,7 +11,7 @@ const Testimonials = () => {
       <div className="row">
         <SectionHeader text="Testimonials" />
       </div>
-      <Swiper spaceBetween={50} slidesPerView={1} loop={true}>
+      <Swiper spaceBetween={50} slidesPerView={2} loop={true}>
         <SwiperSlide>
           <TestimonialsItem />
         </SwiperSlide>

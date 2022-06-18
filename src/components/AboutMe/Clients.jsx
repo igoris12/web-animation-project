@@ -53,7 +53,7 @@ const Clients = () => {
         spaceBetween={0}
         slidesPerView={perView}
         loop={true}
-        res
+        res={'ture'}
       >
         <SwiperSlide>
           <a href="#">

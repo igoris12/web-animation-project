@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { FaQuoteLeft } from 'react-icons/fa';
 import OptionsContext from '../../reducers/OptionsContext';
 
-const TestimonialsItem = ({ img }) => {
+const TestimonialsItem = ({ info }) => {
   const { optionsState } = useContext(OptionsContext);
 
   return (
@@ -18,13 +18,10 @@ const TestimonialsItem = ({ img }) => {
         </p>
       </div>
       <div className="clientInfo">
-        <img
-          src="https://watson-vcard.netlify.app/img/testimonials/author-3.jpg"
-          alt="Client avatar"
-        />
+        <img src={info.img} alt="Client avatar" />
         <span>
-          <h4 className="sectionSecondaryHeader">Randopme name</h4>
-          <p className="sectionParagraph">randome duty</p>
+          <h4 className="sectionSecondaryHeader">{info.personName}</h4>
+          <p className="sectionParagraph">{info.personRole}</p>
         </span>
       </div>
     </div>

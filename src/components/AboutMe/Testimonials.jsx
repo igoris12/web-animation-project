@@ -45,6 +45,7 @@ const Testimonials = () => {
     window.innerWidth < 1000 && setPerView(1);
     window.innerWidth > 1000 && setPerView(2);
   }, []);
+
   return (
     <section className="Testimonials container-fluid">
       <div className="row">

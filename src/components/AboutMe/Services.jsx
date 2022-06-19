@@ -16,25 +16,26 @@ const Services = () => {
           col="col-12 col-sm-6 col-lg-3"
           icon={<MdComputer />}
           title="Web Development"
-          text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto itaque accusamus ullam dolorem quibusdam, necessitatibus perferendis doloribus quo placeat incidunt, porro amet nisi deleniti nemo assumenda repudiandae blanditiis dolore! Aut!"
+          text="I am Igoris, a web developer based in Lithuania. I develop websites using React.js and CSS, I mostly love working on the front-end using SASS and React."
         />
         <ServicesItem
           col="col-12 col-sm-6 col-lg-3"
           icon={<ImEye />}
           title="Web Design"
-          text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto itaque accusamus ullam dolorem quibusdam, necessitatibus perferendis doloribus quo placeat incidunt, porro amet nisi deleniti nemo assumenda repudiandae blanditiis dolore! Aut!"
+          text="I am working with many different styles and keeping with modern design trends.
+My main goal in my work it contributes to the success of my clients."
         />
         <ServicesItem
           col="col-12 col-sm-6 col-lg-3"
           icon={<MdPhonelink />}
           title="Responsive Design"
-          text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto itaque accusamus ullam dolorem quibusdam, necessitatibus perferendis doloribus quo placeat incidunt, porro amet nisi deleniti nemo assumenda repudiandae blanditiis dolore! Aut!"
+          text="Responsive Design is one of the main must have in my skill set for maximum clients profit!"
         />
         <ServicesItem
           col="col-12 col-sm-6 col-lg-3"
           icon={<VscDebug />}
           title="Debugging"
-          text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto itaque accusamus ullam dolorem quibusdam, necessitatibus perferendis doloribus quo placeat incidunt, porro amet nisi deleniti nemo assumenda repudiandae blanditiis dolore! Aut!"
+          text="I' am experienced in debugging I gain great skill base working on many projects. "
         />
       </ul>
     </section>

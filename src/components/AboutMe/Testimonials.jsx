@@ -33,13 +33,8 @@ const Testimonials = () => {
   const [perView, setPerView] = useState(1);
   useEffect(() => {
     window.addEventListener('resize', (e) => {
-      if (e.target.innerWidth < 1000) {
-        setPerView(1);
-      }
-
-      if (e.target.innerWidth > 1000) {
-        setPerView(2);
-      }
+      if (e.target.innerWidth < 1000) setPerView(1);
+      if (e.target.innerWidth > 1000) setPerView(2);
     });
 
     window.innerWidth < 1000 && setPerView(1);

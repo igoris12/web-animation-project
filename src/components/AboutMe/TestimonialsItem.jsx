@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FaQuoteLeft } from 'react-icons/fa';
+import OptionsContext from '../../reducers/OptionsContext';
 
-const TestimonialsItem = () => {
+const TestimonialsItem = ({ img }) => {
+  const { optionsState } = useContext(OptionsContext);
+
   return (
     <div className="TestimonialsItem">
       <div className="testimonilTextBox ">
-        <span>
+        <span style={{ color: optionsState.color }}>
           <FaQuoteLeft />
         </span>
         <p className="sectionParagraph">

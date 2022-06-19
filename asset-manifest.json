@@ -1,17 +1,26 @@
 {
   "files": {
-    "main.css": "/web-animation-project/static/css/main.26c53cce.css",
-    "main.js": "/web-animation-project/static/js/main.535fd981.js",
+    "main.css": "/web-animation-project/static/css/main.79745202.css",
+    "main.js": "/web-animation-project/static/js/main.cd922626.js",
     "static/js/937.2379673e.chunk.js": "/web-animation-project/static/js/937.2379673e.chunk.js",
     "static/media/avatar.png": "/web-animation-project/static/media/avatar.e3cc57bdb67d61d2da9b.png",
     "static/media/home-bg.jpg": "/web-animation-project/static/media/home-bg.076fbdf26f56ba61597b.jpg",
+    "static/media/client-03.png": "/web-animation-project/static/media/client-03.8513e3247af1ed2ebc9d.png",
+    "static/media/client-05.png": "/web-animation-project/static/media/client-05.d626e60c57e01e1a0fb2.png",
+    "static/media/client-01.png": "/web-animation-project/static/media/client-01.6b88163cba3b308ca688.png",
+    "static/media/client-08.png": "/web-animation-project/static/media/client-08.3576a4e166b8494791ba.png",
+    "static/media/client-02.png": "/web-animation-project/static/media/client-02.3980c58af7a456a3c4e3.png",
+    "static/media/client-04.png": "/web-animation-project/static/media/client-04.1f7f2c6bf82516cba4e0.png",
+    "static/media/client-07.png": "/web-animation-project/static/media/client-07.8a7274336c467ab133a3.png",
+    "static/media/client-09.png": "/web-animation-project/static/media/client-09.8fef02a629671215e468.png",
+    "static/media/client-06.png": "/web-animation-project/static/media/client-06.cf0046e35b09f290ccb8.png",
     "index.html": "/web-animation-project/index.html",
-    "main.26c53cce.css.map": "/web-animation-project/static/css/main.26c53cce.css.map",
-    "main.535fd981.js.map": "/web-animation-project/static/js/main.535fd981.js.map",
+    "main.79745202.css.map": "/web-animation-project/static/css/main.79745202.css.map",
+    "main.cd922626.js.map": "/web-animation-project/static/js/main.cd922626.js.map",
     "937.2379673e.chunk.js.map": "/web-animation-project/static/js/937.2379673e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.26c53cce.css",
-    "static/js/main.535fd981.js"
+    "static/css/main.79745202.css",
+    "static/js/main.cd922626.js"
   ]
 }

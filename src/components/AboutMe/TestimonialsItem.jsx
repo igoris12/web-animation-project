@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { FaQuoteLeft } from 'react-icons/fa';
+import OptionsContext from '../../reducers/OptionsContext';
 
-const TestimonialsItem = () => {
+const TestimonialsItem = ({ info }) => {
+  const { optionsState } = useContext(OptionsContext);
+
   return (
     <div className="TestimonialsItem">
       <div className="testimonilTextBox ">
-        <span>
+        <span style={{ color: optionsState.color }}>
           <FaQuoteLeft />
         </span>
         <p className="sectionParagraph">
@@ -15,13 +18,10 @@ const TestimonialsItem = () => {
         </p>
       </div>
       <div className="clientInfo">
-        <img
-          src="https://watson-vcard.netlify.app/img/testimonials/author-3.jpg"
-          alt="Client avatar"
-        />
+        <img src={info.img} alt="Client avatar" />
         <span>
-          <h4 className="sectionSecondaryHeader">Randopme name</h4>
-          <p className="sectionParagraph">randome duty</p>
+          <h4 className="sectionSecondaryHeader">{info.personName}</h4>
+          <p className="sectionParagraph">{info.personRole}</p>
         </span>
       </div>
     </div>

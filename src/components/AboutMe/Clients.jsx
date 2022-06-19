@@ -18,18 +18,13 @@ const Clients = () => {
   const [perView, setPerView] = useState(2);
   useEffect(() => {
     window.addEventListener('resize', (e) => {
-      if (e.target.innerWidth < 500) {
-        setPerView(2);
-      }
-      if (e.target.innerWidth > 500) {
-        setPerView(3);
-      }
-      if (e.target.innerWidth > 700) {
-        setPerView(4);
-      }
-      if (e.target.innerWidth > 1000) {
-        setPerView(6);
-      }
+      if (e.target.innerWidth < 500) setPerView(2);
+
+      if (e.target.innerWidth > 500) setPerView(3);
+
+      if (e.target.innerWidth > 700) setPerView(4);
+
+      if (e.target.innerWidth > 1000) setPerView(6);
     });
 
     window.innerWidth < 500 && setPerView(2);

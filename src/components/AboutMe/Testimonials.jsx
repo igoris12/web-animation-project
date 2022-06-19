@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import SectionHeader from '../Base/SectionHeader';
 import TestimonialsItem from './TestimonialsItem';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/bundle';
 import image1 from '../../images/AboutMe/Testimonials/author-1.jpg';
@@ -29,12 +30,38 @@ const massagesInfo = [
   },
 ];
 const Testimonials = () => {
+  const [perView, setPerView] = useState(1);
+  useEffect(() => {
+    window.addEventListener('resize', (e) => {
+      if (e.target.innerWidth < 1000) {
+        setPerView(1);
+      }
+
+      if (e.target.innerWidth > 1000) {
+        setPerView(2);
+      }
+    });
+
+    window.innerWidth < 1000 && setPerView(1);
+    window.innerWidth > 1000 && setPerView(2);
+  }, []);
   return (
     <section className="Testimonials container-fluid">
       <div className="row">
         <SectionHeader text="Testimonials" />
       </div>
-      <Swiper spaceBetween={50} slidesPerView={2} loop={true}>
+      <Swiper
+        modules={[Autoplay]}
+        className="row"
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        spaceBetween={50}
+        slidesPerView={perView}
+        loop={true}
+        res={'ture'}
+      >
         {massagesInfo.map((info) => (
           <SwiperSlide key={info.id}>
             <TestimonialsItem info={info} />

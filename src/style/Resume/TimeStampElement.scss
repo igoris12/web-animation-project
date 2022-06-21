@@ -32,7 +32,7 @@
             width: 10px;
             height: 10px;
             border-radius: 50%;
-            border: 2px solid red;
+            border: 2px solid #007aff;
             background-color: transparent;
         }
         .circleBottom {
@@ -43,7 +43,7 @@
                 width: 10px;
                 height: 10px;
                 border-radius: 50%;
-                border: 2px solid red;
+                border: 2px solid #007aff;
                 background-color: transparent;
         }
     }
@@ -51,5 +51,19 @@
         display: flex;
         flex-direction: column;
         padding: 20px;
+        gap: 5px;
+        h4 {
+            font-size: 18px;
+            text-transform: uppercase;
+            margin: 0;
+        }
+        h5 {
+            font-size: 12px;
+            font-family: $secondaryFont, sans-serif;
+            text-transform: uppercase;
+            color: #007aff;
+            letter-spacing: 1px;
+        }
+        
     }
 }

@@ -13,9 +13,9 @@ const TimeStampElement = () => {
         ></span>
       </span>
       <span className="content">
-        <h4>header</h4>
+        <h4 className="sectionSecondaryHeader">header</h4>
         <h5>header nr2</h5>
-        <p className="info">
+        <p className="info sectionParagraph">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius,
           accusamus.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
         </p>

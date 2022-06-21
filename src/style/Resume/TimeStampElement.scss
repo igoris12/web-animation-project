@@ -1,3 +1,55 @@
 .TimeStampElement {
-
+    display: flex;
+    flex-direction: row;
+    color: white;
+    position: relative;
+    padding-left: 50px;
+    .from {
+        position: absolute;
+        bottom: -12px;
+        left: 0;
+        color: white;
+    }
+    .to {
+        position: absolute;
+        top: -12px;
+        left: 0;
+        color: white;
+    }
+    .line {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 45px;
+        width: 2px;
+        height: 100%;
+        background-color: #007aff;
+        .circleTop {
+            position: absolute;
+            top: -9px;
+            left: -3.5px;
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            border: 2px solid red;
+            background-color: transparent;
+        }
+        .circleBottom {
+            position: absolute;
+                bottom: -9px;
+                left: -3.5px;
+                content: '';
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                border: 2px solid red;
+                background-color: transparent;
+        }
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
 }

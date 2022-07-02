@@ -6,19 +6,22 @@ const experienceAndEducation = () => {
   return (
     <>
       <div className="experienceEducation container-fluid">
-        <div className="experience row">
-          <SectionHeader text={'experience'} />
-          <ul className="col-12">
-            <TimeStampElement />
-            <TimeStampElement />
-          </ul>
-        </div>
-        <div className="education row">
-          <SectionHeader text={'education'} />
-          <ul className="col-12 ">
-            <TimeStampElement />
-            <TimeStampElement />
-          </ul>
+        <div className="row">
+          <div className="experience col-12 col-lg-5">
+            <SectionHeader text={'experience'} />
+            <ul className="col-12">
+              <TimeStampElement />
+              <TimeStampElement />
+            </ul>
+          </div>
+
+          <div className="education col-12 col-lg-5">
+            <SectionHeader text={'education'} />
+            <ul>
+              <TimeStampElement />
+              <TimeStampElement />
+            </ul>
+          </div>
         </div>
       </div>
     </>

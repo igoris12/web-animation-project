@@ -7,7 +7,7 @@ const experienceAndEducation = () => {
     <>
       <div className="experienceEducation container-fluid">
         <div className="row">
-          <div className="experience col-12 col-lg-5">
+          <div className="experience col-12 col-lg-6">
             <SectionHeader text={'experience'} />
             <ul className="col-12">
               <TimeStampElement
@@ -27,7 +27,7 @@ const experienceAndEducation = () => {
             </ul>
           </div>
 
-          <div className="education col-12 col-lg-5">
+          <div className="education col-12 col-lg-6">
             <SectionHeader text={'education'} />
             <ul>
               <TimeStampElement

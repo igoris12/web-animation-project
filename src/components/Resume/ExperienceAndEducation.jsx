@@ -21,7 +21,7 @@ const experienceAndEducation = () => {
                 from="2021"
                 to="2022"
                 title="vinted-project"
-                location="home , self-work"
+                location="home, self-work"
                 text="In this project I try to make something similar to vinted.lt website using React.js. Working on this project I gain useful experience."
               />
             </ul>

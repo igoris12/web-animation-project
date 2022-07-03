@@ -10,8 +10,20 @@ const experienceAndEducation = () => {
           <div className="experience col-12 col-lg-5">
             <SectionHeader text={'experience'} />
             <ul className="col-12">
-              <TimeStampElement />
-              <TimeStampElement />
+              <TimeStampElement
+                from="2022"
+                to="2022"
+                title="portfolio_website"
+                location="home, self-work"
+                text="This project was supposed to solidify my fundamentals of front-end development. In this project, I get a bunch of new things and techniques."
+              />
+              <TimeStampElement
+                from="2021"
+                to="2022"
+                title="vinted-project"
+                location="home , self-work"
+                text="In this project I try to make something similar to vinted.lt website using React.js. Working on this project I gain useful experience."
+              />
             </ul>
           </div>
 

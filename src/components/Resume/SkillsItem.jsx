@@ -4,8 +4,8 @@ const SkillsItem = ({ title, value }) => {
   return (
     <div className="SkillsItem">
       <h4 className="title sectionSecondaryHeader">{title}</h4>
-      <progress value={value} max="100">
-        <span>{value}</span>
+      <progress style={{ background: 'red' }} value={value} max="100">
+        {value}
       </progress>
     </div>
   );

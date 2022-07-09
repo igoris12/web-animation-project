@@ -10,4 +10,20 @@
         font-weight: 500;
         width: 95%;
     }
+    progress {
+        width: 95%;
+        height: 10px;
+        border: none;
+        -webkit-appearance: none;
+        &::-webkit-progress-bar {
+                background-color: #6B6C6D;
+            }
+            &::-webkit-progress-value {
+                background-color: #007aff;
+            }
+    
+            &::-moz-progress-bar {
+                background-color: #007aff;
+            }
+        }
 }

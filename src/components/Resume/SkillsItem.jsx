@@ -1,13 +1,8 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import React from 'react';
 
 const SkillsItem = ({ title, value }) => {
   const [skillsAnimation, setSkillAnimation] = useState(0);
-  useEffect(() => {
-    window.addEventListener('scroll', (event) => {
-      console.log('Scrolling...');
-    });
-  }, []);
 
   return (
     <div className="SkillsItem">

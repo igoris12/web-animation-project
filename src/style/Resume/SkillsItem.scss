@@ -10,20 +10,20 @@
         font-weight: 500;
         width: 95%;
     }
-    progress {
+    .pregressBar {
         width: 95%;
         height: 10px;
         border: none;
-        -webkit-appearance: none;
-        &::-webkit-progress-bar {
-                background-color: #6B6C6D;
-            }
-            &::-webkit-progress-value {
-                background-color: #007aff;
-            }
-    
-            &::-moz-progress-bar {
-                background-color: #007aff;
-            }
+        background-color: #6B6C6D;
+        position: relative;
+        .progress {
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: red;
+            transition: 1s;
         }
+    }
 }

@@ -2,7 +2,8 @@ import React from 'react';
 import SectionHeader from '../Base/SectionHeader';
 import SkillsItem from './SkillsItem';
 
-const Skills = () => {
+const Skills = ({ inView }) => {
+  console.log(inView);
   return (
     <section className="skills container-fluid">
       <div className="row">

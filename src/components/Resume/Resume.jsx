@@ -11,9 +11,18 @@ const Resume = () => {
 
   return (
     <section className="resume">
+      <strong
+        style={
+          inView
+            ? { color: 'red' }
+            : { color: 'blue', position: 'sticky', top: 0 }
+        }
+      >
+        aaa
+      </strong>
       <Header text="My resume." icon={<BsNewspaper />} />
       <ExperienceAndEducation />
-      <Skills ref={ref} />
+      <Skills ref={ref} inView={inView} />
     </section>
   );
 };

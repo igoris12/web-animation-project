@@ -1,15 +1,20 @@
 import React from 'react';
 import Header from '../Base/Header';
-import { BsNewspaper } from 'react-icons/bs';
 import ExperienceAndEducation from './ExperienceAndEducation';
 import Skills from './Skills';
+import { BsNewspaper } from 'react-icons/bs';
+import { useInView } from 'react-intersection-observer';
+
 const Resume = () => {
-  // const handleScroll = (event) => {};
+  const { ref, inView, entry } = useInView({
+    threshold: 0,
+  });
+  console.log(inView);
   return (
-    <section className="resume" onScroll={handleScroll}>
+    <section className="resume">
       <Header text="My resume." icon={<BsNewspaper />} />
       <ExperienceAndEducation />
-      <Skills />
+      <Skills ref={ref} inView={inView} />
     </section>
   );
 };

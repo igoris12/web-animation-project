@@ -10,7 +10,7 @@ const SkillsItem = ({ title, value }) => {
       <div className="pregressBar">
         <span
           className="progress"
-          style={{ right: `calc(100% - ${skillsAnimation}%)` }}
+          style={{ right: `calc(100% - ${value}%)` }}
         ></span>
         <span className="value">{value}</span>
       </div>

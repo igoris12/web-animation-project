@@ -1,8 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import React from 'react';
 
-const SkillsItem = ({ title, value }) => {
+const SkillsItem = ({ title, value, inView }) => {
   const [skillsAnimation, setSkillAnimation] = useState(0);
+  useEffect(() => {
+    if (inView) setSkillAnimation(value);
+  }, [inView]);
 
   return (
     <div className="SkillsItem">
@@ -10,7 +13,7 @@ const SkillsItem = ({ title, value }) => {
       <div className="pregressBar">
         <span
           className="progress"
-          style={{ right: `calc(100% - ${value}%)` }}
+          style={{ right: `calc(100% - ${skillsAnimation}%)` }}
         ></span>
         <span className="value">{value}</span>
       </div>

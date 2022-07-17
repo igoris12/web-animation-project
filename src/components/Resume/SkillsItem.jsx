@@ -6,7 +6,6 @@ import { useInView } from 'react-intersection-observer';
 const SkillsItem = ({ title, value }) => {
   const { optionsState } = useContext(OptionsContext);
   const [skillsAnimation, setSkillAnimation] = useState(0);
-
   const { ref, inView, entry } = useInView({
     threshold: 0,
   });
@@ -25,8 +24,13 @@ const SkillsItem = ({ title, value }) => {
             right: `calc(100% - ${skillsAnimation}%)`,
             backgroundColor: optionsState.color,
           }}
-        ></span>
-        <span className="value">{value}</span>
+        >
+          <span className="value">{value}%</span>
+          <span
+            className="poiner"
+            style={{ borderBottom: `15px solid ${optionsState.color}` }}
+          ></span>
+        </span>
       </div>
     </div>
   );

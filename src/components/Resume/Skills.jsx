@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import SectionHeader from '../Base/SectionHeader';
 import SkillsItem from './SkillsItem';
 
-const Skills = ({ inView }) => {
+const Skills = () => {
   return (
     <section className="skills container-fluid">
       <div className="row">

@@ -2,6 +2,7 @@ import { useState, useEffect, useContext } from 'react';
 import React from 'react';
 import OptionsContext from '../../reducers/OptionsContext';
 import { useInView } from 'react-intersection-observer';
+import CountUp from '../Base/CountUp';
 
 const SkillsItem = ({ title, value }) => {
   const { optionsState } = useContext(OptionsContext);
@@ -25,7 +26,15 @@ const SkillsItem = ({ title, value }) => {
             backgroundColor: optionsState.color,
           }}
         >
-          <span className="value">{value}%</span>
+          <span className="value">
+            {skillsAnimation ? (
+              <CountUp start={0} end={value} tiem={3000} />
+            ) : (
+              0
+            )}
+            %
+          </span>
+
           <span
             className="poiner"
             style={{ borderBottom: `15px solid ${optionsState.color}` }}

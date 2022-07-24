@@ -1,0 +1,44 @@
+.SkillsItem {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+    .title {
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        font-weight: 500;
+        width: 95%;
+    }
+    .pregressBar {
+        width: 95%;
+        height: 10px;
+        border: none;
+        background-color: #6B6C6D;
+        position: relative;
+        .progress {
+            position: absolute;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #007aff;
+            transition: 3s;
+            .value {
+                color: white;
+                position: absolute;
+                top: -25px;
+                right: 0;
+            }
+            .poiner {
+                position: absolute;
+                top: -5px;
+                right: -10px;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-bottom: 15px solid #007aff;
+                filter: grayscale(50%);
+            }
+        }
+    }
+}

@@ -27,7 +27,12 @@ const SkillsItem = ({ title, value }) => {
           }}
         >
           <span className="value">
-            {inView ? <CountUp start={0} end={value} tiem={2000} /> : 0}%
+            {skillsAnimation ? (
+              <CountUp start={0} end={value} tiem={3000} />
+            ) : (
+              0
+            )}
+            %
           </span>
 
           <span

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/web-animation-project/static/css/main.79745202.css",
-    "main.js": "/web-animation-project/static/js/main.cd922626.js",
+    "main.css": "/web-animation-project/static/css/main.dd8c62e5.css",
+    "main.js": "/web-animation-project/static/js/main.4133e2aa.js",
     "static/js/937.2379673e.chunk.js": "/web-animation-project/static/js/937.2379673e.chunk.js",
     "static/media/avatar.png": "/web-animation-project/static/media/avatar.e3cc57bdb67d61d2da9b.png",
     "static/media/home-bg.jpg": "/web-animation-project/static/media/home-bg.076fbdf26f56ba61597b.jpg",
@@ -15,12 +15,12 @@
     "static/media/client-09.png": "/web-animation-project/static/media/client-09.8fef02a629671215e468.png",
     "static/media/client-06.png": "/web-animation-project/static/media/client-06.cf0046e35b09f290ccb8.png",
     "index.html": "/web-animation-project/index.html",
-    "main.79745202.css.map": "/web-animation-project/static/css/main.79745202.css.map",
-    "main.cd922626.js.map": "/web-animation-project/static/js/main.cd922626.js.map",
+    "main.dd8c62e5.css.map": "/web-animation-project/static/css/main.dd8c62e5.css.map",
+    "main.4133e2aa.js.map": "/web-animation-project/static/js/main.4133e2aa.js.map",
     "937.2379673e.chunk.js.map": "/web-animation-project/static/js/937.2379673e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.79745202.css",
-    "static/js/main.cd922626.js"
+    "static/css/main.dd8c62e5.css",
+    "static/js/main.4133e2aa.js"
   ]
 }

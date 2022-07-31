@@ -16,7 +16,7 @@ const PortfolioFilter = () => {
         <div className="col-12">
           <ul>
             <li
-              //   style={{ background: optionsState.color }}
+              style={active === 0 ? { background: optionsState.color } : null}
               className={
                 active === 0 ? 'sectionParagraph active' : 'sectionParagraph'
               }
@@ -25,7 +25,7 @@ const PortfolioFilter = () => {
               All
             </li>
             <li
-              //   style={{ background: optionsState.color }}
+              style={active === 1 ? { background: optionsState.color } : null}
               className={
                 active === 1 ? 'sectionParagraph active' : 'sectionParagraph'
               }
@@ -34,7 +34,7 @@ const PortfolioFilter = () => {
               React
             </li>
             <li
-              //   style={{ background: optionsState.color }}
+              style={active === 2 ? { background: optionsState.color } : null}
               className={
                 active === 2 ? 'sectionParagraph active' : 'sectionParagraph'
               }
@@ -43,7 +43,7 @@ const PortfolioFilter = () => {
               JavaScript
             </li>
             <li
-              //   style={{ background: optionsState.color }}
+              style={active === 3 ? { background: optionsState.color } : null}
               className={
                 active === 3 ? 'sectionParagraph active' : 'sectionParagraph'
               }

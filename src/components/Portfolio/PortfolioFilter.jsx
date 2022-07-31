@@ -2,8 +2,10 @@ import React, { useContext, useState } from 'react';
 import OptionsContext from '../../reducers/OptionsContext';
 const PortfolioFilter = () => {
   const { optionsState } = useContext(OptionsContext);
+
   const [active, setActive] = useState(0);
-  const filtering = (filterNum, item = 'all') => {
+
+  const filtering = (filterNum) => {
     if (filterNum !== active) {
       setActive(filterNum);
     }

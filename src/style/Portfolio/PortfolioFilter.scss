@@ -19,6 +19,7 @@
                     list-style: none;
                     text-transform: uppercase;
                     padding: 10px 20px;
+                    transition: 0.25s;
                     &.active {
                         background-color: #00A3E1;
                         border-radius: 20px;

@@ -1,20 +1,43 @@
 .portfolioFilter {
     .row {
         div {
+           display: flex;
+           align-items: center;
+           justify-content: center;
             ul {
-                // background-color: red;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 justify-content: center;
-                gap: 20px;
-                border: 1px dashed rgba(255, 255, 255, 0.2);
-                border-radius: 15px;
+                gap: 5px;
+                height: 100%;
+                width: 387px;
+                padding: 1px;
+                flex-wrap: wrap;
                 li {
                   list-style: none;
-                  
+                  text-transform: uppercase;
+                  padding: 10px 20px;
+                  &.active {
+                    background-color: red;
+                    border-radius: 20px;
+                  }
                 }
             }
         }
     }
+}
+
+@media (min-width: 575px) {
+    .portfolioFilter {
+            .row {
+                div {
+                    ul {
+                        border: 1px dashed rgba(255, 255, 255, 0.2);
+                        border-radius: 20px;
+
+                    }
+                }
+            }
+        }
 }

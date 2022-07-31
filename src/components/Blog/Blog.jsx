@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import AboutMe from '../AboutMe/AboutMe';
 import Home from '../Home/Home';
+import Portfolio from '../Portfolio/Portfolio';
 import Resume from '../Resume/Resume';
 
 const Blog = () => {
@@ -8,7 +9,8 @@ const Blog = () => {
     <section className="blog-page ">
       {/* <Home /> */}
       {/* <AboutMe /> */}
-      <Resume />
+      {/* <Resume /> */}
+      <Portfolio />
     </section>
   );
 };

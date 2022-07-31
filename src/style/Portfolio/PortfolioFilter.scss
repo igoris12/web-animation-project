@@ -15,12 +15,14 @@
                 padding: 1px;
                 flex-wrap: wrap;
                 li {
-                  list-style: none;
-                  text-transform: uppercase;
-                  padding: 10px 20px;
-                  &.active {
-                    background-color: red;
-                    border-radius: 20px;
+                    cursor: pointer;
+                    list-style: none;
+                    text-transform: uppercase;
+                    padding: 10px 20px;
+                    &.active {
+                        background-color: #00A3E1;
+                        border-radius: 20px;
+                        color: $background-dark;
                   }
                 }
             }

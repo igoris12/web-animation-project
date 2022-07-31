@@ -1,0 +1,20 @@
+.portfolioFilter {
+    .row {
+        div {
+            ul {
+                // background-color: red;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                border: 1px dashed rgba(255, 255, 255, 0.2);
+                border-radius: 15px;
+                li {
+                  list-style: none;
+                  
+                }
+            }
+        }
+    }
+}

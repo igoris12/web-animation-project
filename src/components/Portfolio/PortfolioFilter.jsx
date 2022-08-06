@@ -4,9 +4,9 @@ import data from './data/portfolioData';
 const PortfolioFilter = () => {
   const { optionsState } = useContext(OptionsContext);
 
-  const [active, setActive] = useState(0);
+  const [active, setActive] = useState('All');
   const [galleryData, setGalleryData] = useState(data);
-  console.log(galleryData);
+  // console.log(galleryData);
 
   const filtering = (filterNum) => {
     if (filterNum !== active) {
@@ -19,40 +19,58 @@ const PortfolioFilter = () => {
         <div className="col-12">
           <ul>
             <li
-              style={active === 0 ? { background: optionsState.color } : null}
-              className={
-                active === 0 ? 'sectionParagraph active' : 'sectionParagraph'
+              style={
+                active === 'All' ? { background: optionsState.color } : null
               }
-              onClick={() => filtering(0)}
+              className={
+                active === 'All'
+                  ? 'sectionParagraph active'
+                  : 'sectionParagraph'
+              }
+              onClick={() => filtering('All')}
             >
               All
             </li>
             <li
-              style={active === 1 ? { background: optionsState.color } : null}
-              className={
-                active === 1 ? 'sectionParagraph active' : 'sectionParagraph'
+              style={
+                active === 'React' ? { background: optionsState.color } : null
               }
-              onClick={() => filtering(1)}
+              className={
+                active === 'React'
+                  ? 'sectionParagraph active'
+                  : 'sectionParagraph'
+              }
+              onClick={() => filtering('React')}
             >
               React
             </li>
             <li
-              style={active === 2 ? { background: optionsState.color } : null}
-              className={
-                active === 2 ? 'sectionParagraph active' : 'sectionParagraph'
+              style={
+                active === 'JavaScript'
+                  ? { background: optionsState.color }
+                  : null
               }
-              onClick={() => filtering(2)}
+              className={
+                active === 'JavaScript'
+                  ? 'sectionParagraph active'
+                  : 'sectionParagraph'
+              }
+              onClick={() => filtering('JavaScript')}
             >
               JavaScript
             </li>
             <li
-              style={active === 3 ? { background: optionsState.color } : null}
-              className={
-                active === 3 ? 'sectionParagraph active' : 'sectionParagraph'
+              style={
+                active === 'SASS' ? { background: optionsState.color } : null
               }
-              onClick={() => filtering(3)}
+              className={
+                active === 'SASS'
+                  ? 'sectionParagraph active'
+                  : 'sectionParagraph'
+              }
+              onClick={() => filtering('SASS')}
             >
-              Sass
+              SASS
             </li>
           </ul>
         </div>

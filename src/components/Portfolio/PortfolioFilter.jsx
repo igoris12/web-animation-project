@@ -6,13 +6,22 @@ const PortfolioFilter = () => {
 
   const [active, setActive] = useState('All');
   const [galleryData, setGalleryData] = useState(data);
-  // console.log(galleryData);
+  const filtering = (filter) => {
+    if (filter !== active) {
+      setActive(filter);
+    }
+    setGalleryData(datafilter(filter));
+    console.log(galleryData);
+  };
 
-  const filtering = (filterNum) => {
-    if (filterNum !== active) {
-      setActive(filterNum);
+  const datafilter = (filter) => {
+    if (filter !== 'All') {
+      return data.filter((proejct) => proejct.tools.includes(filter));
+    } else {
+      return data;
     }
   };
+
   return (
     <div className="portfolioFilter container-fluid">
       <div className="row">

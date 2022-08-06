@@ -2,41 +2,41 @@ let data = [
     {
         title: 'Portfolio website',
         tools: ['React', 'SASS'],
-        img: '',
+        img: 'portfolio',
         link: 'https://igoris12.github.io/portfolio_website/',
 
     },
     {
         title: 'Web proejct',
         tools: ['React', 'JavaScript', 'SASS'],
-        img: '',
+        img: 'webProject',
         link: 'https://igoris12.github.io/web-animation-project/',
 
     },
     {
         title: 'Snake game',
         tools: ['JavaScript', 'CSS'],
-        img: '',
+        img: 'snakeGame',
         link: 'https://igoris12.github.io/Gallery/',
 
     },
     {
         title: 'Vinted Copy',
         tools: ['React', "SASS"],
-        img: '',
+        img: 'vintedCopy',
         link: 'https://igoris12.github.io/vinted-project/',
     },
     {
         title: '3D slider',
         tools: ['React', "SASS", 'JavaScript'],
-        img: '',
+        img: 'slider3d',
         link: 'https://igoris12.github.io/3d-slider/',
     }
     ,
     {
         title: 'Simple form',
         tools: ["CSS", 'JavaScript'],
-        img: '',
+        img: 'simpleForm',
         link: 'https://igoris12.github.io/simple_form/',
     }
 ];

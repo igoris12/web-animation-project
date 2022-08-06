@@ -1,6 +1,8 @@
 import React, { useContext, useState } from 'react';
 import OptionsContext from '../../reducers/OptionsContext';
+import data from './data/portfolioData';
 const PortfolioFilter = () => {
+  console.log(data);
   const { optionsState } = useContext(OptionsContext);
 
   const [active, setActive] = useState(0);

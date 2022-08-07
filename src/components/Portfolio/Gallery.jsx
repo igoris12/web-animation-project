@@ -9,7 +9,9 @@ const Gallery = () => {
     <div className="gallery container-fluid">
       <div className="row">
         <ul className="col-12">
-          <GalleryItem />
+          {galleryData.map((data) => (
+            <GalleryItem key={data.id} project={data} />
+          ))}
         </ul>
       </div>
     </div>

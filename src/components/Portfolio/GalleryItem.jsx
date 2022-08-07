@@ -1,5 +1,9 @@
 import React from 'react';
 
+import { GrDocumentText, GrImage } from 'react-icons/gr';
+
+import { BsFillCameraVideoFill } from 'react-icons/bs';
+
 function GalleryItem({ project }) {
   return (
     <div className="galleryItem">
@@ -7,7 +11,15 @@ function GalleryItem({ project }) {
       {project.tools.map((data, index) => (
         <span key={index}>{data + ' '}</span>
       ))}
-      <span>{project.type}</span>
+      <span>
+        {project.type == 'doc' ? (
+          <GrDocumentText />
+        ) : project.type == 'img' ? (
+          <GrImage />
+        ) : (
+          <BsFillCameraVideoFill />
+        )}
+      </span>
     </div>
   );
 }

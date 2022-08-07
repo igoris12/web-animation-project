@@ -1,24 +1,19 @@
 import React, { useContext, useState } from 'react';
+import GalleryDataContext from '../../reducers/GalleryDataContext';
 import OptionsContext from '../../reducers/OptionsContext';
-import data from './data/portfolioData';
+
 const PortfolioFilter = () => {
   const { optionsState } = useContext(OptionsContext);
-
+  const { galleryDatadispatch } = useContext(GalleryDataContext);
   const [active, setActive] = useState('All');
-  const [galleryData, setGalleryData] = useState(data);
   const filtering = (filter) => {
     if (filter !== active) {
       setActive(filter);
     }
-    setGalleryData(datafilter(filter));
-  };
-
-  const datafilter = (filter) => {
-    if (filter !== 'All') {
-      return data.filter((proejct) => proejct.tools.includes(filter));
-    } else {
-      return data;
-    }
+    galleryDatadispatch({
+      type: 'FILTER',
+      deploy: filter,
+    });
   };
 
   return (

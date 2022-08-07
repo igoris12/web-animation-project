@@ -11,7 +11,6 @@ const PortfolioFilter = () => {
       setActive(filter);
     }
     setGalleryData(datafilter(filter));
-    console.log(galleryData);
   };
 
   const datafilter = (filter) => {

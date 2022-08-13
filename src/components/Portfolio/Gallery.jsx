@@ -8,7 +8,7 @@ const Gallery = () => {
   return (
     <div className="gallery container-fluid">
       <div className="row">
-        <ul className="col-12">
+        <ul className="col-12 gridBox">
           {galleryData.map((data) => (
             <GalleryItem key={data.id} project={data} />
           ))}

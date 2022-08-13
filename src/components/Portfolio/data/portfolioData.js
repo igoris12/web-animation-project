@@ -53,7 +53,52 @@ let data = [
         type: 'video'
 
 
+    },
+    {
+        title: 'Portfolio website',
+        tools: ['React', 'SASS'],
+        img: 'portfolio',
+        link: 'https://igoris12.github.io/portfolio_website/',
+        id: 6,
+        type: 'doc'
+    },
+    {
+        title: 'Web proejct',
+        tools: ['React', 'JavaScript', 'SASS'],
+        img: 'webProject',
+        link: 'https://igoris12.github.io/web-animation-project/',
+        id: 7,
+        type: 'img'
+
+    },
+    {
+        title: 'Snake game',
+        tools: ['JavaScript', 'CSS'],
+        img: 'snakeGame',
+        link: 'https://igoris12.github.io/Gallery/',
+        id: 8,
+        type: 'video'
+
+    },
+    {
+        title: 'Vinted Copy',
+        tools: ['React', "SASS"],
+        img: 'vintedCopy',
+        link: 'https://igoris12.github.io/vinted-project/',
+        id: 9,
+        type: 'doc'
+
+    },
+    {
+        title: '3D slider',
+        tools: ['React', "SASS", 'JavaScript'],
+        img: 'slider3d',
+        link: 'https://igoris12.github.io/3d-slider/',
+        id: 10,
+        type: 'img'
+
     }
+
 ];
 
 export default data;

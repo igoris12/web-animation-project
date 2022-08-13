@@ -1,3 +1,33 @@
 .galleryItem {
-    background-color: green;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    color: white;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    h2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .icon {
+        position: absolute;
+        bottom: 30px;
+        right: -20px;
+        fill: white;
+    }
+    .tools {
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+    &:hover {
+        .icon {
+                right: 20px;
+            }
+    }
 }

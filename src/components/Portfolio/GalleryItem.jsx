@@ -36,6 +36,7 @@ function GalleryItem({ project }) {
   return (
     <div className="galleryItem">
       <img src={getImage(project.img)} alt="Project image" />
+      <span className="hoverEffect" style={{ backgroundColor: 'red' }}></span>
       <h2 className="sectionSecondaryHeader">{project.title}</h2>
       <span className="tools sectionParagraph ">
         {project.tools.map((data, index) => (

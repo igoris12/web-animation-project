@@ -4,6 +4,8 @@
     overflow: hidden;
     cursor: pointer;
     color: white;
+    transition:  0.4s;
+    height: 300px;
     img {
         width: 100%;
         height: 100%;
@@ -15,30 +17,51 @@
         bottom: 0;
         left: 0;
         right: 0;
-        // transform: rotate(4deg);
-  
+        opacity: 0;
+        transition:inherit;
     }
 
     h2 {
         position: absolute;
-        top: 0;
-        left: 0;
-    }
-    .icon {
-        position: absolute;
-        bottom: 30px;
-        right: -20px;
-        fill: white;
+        top: 30px;
+        left: 30px;
+        opacity: 0;
+        transition: inherit;
     }
     .tools {
         position: absolute;
-        top: 60px;
-        left: 0;
+        bottom: 30px;
+        left: 30px;
+        opacity: 0;
+        transition: inherit;
+    }
+    .icon {
+        position: absolute;
+        font-size: 25px;
+        bottom: 30px;
+        right: -20px;
+        transition: inherit;
+        opacity: 0;
+      
     }
     
     &:hover {
+        .hoverEffect {
+            opacity: 0.7;
+        }
+        h2 {
+            opacity: 1;
+            top: calc(100% / 2);
+        } 
+        .tools {
+            opacity: 1;
+            bottom: 60px;
+            bottom: calc(100% / 2  - 15%);
+        }
+
         .icon {
-                right: 20px;
+            right: 30px;
+            opacity:1;
             }
     }
 }

@@ -1,7 +1,11 @@
 import React, { useContext } from 'react';
 import OptionsContext from '../../reducers/OptionsContext';
-import { GrDocumentText, GrImage } from 'react-icons/gr';
-import { BsFillCameraVideoFill } from 'react-icons/bs';
+
+import {
+  BsImage,
+  BsFillFileEarmarkTextFill,
+  BsFillCameraVideoFill,
+} from 'react-icons/bs';
 import portfolio from '../../images/Portfolio/Projects/portfolio.png';
 import snakeGame from '../../images/Portfolio/Projects/snakeGame.png';
 import vintedCopy from '../../images/Portfolio/Projects/vintedCopy.png';
@@ -52,9 +56,9 @@ function GalleryItem({ project }) {
       </span>
       <span className="icon">
         {project.type == 'doc' ? (
-          <GrDocumentText />
+          <BsFillFileEarmarkTextFill />
         ) : project.type == 'img' ? (
-          <GrImage />
+          <BsImage />
         ) : (
           <BsFillCameraVideoFill />
         )}

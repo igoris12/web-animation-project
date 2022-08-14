@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import OptionsContext from '../../reducers/OptionsContext';
 import { GrDocumentText, GrImage } from 'react-icons/gr';
 import { BsFillCameraVideoFill } from 'react-icons/bs';
 import portfolio from '../../images/Portfolio/Projects/portfolio.png';
@@ -9,6 +10,8 @@ import simpleForm from '../../images/Portfolio/Projects/simpleForm.png';
 import webProject from '../../images/Portfolio/Projects/webProject.png';
 
 function GalleryItem({ project }) {
+  const { optionsState } = useContext(OptionsContext);
+
   const getImage = (image) => {
     switch (image) {
       case 'portfolio':
@@ -33,10 +36,14 @@ function GalleryItem({ project }) {
         return;
     }
   };
+
   return (
     <div className="galleryItem">
       <img src={getImage(project.img)} alt="Project image" />
-      <span className="hoverEffect" style={{ backgroundColor: 'red' }}></span>
+      <span
+        className="hoverEffect"
+        style={{ backgroundColor: optionsState.color }}
+      ></span>
       <h2 className="sectionSecondaryHeader">{project.title}</h2>
       <span className="tools sectionParagraph ">
         {project.tools.map((data, index) => (

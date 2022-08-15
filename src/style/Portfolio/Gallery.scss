@@ -1,11 +1,20 @@
 .gallery {
-    .gridBox {
-       display: grid;
-       column-gap: 20px;
-       row-gap: 10px;
-    //    grid-template-columns: repeat(auto-fill, minmax(230px,1fr));
-    grid-template-columns: 1fr 1fr;
-       transition: 0.5s;
+   .gridBox {
+      display: grid;
+      column-gap: 20px;
+      row-gap: 10px;
+      grid-template-columns: 1fr;
+      transition: 0.5s;
 
-    }
+   }
+   @media (min-width: 580px) {
+   .gridBox {
+      grid-template-columns: 1fr 1fr;
+   }
+   }
+   @media (min-width: 990px) {
+      .gridBox {
+         grid-template-columns: 1fr 1fr 1fr;
+      }
+   }
 }

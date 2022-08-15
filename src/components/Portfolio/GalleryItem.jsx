@@ -42,7 +42,9 @@ function GalleryItem({ project }) {
   };
 
   return (
-    <div className={project.active ? 'galleryItem active' : 'galleryItem'}>
+    <div
+      className={project.active ? 'galleryItem active' : 'galleryItem hidden'}
+    >
       <img src={getImage(project.img)} alt="Project image" />
       <span
         className="hoverEffect"

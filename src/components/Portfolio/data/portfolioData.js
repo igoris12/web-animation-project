@@ -6,7 +6,7 @@ let data = [
         link: 'https://igoris12.github.io/portfolio_website/',
         id: 0,
         type: 'doc',
-        active: false
+        active: true
     },
     {
         title: 'Web proejct',

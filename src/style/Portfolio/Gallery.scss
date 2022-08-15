@@ -5,7 +5,7 @@
       row-gap: 10px;
       grid-template-columns: 1fr;
       transition: 0.5s;
-
+      grid-auto-rows: 1fr;
    }
    @media (min-width: 580px) {
    .gridBox {

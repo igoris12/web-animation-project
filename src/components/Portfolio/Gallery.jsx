@@ -4,7 +4,6 @@ import GalleryItem from './GalleryItem';
 
 const Gallery = () => {
   const { galleryData } = useContext(GalleryDataContext);
-  //   console.log(galleryData);
   return (
     <div className="gallery container-fluid">
       <div className="row">

@@ -5,7 +5,8 @@ let data = [
         img: 'portfolio',
         link: 'https://igoris12.github.io/portfolio_website/',
         id: 0,
-        type: 'doc'
+        type: 'doc',
+        active: true
     },
     {
         title: 'Web proejct',
@@ -13,7 +14,8 @@ let data = [
         img: 'webProject',
         link: 'https://igoris12.github.io/web-animation-project/',
         id: 1,
-        type: 'img'
+        type: 'img',
+        active: true
 
     },
     {
@@ -22,7 +24,8 @@ let data = [
         img: 'snakeGame',
         link: 'https://igoris12.github.io/Gallery/',
         id: 2,
-        type: 'video'
+        type: 'video',
+        active: true
 
     },
     {
@@ -31,7 +34,8 @@ let data = [
         img: 'vintedCopy',
         link: 'https://igoris12.github.io/vinted-project/',
         id: 3,
-        type: 'doc'
+        type: 'doc',
+        active: true
 
     },
     {
@@ -40,7 +44,8 @@ let data = [
         img: 'slider3d',
         link: 'https://igoris12.github.io/3d-slider/',
         id: 4,
-        type: 'img'
+        type: 'img',
+        active: true
 
     }
     ,
@@ -50,52 +55,9 @@ let data = [
         img: 'simpleForm',
         link: 'https://igoris12.github.io/simple_form/',
         id: 5,
-        type: 'video'
+        type: 'video',
+        active: true
 
-
-    },
-    {
-        title: 'Portfolio website',
-        tools: ['React', 'SASS'],
-        img: 'portfolio',
-        link: 'https://igoris12.github.io/portfolio_website/',
-        id: 6,
-        type: 'doc'
-    },
-    {
-        title: 'Web proejct',
-        tools: ['React', 'JavaScript', 'SASS'],
-        img: 'webProject',
-        link: 'https://igoris12.github.io/web-animation-project/',
-        id: 7,
-        type: 'img'
-
-    },
-    {
-        title: 'Snake game',
-        tools: ['JavaScript', 'CSS'],
-        img: 'snakeGame',
-        link: 'https://igoris12.github.io/Gallery/',
-        id: 8,
-        type: 'video'
-
-    },
-    {
-        title: 'Vinted Copy',
-        tools: ['React', "SASS"],
-        img: 'vintedCopy',
-        link: 'https://igoris12.github.io/vinted-project/',
-        id: 9,
-        type: 'doc'
-
-    },
-    {
-        title: '3D slider',
-        tools: ['React', "SASS", 'JavaScript'],
-        img: 'slider3d',
-        link: 'https://igoris12.github.io/3d-slider/',
-        id: 10,
-        type: 'img'
 
     }
 

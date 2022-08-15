@@ -42,7 +42,7 @@ function GalleryItem({ project }) {
   };
 
   return (
-    <div className="galleryItem">
+    <div className={project.active ? 'galleryItem active' : 'galleryItem'}>
       <img src={getImage(project.img)} alt="Project image" />
       <span
         className="hoverEffect"

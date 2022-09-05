@@ -7,6 +7,7 @@ import GalleryDatadReducer from './reducers/GalleryDataReducer';
 import GalleryDataContext from './reducers/GalleryDataContext';
 import data from './components/Portfolio/data/portfolioData';
 import './jquery/loader.js';
+import './components/Portfolio/js/filter.js';
 
 function App() {
   const [opotions, dispatch] = useReducer(OptionsReducer, { animation: 1, color: '#00A3E1' })

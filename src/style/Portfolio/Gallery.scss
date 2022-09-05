@@ -1,20 +1,22 @@
 .gallery {
-   .gridBox {
-      display: grid;
-      column-gap: 20px;
-      row-gap: 10px;
-      grid-template-columns: 1fr;
-      transition: 0.5s;
-      grid-auto-rows: 1fr;
-   }
-   @media (min-width: 580px) {
-   .gridBox {
-      grid-template-columns: 1fr 1fr;
-   }
-   }
-   @media (min-width: 990px) {
-      .gridBox {
-         grid-template-columns: 1fr 1fr 1fr;
-      }
-   }
+   width: 100%;
+
+   // .gridBox {
+   //    display: grid;
+   //    column-gap: 20px;
+   //    row-gap: 10px;
+   //    grid-template-columns: 1fr;
+   //    transition: 0.5s;
+   //    grid-auto-rows: 1fr;
+   // }
+   // @media (min-width: 580px) {
+   // .gridBox {
+   //    grid-template-columns: 1fr 1fr;
+   // }
+   // }
+   // @media (min-width: 990px) {
+   //    .gridBox {
+   //       grid-template-columns: 1fr 1fr 1fr;
+   //    }
+   // }
 }

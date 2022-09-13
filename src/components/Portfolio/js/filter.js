@@ -8,4 +8,16 @@ $(document).ready(function () {
         layoutMode: 'masonry'
     });
 
+    let filtersElem = document.querySelector('.portfolioFilterList');
+    filtersElem.addEventListener('click', function (event) {
+        if (event.target.localName !== "li") {
+            return;
+        }
+
+        let filterValue = event.target.getAttribute('data-filter');
+        console.log(filterValue);
+
+        iso.arrange({ filter: filterValue });
+    });
 });
+

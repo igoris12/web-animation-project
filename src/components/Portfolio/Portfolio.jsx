@@ -12,12 +12,12 @@ const Portfolio = () => {
       <div className="portfolioFilter container-fluid">
         <div className="row">
           <div className="col-12">
-            <ul className="">
-              <li className="active" data-filter="* ">
+            <ul className="portfolioFilterList">
+              <li className="active" data-filter="*">
                 All
               </li>
-              <li data-filter="Odd">Odd</li>
-              <li data-filter="Even">Even</li>
+              <li data-filter="odd">Odd</li>
+              <li data-filter="even">Even</li>
             </ul>
           </div>
         </div>
@@ -27,25 +27,25 @@ const Portfolio = () => {
         <div className="row">
           <div className="col-12">
             <div className="grid container-fluid">
-              <div className="element-item Odd">
+              <div data-category="odd" className="element-item Odd">
                 <h3>1</h3>
               </div>
-              <div className="element-item Even">
+              <div data-category="even" className="element-item Even">
                 <h3>2</h3>
               </div>
-              <div className="element-item Odd">
+              <div data-category="odd" className="element-item Odd">
                 <h3>3</h3>
               </div>
-              <div className="element-item Even">
+              <div data-category="even" className="element-item Even">
                 <h3>4</h3>
               </div>
-              <div className="element-item Odd">
+              <div data-category="odd" className="element-item Odd">
                 <h3>5</h3>
               </div>
-              <div className="element-item Even">
+              <div data-category="even" className="element-item Even">
                 <h3>6</h3>
               </div>
-              <div className="element-item Odd">
+              <div data-category="odd" className="element-item Odd">
                 <h3>7</h3>
               </div>
             </div>

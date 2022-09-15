@@ -16,8 +16,8 @@ const Portfolio = () => {
               <li className="active" data-filter="*">
                 All
               </li>
-              <li data-filter="odd">Odd</li>
-              <li data-filter="even">Even</li>
+              <li data-filter=".Odd">Odd</li>
+              <li data-filter=".Even">Even</li>
             </ul>
           </div>
         </div>

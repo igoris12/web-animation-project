@@ -9,6 +9,7 @@ const Portfolio = () => {
       <Header text="Portfolio." icon={<BsBriefcase />} />
       {/* <PortfolioFilter /> */}
       {/* <Gallery /> */}
+
       <div className="portfolioFilter container-fluid">
         <div className="row">
           <div className="col-12">

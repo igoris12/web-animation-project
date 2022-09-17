@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import Isotope from 'isotope-layout';
 
-// $(document).ready(function () {
+$(document).ready(function () {
 //     let grid = document.querySelector('.grid');
 //     let iso = new Isotope(grid, {
 //         itemSelector: '.element-item',
@@ -19,5 +19,8 @@ import Isotope from 'isotope-layout';
 
 //         iso.arrange({ filter: filterValue });
 //     });
-// });
-
+$('.portfolio-nav li').click(function () {
+    $('.portfolio-nav .active').removeClass('active');
+    $(this).addClass('active');
+})
+});

@@ -20,57 +20,41 @@ const PortfolioFilter = () => {
     <div className="portfolioFilter container-fluid">
       <div className="row">
         <div className="col-12">
-          <ul>
+          <ul className='portfolio-nav'>
             <li
-              style={
-                active === 'All' ? { background: optionsState.color } : null
-              }
-              className={
-                active === 'All'
-                  ? 'sectionParagraph active'
-                  : 'sectionParagraph'
-              }
+              // style={
+              //   active === 'All' ? { background: optionsState.color } : null
+              // }
+              className='sectionParagraph active'
               onClick={() => filtering('All')}
             >
               All
             </li>
             <li
-              style={
-                active === 'React' ? { background: optionsState.color } : null
-              }
-              className={
-                active === 'React'
-                  ? 'sectionParagraph active'
-                  : 'sectionParagraph'
-              }
+              // style={
+              //   active === 'React' ? { background: optionsState.color } : null
+              // }
+              className='sectionParagraph'
               onClick={() => filtering('React')}
             >
               React
             </li>
             <li
-              style={
-                active === 'JavaScript'
-                  ? { background: optionsState.color }
-                  : null
-              }
-              className={
-                active === 'JavaScript'
-                  ? 'sectionParagraph active'
-                  : 'sectionParagraph'
-              }
+              // style={
+              //   active === 'JavaScript'
+              //     ? { background: optionsState.color }
+              //     : null
+              // }
+              className='sectionParagraph'
               onClick={() => filtering('JavaScript')}
             >
               JavaScript
             </li>
             <li
-              style={
-                active === 'SASS' ? { background: optionsState.color } : null
-              }
-              className={
-                active === 'SASS'
-                  ? 'sectionParagraph active'
-                  : 'sectionParagraph'
-              }
+              // style={
+              //   active === 'SASS' ? { background: optionsState.color } : null
+              // }
+              className='sectionParagraph'
               onClick={() => filtering('SASS')}
             >
               SASS

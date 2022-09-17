@@ -7,7 +7,7 @@ const Portfolio = () => {
   return (
     <section className="portfolio">
       <Header text="Portfolio." icon={<BsBriefcase />} />
-      {/* <PortfolioFilter /> */}
+      <PortfolioFilter />
       {/* <Gallery /> */}
     </section>
   );

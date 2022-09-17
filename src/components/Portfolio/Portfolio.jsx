@@ -8,7 +8,7 @@ const Portfolio = () => {
     <section className="portfolio">
       <Header text="Portfolio." icon={<BsBriefcase />} />
       <PortfolioFilter />
-      {/* <Gallery /> */}
+      <Gallery />
     </section>
   );
 };

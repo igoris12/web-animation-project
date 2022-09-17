@@ -1,22 +1,7 @@
-.gallery {
-   width: 100%;
 
-   // .gridBox {
-   //    display: grid;
-   //    column-gap: 20px;
-   //    row-gap: 10px;
-   //    grid-template-columns: 1fr;
-   //    transition: 0.5s;
-   //    grid-auto-rows: 1fr;
-   // }
-   // @media (min-width: 580px) {
-   // .gridBox {
-   //    grid-template-columns: 1fr 1fr;
-   // }
-   // }
-   // @media (min-width: 990px) {
-   //    .gridBox {
-   //       grid-template-columns: 1fr 1fr 1fr;
-   //    }
-   // }
-}
+.gridBox {
+   display: flex;
+   gap: 20px;
+   flex-wrap: wrap;
+   background-color: red}
+   

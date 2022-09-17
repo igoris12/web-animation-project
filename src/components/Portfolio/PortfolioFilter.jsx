@@ -6,15 +6,7 @@ const PortfolioFilter = () => {
   const { optionsState } = useContext(OptionsContext);
   const { galleryDatadispatch } = useContext(GalleryDataContext);
   const [active, setActive] = useState('All');
-  const filtering = (filter) => {
-    if (filter !== active) {
-      setActive(filter);
-    }
-    galleryDatadispatch({
-      type: 'FILTER',
-      deploy: filter,
-    });
-  };
+
 
   return (
     <div className="portfolioFilter container-fluid">
@@ -26,7 +18,7 @@ const PortfolioFilter = () => {
               //   active === 'All' ? { background: optionsState.color } : null
               // }
               className='sectionParagraph active'
-              onClick={() => filtering('All')}
+             
             >
               All
             </li>
@@ -35,7 +27,7 @@ const PortfolioFilter = () => {
               //   active === 'React' ? { background: optionsState.color } : null
               // }
               className='sectionParagraph'
-              onClick={() => filtering('React')}
+            
             >
               React
             </li>
@@ -46,7 +38,7 @@ const PortfolioFilter = () => {
               //     : null
               // }
               className='sectionParagraph'
-              onClick={() => filtering('JavaScript')}
+             
             >
               JavaScript
             </li>
@@ -55,7 +47,7 @@ const PortfolioFilter = () => {
               //   active === 'SASS' ? { background: optionsState.color } : null
               // }
               className='sectionParagraph'
-              onClick={() => filtering('SASS')}
+            
             >
               SASS
             </li>

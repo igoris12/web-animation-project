@@ -20,32 +20,31 @@ function GalleryItem({ project }) {
     switch (image) {
       case 'portfolio':
         return portfolio;
-        break;
       case 'snakeGame':
         return snakeGame;
-        break;
       case 'vintedCopy':
         return vintedCopy;
-        break;
       case 'slider3d':
         return slider3d;
-        break;
       case 'simpleForm':
         return simpleForm;
-        break;
       case 'webProject':
         return webProject;
-        break;
       default:
         return;
     }
   };
 
+ let tools = '';
+  project.tools.forEach(element => {
+    tools += element + ' ';
+});
+
   return (
-    <div
-      className={project.active ? 'galleryItem active' : 'galleryItem hidden'}
+    <li
+      className={'galleryItem '  + tools }
     >
-      <img src={getImage(project.img)} alt="Project image" />
+      <img src={getImage(project.img)} alt="Project" />
       <span
         className="hoverEffect"
         style={{ backgroundColor: optionsState.color }}
@@ -57,15 +56,15 @@ function GalleryItem({ project }) {
         ))}
       </span>
       <span className="icon">
-        {project.type == 'doc' ? (
+        {project.type === 'doc' ? (
           <BsFillFileEarmarkTextFill />
-        ) : project.type == 'img' ? (
+        ) : project.type === 'img' ? (
           <BsImage />
         ) : (
           <BsFillCameraVideoFill />
         )}
       </span>
-    </div>
+    </li>
   );
 }
 

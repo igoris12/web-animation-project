@@ -18,7 +18,7 @@ const PortfolioFilter = () => {
               //   active === 'All' ? { background: optionsState.color } : null
               // }
               className='sectionParagraph active'
-             
+              data-filter='*'
             >
               All
             </li>
@@ -27,7 +27,7 @@ const PortfolioFilter = () => {
               //   active === 'React' ? { background: optionsState.color } : null
               // }
               className='sectionParagraph'
-            
+              data-filter='.React'
             >
               React
             </li>
@@ -38,7 +38,7 @@ const PortfolioFilter = () => {
               //     : null
               // }
               className='sectionParagraph'
-             
+              data-filter='.JavaScript'
             >
               JavaScript
             </li>
@@ -47,7 +47,7 @@ const PortfolioFilter = () => {
               //   active === 'SASS' ? { background: optionsState.color } : null
               // }
               className='sectionParagraph'
-            
+              data-filter='.SASS'
             >
               SASS
             </li>

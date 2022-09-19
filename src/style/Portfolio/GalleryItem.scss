@@ -4,11 +4,11 @@
     overflow: hidden;
     cursor: pointer;
     color: white;
-    width: 260px;
+    width: 30%;
     height: 260px;
-    outline: none;
     text-align: center;
-    margin: 5px 10px 5px 10px ;
+    margin: 0 1.5% 1.5% 1.5% ;
+    
     img {
         width: 100% ;
         height: 100% ;
@@ -70,3 +70,17 @@
     }   
 }
 
+   
+@media (max-width: 1000px) {
+    .galleryItem {
+       width: 45%;
+    }
+ }
+
+ @media (max-width: 575px) {
+    .galleryItem {
+       width: 100%;
+       margin: 0 0 1.5% 0;
+    }
+ }
+ 

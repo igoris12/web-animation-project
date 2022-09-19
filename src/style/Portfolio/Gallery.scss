@@ -1,9 +1,4 @@
-.gallery {
-    .gridBox {
-       display: grid;
-       column-gap: 20px;
-       row-gap: 10px;
-       grid-template-columns: 1fr;
-    
-    }
+.gridBox {
+   display: flex;
+   gap: 20px;
 }

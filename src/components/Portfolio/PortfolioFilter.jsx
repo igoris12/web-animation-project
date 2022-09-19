@@ -15,63 +15,47 @@ const PortfolioFilter = () => {
       deploy: filter,
     });
   };
-
   return (
     <div className="portfolioFilter container-fluid">
       <div className="row">
         <div className="col-12">
-          <ul>
-            <li
-              style={
+          <ul className='portfolio-nav'>
+            <li   style={
                 active === 'All' ? { background: optionsState.color } : null
-              }
-              className={
-                active === 'All'
-                  ? 'sectionParagraph active'
-                  : 'sectionParagraph'
-              }
+              } 
               onClick={() => filtering('All')}
+              className='sectionParagraph active'
+              data-filter='*'
             >
               All
             </li>
             <li
-              style={
-                active === 'React' ? { background: optionsState.color } : null
-              }
-              className={
-                active === 'React'
-                  ? 'sectionParagraph active'
-                  : 'sectionParagraph'
-              }
-              onClick={() => filtering('React')}
+            style={
+              active === 'React' ? { background: optionsState.color } : null
+            } 
+               onClick={() => filtering('React')}
+              className='sectionParagraph'
+              data-filter='.React'
             >
               React
             </li>
             <li
-              style={
-                active === 'JavaScript'
-                  ? { background: optionsState.color }
-                  : null
-              }
-              className={
-                active === 'JavaScript'
-                  ? 'sectionParagraph active'
-                  : 'sectionParagraph'
-              }
-              onClick={() => filtering('JavaScript')}
+            style={
+              active === 'JavaScript' ? { background: optionsState.color } : null
+            } 
+               onClick={() => filtering('JavaScript')}
+              className='sectionParagraph'
+              data-filter='.JavaScript'
             >
               JavaScript
             </li>
             <li
-              style={
-                active === 'SASS' ? { background: optionsState.color } : null
-              }
-              className={
-                active === 'SASS'
-                  ? 'sectionParagraph active'
-                  : 'sectionParagraph'
-              }
-              onClick={() => filtering('SASS')}
+            style={
+              active === 'SASS' ? { background: optionsState.color } : null
+            } 
+               onClick={() => filtering('SASS')}
+              className='sectionParagraph'
+              data-filter='.SASS'
             >
               SASS
             </li>

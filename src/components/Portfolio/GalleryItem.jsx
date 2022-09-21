@@ -36,13 +36,15 @@ function GalleryItem({ project }) {
   };
 
  let tools = '';
+
   project.tools.forEach(element => {
     tools += element + ' ';
 });
 
+
   return (
     <li
-      className={'galleryItem '  + tools }
+      className={'galleryItem '  + tools + project.layout }
     >
       <img src={getImage(project.img)} alt="Project" />
       <span

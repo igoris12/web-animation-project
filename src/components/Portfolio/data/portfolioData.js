@@ -6,7 +6,8 @@ let data = [
         link: 'https://igoris12.github.io/portfolio_website/',
         id: 0,
         type: 'doc',
-        active: true
+        active: true,
+        layout: 'height--2'
     },
     {
         title: 'Web proejct',
@@ -15,7 +16,8 @@ let data = [
         link: 'https://igoris12.github.io/web-animation-project/',
         id: 1,
         type: 'img',
-        active: true
+        active: true,
+        layout: ''
 
     },
     {
@@ -25,7 +27,20 @@ let data = [
         link: 'https://igoris12.github.io/Gallery/',
         id: 2,
         type: 'video',
-        active: true
+        active: true,
+        layout: 'height--2'
+
+    }
+    ,
+    {
+        title: '3D slider',
+        tools: ['React', "SASS", 'JavaScript'],
+        img: 'slider3d',
+        link: 'https://igoris12.github.io/3d-slider/',
+        id: 4,
+        type: 'img',
+        active: true,
+        layout: 'height--2'
 
     },
     {
@@ -35,17 +50,8 @@ let data = [
         link: 'https://igoris12.github.io/vinted-project/',
         id: 3,
         type: 'doc',
-        active: true
-
-    },
-    {
-        title: '3D slider',
-        tools: ['React', "SASS", 'JavaScript'],
-        img: 'slider3d',
-        link: 'https://igoris12.github.io/3d-slider/',
-        id: 4,
-        type: 'img',
-        active: true
+        active: true,
+        layout: ''
 
     }
     ,
@@ -56,7 +62,8 @@ let data = [
         link: 'https://igoris12.github.io/simple_form/',
         id: 5,
         type: 'video',
-        active: true
+        active: true,
+        layout: ''
 
 
     }

@@ -70,6 +70,21 @@
     }
     &.height--2 {
         height: 420px;
+        &:hover {
+            h2 {
+                top: calc(107% / 2);
+            } 
+            .tools {
+                opacity: 1;
+                bottom: 60px;
+                bottom: calc(107% / 2  - 20%);
+            }
+    
+            .icon {
+                right: 30px;
+                opacity:1;
+                }
+        }
     }
 }
 

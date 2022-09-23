@@ -43,8 +43,7 @@ function GalleryItem({ project }) {
 
 
   return (
-    // <Title>
-    <Title
+    <li
     className={'galleryItem '  + tools + project.layout }
     >
       <img src={getImage(project.img)} alt="Project" />
@@ -67,8 +66,7 @@ function GalleryItem({ project }) {
           <BsFillCameraVideoFill />
         )}
       </span>
-    </Title>
-    // </Title>
+    </li>
   );
 }
 

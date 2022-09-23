@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import OptionsContext from '../../reducers/OptionsContext';
-
 import {
   BsImage,
   BsFillFileEarmarkTextFill,
@@ -12,6 +11,7 @@ import vintedCopy from '../../images/Portfolio/Projects/vintedCopy.png';
 import slider3d from '../../images/Portfolio/Projects/slider3d.png';
 import simpleForm from '../../images/Portfolio/Projects/simpleForm.png';
 import webProject from '../../images/Portfolio/Projects/webProject.png';
+import Title from 'react-vanilla-tilt';
 
 function GalleryItem({ project }) {
   const { optionsState } = useContext(OptionsContext);
@@ -36,13 +36,16 @@ function GalleryItem({ project }) {
   };
 
  let tools = '';
+
   project.tools.forEach(element => {
     tools += element + ' ';
 });
 
+
   return (
-    <li
-      className={'galleryItem '  + tools }
+    // <Title>
+    <Title
+    className={'galleryItem '  + tools + project.layout }
     >
       <img src={getImage(project.img)} alt="Project" />
       <span
@@ -64,7 +67,8 @@ function GalleryItem({ project }) {
           <BsFillCameraVideoFill />
         )}
       </span>
-    </li>
+    </Title>
+    // </Title>
   );
 }
 

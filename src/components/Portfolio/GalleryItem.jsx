@@ -36,20 +36,16 @@ function GalleryItem({ project }) {
   };
 
   let tools = '';
-  const [cursorPoint ,setCursorPoint] = useState({x: 20, y:20});
+  const [cursorPoint ,setCursorPoint] = useState({});
+
   project.tools.forEach(element => {
     tools += element + ' ';
   });
- 
-  const glowHandeler = (e) => {
 
-    setCursorPoint({x: e.clientX - 300, y: e.clientY - 250 })
-  console.log(e);
-  }
 
   return (
     <li
-    onMouseMove={glowHandeler}
+
     className={'galleryItem '  + tools + project.layout }
     >
         <span className="t_over"></span>
@@ -68,11 +64,6 @@ function GalleryItem({ project }) {
         style={{ backgroundColor: optionsState.color }}
       >
       </span>
-      <div 
-       data-x={cursorPoint.x}
-       data-y={cursorPoint.y}
-       style={{top: cursorPoint.y - 150 + 'px', left: cursorPoint.x - 150 + 'px'}}
-      className="glowEffect"></div>
       <h2 className="sectionSecondaryHeader">{project.title}</h2>
       <span className="tools sectionParagraph ">
         {project.tools.map((data, index) => (

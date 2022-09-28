@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import GalleryDataContext from '../../reducers/GalleryDataContext';
 import GalleryItem from './GalleryItem';
+import Showcase from './Showcase';
 
 const Gallery = () => {
   const { galleryData } = useContext(GalleryDataContext);
@@ -13,6 +14,7 @@ const Gallery = () => {
             <GalleryItem key={data.id} project={data} />
           ))}
         </ul>
+        <Showcase/>
       </div>
     </div>
   );

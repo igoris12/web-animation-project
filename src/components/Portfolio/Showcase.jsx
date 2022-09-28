@@ -13,39 +13,34 @@ const Showcase = () => {
           <div className="showcase__carousel">
             <Swiper
               loop="true"
-              modules={[Navigation, Autoplay]}
-              autoplay={{ delay: 4000 }}
-              slidesPerView={3}
-              spaceBetween={40}
+              modules={[Navigation]}
+             
+              slidesPerView={1}
               centeredSlides="true"
-              speed={1800}
+              speed={0}
               navigation={{
                 nextEl: '.showcase__navigation_next',
                 prevEl: '.showcase__navigation_prev',
               }}
             >
               <SwiperSlide>
-                slide 1
-                {/* <ShowcaseImageWrapper title="Front" img={img1} /> */}
+                <img src="" alt="Project 1" />
               </SwiperSlide>
               <SwiperSlide>
-                slide 2
-                {/* <ShowcaseImageWrapper title="Front Two" img={img2} /> */}
+              <img src="" alt="Project 2" />
               </SwiperSlide>
               <SwiperSlide>
-                slide 3
-                {/* <ShowcaseImageWrapper title="Side" img={img3} /> */}
+              <img src="" alt="Project 3" />
               </SwiperSlide>
               <SwiperSlide>
-                slide 4
-                {/* <ShowcaseImageWrapper title="Back" img={img4} /> */}
+              <img src="" alt="Project 4" />
               </SwiperSlide>
             </Swiper>
           </div>
         </div>
         <div className="showcase__navigation">
-          <div className="showcase__navigation_prev"></div>
-          <div className="showcase__navigation_next"></div>
+          <div className="showcase__navigation_prev">a</div>
+          <div className="showcase__navigation_next">b</div>
         </div>
       </div>
     </section>

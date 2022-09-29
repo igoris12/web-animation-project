@@ -1,5 +1,4 @@
 .showcase {
-    z-index: 1;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -8,8 +7,65 @@
     background: rgba($color: #000000, $alpha: 0.5);
     color: white;
     display: flex;
-    text-align: center;
-    // align-items: center;
-    // justify-content: center;
-    // scroll-behavior:unset;
+    align-items: center;
+    .swiper-slide {
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        &:focus {
+            user-select: none !important;
+        }
+        .imageWrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            img {
+                object-fit:contain;
+                width: 800px;
+                height: 800px; 
+            }
+        }
+    } 
+   
+        .showcase__navigation_prev {
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            cursor: pointer;
+            z-index: 1;
+            font-size: 40px;
+
+        }
+        .showcase__navigation_next {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            z-index: 1;
+            cursor: pointer;
+            font-size: 40px;
+            color: white;
+        }
+    
 }
+
+@media (max-width: 1100px) {
+    .showcase {
+        .imageWrapper {
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    
+        
+    }
+}
+
+

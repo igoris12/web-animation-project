@@ -1,20 +1,20 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay } from 'swiper';
-
-// import ShowcaseImageWrapper from './ShowcaseImageWrapper';
-
+import { Navigation} from 'swiper';
+import portfolio from '../../images/Portfolio/Projects/portfolio.png';
+import snakeGame from '../../images/Portfolio/Projects/snakeGame.png';
+import vintedCopy from '../../images/Portfolio/Projects/vintedCopy.png';
+import slider3d from '../../images/Portfolio/Projects/slider3d.png';
+import simpleForm from '../../images/Portfolio/Projects/simpleForm.png';
+import webProject from '../../images/Portfolio/Projects/webProject.png';
+import { BsArrowLeftSquareFill, BsArrowRightSquareFill} from 'react-icons/bs';
 const Showcase = () => {
 
   return (
     <section className="showcase">
-      <div className="showcase__content-wrapper">
-        <div className="showcase__content">
-          <div className="showcase__carousel">
             <Swiper
               loop="true"
               modules={[Navigation]}
-             
               slidesPerView={1}
               centeredSlides="true"
               speed={0}
@@ -24,25 +24,38 @@ const Showcase = () => {
               }}
             >
               <SwiperSlide>
-                <img src="" alt="Project 1" />
+                <div className='imageWrapper'>
+                  <img src={portfolio} alt="Project 1" />
+                </div>
               </SwiperSlide>
               <SwiperSlide>
-              <img src="" alt="Project 2" />
+                <div className='imageWrapper'>
+                  <img src={snakeGame} alt="Project 2" />
+                </div>
               </SwiperSlide>
               <SwiperSlide>
-              <img src="" alt="Project 3" />
+                <div className='imageWrapper'>
+                  <img src={vintedCopy} alt="Project 3" />
+                </div>
               </SwiperSlide>
               <SwiperSlide>
-              <img src="" alt="Project 4" />
+                <div className='imageWrapper'>
+                  <img src={slider3d} alt="Project 4" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className='imageWrapper'>
+                  <img src={simpleForm} alt="Project 5" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className='imageWrapper'>
+                  <img src={webProject} alt="Project 6" />
+                </div>
               </SwiperSlide>
             </Swiper>
-          </div>
-        </div>
-        <div className="showcase__navigation">
-          <div className="showcase__navigation_prev">a</div>
-          <div className="showcase__navigation_next">b</div>
-        </div>
-      </div>
+          <div className="showcase__navigation_prev"><BsArrowLeftSquareFill/></div>
+          <div className="showcase__navigation_next"><BsArrowRightSquareFill/></div>
     </section>
   );
 };

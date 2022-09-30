@@ -13,7 +13,7 @@ import simpleForm from '../../images/Portfolio/Projects/simpleForm.png';
 import webProject from '../../images/Portfolio/Projects/webProject.png';
 
 
-function GalleryItem({ project }) {
+function GalleryItem({ project, clickHandeler }) {
   const { optionsState } = useContext(OptionsContext);
 
   const getImage = (image) => {
@@ -45,7 +45,7 @@ function GalleryItem({ project }) {
 
   return (
     <li
-
+    onClick={clickHandeler('e')}
     className={'galleryItem '  + tools + project.layout }
     >
         <span className="t_over"></span>

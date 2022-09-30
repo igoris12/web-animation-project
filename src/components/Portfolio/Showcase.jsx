@@ -8,10 +8,12 @@ import slider3d from '../../images/Portfolio/Projects/slider3d.png';
 import simpleForm from '../../images/Portfolio/Projects/simpleForm.png';
 import webProject from '../../images/Portfolio/Projects/webProject.png';
 import { BsArrowLeftSquareFill, BsArrowRightSquareFill} from 'react-icons/bs';
-const Showcase = () => {
+import { AiOutlineClose } from 'react-icons/ai';
+
+const Showcase = ({options}) => {
 
   return (
-    <section className="showcase">
+    <section className={"showcase " + options.class}>
             <Swiper
               loop="true"
               modules={[Navigation]}
@@ -54,6 +56,7 @@ const Showcase = () => {
                 </div>
               </SwiperSlide>
             </Swiper>
+          <div className="closeButton"><AiOutlineClose/></div>
           <div className="showcase__navigation_prev"><BsArrowLeftSquareFill/></div>
           <div className="showcase__navigation_next"><BsArrowRightSquareFill/></div>
     </section>

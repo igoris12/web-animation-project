@@ -8,6 +8,7 @@
     color: white;
     display: flex;
     align-items: center;
+    display: none;
     .swiper-slide {
             -webkit-tap-highlight-color: transparent;
             -webkit-touch-callout: none;
@@ -32,7 +33,19 @@
             }
         }
     } 
-   
+        .closeButton {
+            position: absolute;
+            top: 18%;
+            right: 20px;
+            font-size: 25px;
+            color: gray;
+            cursor: pointer;
+            z-index: 1;
+            &:hover {
+               color: white; 
+            }
+
+        }
         .showcase__navigation_prev {
             position: absolute;
             top: 50%;
@@ -51,7 +64,9 @@
             font-size: 40px;
             color: white;
         }
-    
+        &.active {
+            display: flex;
+        }
 }
 
 @media (max-width: 1100px) {

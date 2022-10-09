@@ -5,7 +5,7 @@ import PortfolioFilter from './PortfolioFilter';
 import Gallery from './Gallery';
 const Portfolio = () => {
   return (
-    <section className="portfolio disableScroll">
+    <section className="portfolio">
       <Header text="Portfolio." icon={<BsBriefcase />} />
       <PortfolioFilter />
       <Gallery />

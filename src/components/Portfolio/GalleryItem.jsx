@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import OptionsContext from '../../reducers/OptionsContext';
 import {
   BsImage,
@@ -13,7 +13,7 @@ import simpleForm from '../../images/Portfolio/Projects/simpleForm.png';
 import webProject from '../../images/Portfolio/Projects/webProject.png';
 
 
-function GalleryItem({ project, clickHandeler }) {
+function GalleryItem({ project, showcaseOpen }) {
   const { optionsState } = useContext(OptionsContext);
 
   const getImage = (image) => {
@@ -36,7 +36,6 @@ function GalleryItem({ project, clickHandeler }) {
   };
 
   let tools = '';
-  const [cursorPoint ,setCursorPoint] = useState({});
 
   project.tools.forEach(element => {
     tools += element + ' ';
@@ -45,8 +44,9 @@ function GalleryItem({ project, clickHandeler }) {
 
   return (
     <li
-    onClick={clickHandeler('e')}
     className={'galleryItem '  + tools + project.layout }
+    onClick={showcaseOpen}
+    
     >
         <span className="t_over"></span>
         <span className="t_over"></span>

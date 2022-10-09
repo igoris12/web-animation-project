@@ -10,8 +10,8 @@ import webProject from '../../images/Portfolio/Projects/webProject.png';
 import { BsArrowLeftSquareFill, BsArrowRightSquareFill} from 'react-icons/bs';
 import { AiOutlineClose } from 'react-icons/ai';
 
-const Showcase = ({options}) => {
-
+const Showcase = ({options, showcaseClose}) => {
+ 
   return (
     <section className={"showcase " + options.class}>
             <Swiper
@@ -56,7 +56,7 @@ const Showcase = ({options}) => {
                 </div>
               </SwiperSlide>
             </Swiper>
-          <div className="closeButton"><AiOutlineClose/></div>
+          <div className="closeButton" onClick={showcaseClose}><AiOutlineClose/></div>
           <div className="showcase__navigation_prev"><BsArrowLeftSquareFill/></div>
           <div className="showcase__navigation_next"><BsArrowRightSquareFill/></div>
     </section>

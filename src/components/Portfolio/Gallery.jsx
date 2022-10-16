@@ -15,6 +15,7 @@ const Gallery = () => {
   function showcaseClose (e) {
     e.nativeEvent.path[5].classList.remove('disableScroll')
     setShowcaseActive({class: '', image: 1})
+    console.log('worked');
   }
   return (
     <div className="gallery container-fluid" id="portfolioGallery">

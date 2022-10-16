@@ -4,18 +4,17 @@ import GalleryDataContext from '../../reducers/GalleryDataContext';
 import GalleryItem from './GalleryItem';
 import Showcase from './Showcase';
 
-const Gallery = () => {
+const Gallery = ({disableScrollHandler}) => {
   const { galleryData } = useContext(GalleryDataContext);
   const [showcaseActive, setShowcaseActive] = useState({class: '', image: 1});
 
   function showcaseOpen (e) {
-    e.nativeEvent.path[5].classList.add('disableScroll')
-    setShowcaseActive({class: 'active', image: 1})
+    disableScrollHandler();
+    setShowcaseActive({class: 'active', image: 1});
   }
   function showcaseClose (e) {
-    e.nativeEvent.path[5].classList.remove('disableScroll')
-    setShowcaseActive({class: '', image: 1})
-    console.log('worked');
+    disableScrollHandler();
+    setShowcaseActive({class: '', image: 1});
   }
   return (
     <div className="gallery container-fluid" id="portfolioGallery">

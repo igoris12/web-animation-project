@@ -20,45 +20,46 @@ const Showcase = ({options, showcaseClose}) => {
               slidesPerView={1}
               centeredSlides="true"
               speed={0}
+              spaceBetween={300}
               navigation={{
                 nextEl: '.showcase__navigation_next',
                 prevEl: '.showcase__navigation_prev',
               }}
             >
               <SwiperSlide>
-                <div className='imageWrapper'>
-                  <img src={portfolio} alt="Project 1" />
+                <div className='imageWrapper showcase__navigation_next'>
+                  <img  src={portfolio} alt="Project 1" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className='imageWrapper'>
-                  <img src={snakeGame} alt="Project 2" />
+                <div className='imageWrapper showcase__navigation_next'>
+                  <img   src={snakeGame} alt="Project 2" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className='imageWrapper'>
-                  <img src={vintedCopy} alt="Project 3" />
+                <div  className='imageWrapper showcase__navigation_next'>
+                  <img   src={vintedCopy} alt="Project 3" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className='imageWrapper'>
-                  <img src={slider3d} alt="Project 4" />
+                <div className='imageWrapper showcase__navigation_next'>
+                  <img   src={slider3d} alt="Project 4" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className='imageWrapper'>
-                  <img src={simpleForm} alt="Project 5" />
+                <div className='imageWrapper showcase__navigation_next'>
+                  <img   src={simpleForm} alt="Project 5" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className='imageWrapper'>
-                  <img src={webProject} alt="Project 6" />
+                <div className='imageWrapper showcase__navigation_next'>
+                  <img   src={webProject} alt="Project 6" />
                 </div>
               </SwiperSlide>
             </Swiper>
           <div className="closeButton" onClick={showcaseClose}><AiOutlineClose/></div>
-          <div className="showcase__navigation_prev"><BsArrowLeftSquareFill/></div>
-          <div className="showcase__navigation_next"><BsArrowRightSquareFill/></div>
+          <div className="btnPrev showcase__navigation_prev"><BsArrowLeftSquareFill/></div>
+          <div className="btnNext showcase__navigation_next"><BsArrowRightSquareFill/></div>
     </section>
   );
 };

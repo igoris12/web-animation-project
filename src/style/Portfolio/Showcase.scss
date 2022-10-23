@@ -9,6 +9,8 @@
     display: flex;
     align-items: center;
     display: none;
+    z-index: 1;
+    padding: 10px;
     .swiper-slide {
             -webkit-tap-highlight-color: transparent;
             -webkit-touch-callout: none;
@@ -27,6 +29,7 @@
             width: 100%;
             height: 100%;
             img {
+                cursor: pointer;
                 object-fit:contain;
                 width: 800px;
                 height: 800px; 
@@ -46,7 +49,7 @@
             }
 
         }
-        .showcase__navigation_prev {
+        .btnPrev {
             position: absolute;
             top: 50%;
             left: 20px;
@@ -55,7 +58,7 @@
             font-size: 40px;
 
         }
-        .showcase__navigation_next {
+        .btnNext {
             position: absolute;
             top: 50%;
             right: 20px;
@@ -71,15 +74,20 @@
 
 @media (max-width: 1100px) {
     .showcase {
-        .imageWrapper {
-
-            img {
-                width: 100%;
-                height: 100%;
+        .swiper-slide  {
+            .imageWrapper {
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
             }
         }
-    
-        
+        .btnPrev {
+            color: gray;
+        }
+        .btnNext {
+            color: gray;
+        }
     }
 }
 

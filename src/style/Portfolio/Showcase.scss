@@ -11,6 +11,7 @@
     display: none;
     z-index: 1;
     padding: 10px;
+    cursor: zoom-out;
     .swiper-slide {
             -webkit-tap-highlight-color: transparent;
             -webkit-touch-callout: none;
@@ -31,8 +32,8 @@
             img {
                 cursor: pointer;
                 object-fit:contain;
-                width: 800px;
-                height: 800px; 
+                width: 80%;
+                height: 80%; 
             }
         }
     } 
@@ -56,6 +57,7 @@
             cursor: pointer;
             z-index: 1;
             font-size: 40px;
+            padding: 10px;
 
         }
         .btnNext {
@@ -66,6 +68,7 @@
             cursor: pointer;
             font-size: 40px;
             color: white;
+            padding: 10px;
         }
         &.active {
             display: flex;
@@ -84,9 +87,11 @@
         }
         .btnPrev {
             color: gray;
+            padding: 0;
         }
         .btnNext {
             color: gray;
+            padding:0;
         }
     }
 }

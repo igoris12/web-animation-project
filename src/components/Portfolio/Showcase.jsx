@@ -11,9 +11,14 @@ import { BsArrowLeftSquareFill, BsArrowRightSquareFill} from 'react-icons/bs';
 import { AiOutlineClose } from 'react-icons/ai';
 
 const Showcase = ({options, showcaseClose}) => {
- 
+  const clickHendeler = (e) => {
+    if (e.target.tagName === 'IMG' || e.target.tagName === 'path') {
+      return;
+    }
+    showcaseClose();
+  } 
   return (
-    <section className={"showcase " + options.class}>
+    <section onClick={clickHendeler} className={"showcase " + options.class}>
             <Swiper
               loop="true"
               modules={[Navigation]}
@@ -27,33 +32,33 @@ const Showcase = ({options, showcaseClose}) => {
               }}
             >
               <SwiperSlide>
-                <div className='imageWrapper showcase__navigation_next'>
-                  <img  src={portfolio} alt="Project 1" />
+                <div className='imageWrapper'>
+                  <img className='showcase__navigation_next'  src={portfolio} alt="Project 1" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className='imageWrapper showcase__navigation_next'>
-                  <img   src={snakeGame} alt="Project 2" />
+                <div className='imageWrapper'>
+                  <img className='showcase__navigation_next'  src={snakeGame} alt="Project 2" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div  className='imageWrapper showcase__navigation_next'>
-                  <img   src={vintedCopy} alt="Project 3" />
+                <div  className='imageWrapper'>
+                  <img className='showcase__navigation_next'  src={vintedCopy} alt="Project 3" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className='imageWrapper showcase__navigation_next'>
-                  <img   src={slider3d} alt="Project 4" />
+                <div className='imageWrapper'>
+                  <img className='showcase__navigation_next'   src={slider3d} alt="Project 4" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className='imageWrapper showcase__navigation_next'>
-                  <img   src={simpleForm} alt="Project 5" />
+                <div className='imageWrapper'>
+                  <img className='showcase__navigation_next'  src={simpleForm} alt="Project 5" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className='imageWrapper showcase__navigation_next'>
-                  <img   src={webProject} alt="Project 6" />
+                <div className='imageWrapper'>
+                  <img className='showcase__navigation_next'  src={webProject} alt="Project 6" />
                 </div>
               </SwiperSlide>
             </Swiper>

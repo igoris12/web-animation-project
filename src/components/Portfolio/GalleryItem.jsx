@@ -45,7 +45,7 @@ function GalleryItem({ project, showcaseOpen }) {
   return (
     <li
     className={'galleryItem '  + tools + project.layout }
-    onClick={showcaseOpen}
+    onClick={()=> showcaseOpen(project.id)}
     
     >
         <span className="t_over"></span>

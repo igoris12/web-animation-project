@@ -11,12 +11,14 @@ import { BsArrowLeftSquareFill, BsArrowRightSquareFill} from 'react-icons/bs';
 import { AiOutlineClose } from 'react-icons/ai';
 
 const Showcase = ({options, showcaseClose}) => {
+  // console.log(options.slideIndex);
   const clickHendeler = (e) => {
     if (e.target.tagName === 'IMG' || e.target.tagName === 'path') {
       return;
     }
     showcaseClose();
   } 
+
   return (
     <section onClick={clickHendeler} className={"showcase " + options.class}>
             <Swiper
@@ -30,8 +32,12 @@ const Showcase = ({options, showcaseClose}) => {
                 nextEl: '.showcase__navigation_next',
                 prevEl: '.showcase__navigation_prev',
               }}
+              
             >
-              <SwiperSlide>
+              <SwiperSlide
+              
+              >
+                
                 <div className='imageWrapper'>
                   <img className='showcase__navigation_next'  src={portfolio} alt="Project 1" />
                 </div>

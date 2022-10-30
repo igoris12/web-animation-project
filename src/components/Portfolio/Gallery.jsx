@@ -6,15 +6,15 @@ import Showcase from './Showcase';
 
 const Gallery = ({disableScrollHandler}) => {
   const { galleryData } = useContext(GalleryDataContext);
-  const [showcaseActive, setShowcaseActive] = useState({class: '', image: 1});
+  const [showcaseActive, setShowcaseActive] = useState({class: '', slideIndex: 0});
 
-  function showcaseOpen (e) {
+  function showcaseOpen (slideIndex) {
     disableScrollHandler();
-    setShowcaseActive({class: 'active', image: 1});
+    setShowcaseActive({...showcaseActive, class: 'active', slideIndex: slideIndex});
   }
   function showcaseClose (e) {
     disableScrollHandler();
-    setShowcaseActive({class: '', image: 1});
+    setShowcaseActive({...showcaseActive, class: ''});
   }
   return (
     <div className="gallery container-fluid" id="portfolioGallery">

@@ -59,7 +59,7 @@
             text-align: center;
             position: absolute;
             width: 50px !important;
-            left: 87% !important;
+            left: 86% !important;
             bottom: -20px !important;
             -webkit-tap-highlight-color: transparent;
             -webkit-touch-callout: none;
@@ -108,6 +108,9 @@
                 }
             }
         }
+        .pagination {
+            left: 95% !important;
+        }
         .btnPrev {
             color: gray;
             padding: 0;
@@ -115,6 +118,30 @@
         .btnNext {
             color: gray;
             padding:0;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .showcase {
+        .pagination {
+            left: 93% !important;
+        }
+    }
+}
+
+@media (max-width: 580px) {
+    .showcase {
+        .pagination {
+            left: 90% !important;
+        }
+    }
+}
+@media (max-width: 400px) {
+    .showcase {
+        .pagination {
+            left: 88% !important;
+            text-align: left;
         }
     }
 }

@@ -18,6 +18,13 @@ const Showcase = ({options, showcaseClose}) => {
     showcaseClose();
   } 
 
+ const renderFraction  = function (currentClass, totalClass) {
+    return '<span class="' + currentClass + '"></span>' +
+            ' of ' +
+            '<span class="' + totalClass + '"></span>';
+}
+
+
   return (
     <section onClick={clickHendeler} className={"showcase " + options.class}>
             <Swiper
@@ -27,7 +34,7 @@ const Showcase = ({options, showcaseClose}) => {
               centeredSlides="true"
               speed={0}
               spaceBetween={300}
-              pagination={{ clickable: false, el: '.pagination', type: 'fraction'}}
+              pagination={{ clickable: false, el: '.pagination', type: 'fraction', renderFraction: renderFraction}}
               navigation={{
                 nextEl: '.showcase__navigation_next',
                 prevEl: '.showcase__navigation_prev',
@@ -67,9 +74,9 @@ const Showcase = ({options, showcaseClose}) => {
                   <img className='showcase__navigation_next'  src={webProject} alt="Project 6" />
                 </div>
               </SwiperSlide>
+          <div className="pagination"></div>
             </Swiper>
           <div className="closeButton" onClick={showcaseClose}><AiOutlineClose/></div>
-          <div className="pagination"></div>
           <div className="btnPrev showcase__navigation_prev"><BsArrowLeftSquareFill/></div>
           <div className="btnNext showcase__navigation_next"><BsArrowRightSquareFill/></div>
     </section>

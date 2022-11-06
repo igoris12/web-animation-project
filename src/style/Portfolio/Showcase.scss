@@ -56,7 +56,18 @@
             position: absolute;
             width: 100px !important;
             left: 80% !important;
-            bottom: 15% !important;
+            bottom: 0px !important;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            z-index: 100;
+        &:focus {
+            user-select: none !important;
+        }
         }
         .btnPrev {
             position: absolute;

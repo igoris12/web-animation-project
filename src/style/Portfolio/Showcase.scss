@@ -12,6 +12,9 @@
     z-index: 1;
     padding: 10px;
     cursor: zoom-out;
+    .swiper {
+        padding-bottom: 20px;
+    }
     .swiper-slide {
             -webkit-tap-highlight-color: transparent;
             -webkit-touch-callout: none;
@@ -52,11 +55,12 @@
         }
         .pagination  {
             font-family: $secondaryFont, sans-serif;
-            text-align: right;
+            font-size: 12px;
+            text-align: center;
             position: absolute;
-            width: 100px !important;
-            left: 80% !important;
-            bottom: 0px !important;
+            width: 50px !important;
+            left: 87% !important;
+            bottom: -20px !important;
             -webkit-tap-highlight-color: transparent;
             -webkit-touch-callout: none;
             -webkit-user-select: none;

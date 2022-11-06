@@ -50,6 +50,14 @@
             }
 
         }
+        .pagination  {
+            font-family: $secondaryFont, sans-serif;
+            text-align: right;
+            position: absolute;
+            width: 100px !important;
+            left: 80% !important;
+            bottom: 15% !important;
+        }
         .btnPrev {
             position: absolute;
             top: 50%;

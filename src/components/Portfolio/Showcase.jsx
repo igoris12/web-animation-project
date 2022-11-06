@@ -1,6 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation} from 'swiper';
+import { Navigation, Pagination} from 'swiper';
 import portfolio from '../../images/Portfolio/Projects/portfolio.png';
 import snakeGame from '../../images/Portfolio/Projects/snakeGame.png';
 import vintedCopy from '../../images/Portfolio/Projects/vintedCopy.png';
@@ -11,7 +11,6 @@ import { BsArrowLeftSquareFill, BsArrowRightSquareFill} from 'react-icons/bs';
 import { AiOutlineClose } from 'react-icons/ai';
 
 const Showcase = ({options, showcaseClose}) => {
-  // console.log(options.slideIndex);
   const clickHendeler = (e) => {
     if (e.target.tagName === 'IMG' || e.target.tagName === 'path') {
       return;
@@ -23,11 +22,12 @@ const Showcase = ({options, showcaseClose}) => {
     <section onClick={clickHendeler} className={"showcase " + options.class}>
             <Swiper
               loop="true"
-              modules={[Navigation]}
+              modules={[Navigation, Pagination]}
               slidesPerView={1}
               centeredSlides="true"
               speed={0}
               spaceBetween={300}
+              pagination={{ clickable: false, el: '.pagination', type: 'fraction'}}
               navigation={{
                 nextEl: '.showcase__navigation_next',
                 prevEl: '.showcase__navigation_prev',
@@ -69,6 +69,7 @@ const Showcase = ({options, showcaseClose}) => {
               </SwiperSlide>
             </Swiper>
           <div className="closeButton" onClick={showcaseClose}><AiOutlineClose/></div>
+          <div className="pagination"></div>
           <div className="btnPrev showcase__navigation_prev"><BsArrowLeftSquareFill/></div>
           <div className="btnNext showcase__navigation_next"><BsArrowRightSquareFill/></div>
     </section>

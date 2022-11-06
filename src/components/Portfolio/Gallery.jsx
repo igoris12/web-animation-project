@@ -6,11 +6,11 @@ import Showcase from './Showcase';
 
 const Gallery = ({disableScrollHandler}) => {
   const { galleryData } = useContext(GalleryDataContext);
-  const [showcaseActive, setShowcaseActive] = useState({class: '', slideIndex: 0});
+  const [showcaseActive, setShowcaseActive] = useState({class: ''});
 
-  function showcaseOpen (slideIndex) {
+  function showcaseOpen () {
     disableScrollHandler();
-    setShowcaseActive({...showcaseActive, class: 'active', slideIndex: slideIndex});
+    setShowcaseActive({...showcaseActive, class: 'active'});
   }
   function showcaseClose (e) {
     disableScrollHandler();

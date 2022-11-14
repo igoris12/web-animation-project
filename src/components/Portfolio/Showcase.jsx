@@ -39,6 +39,7 @@ const Showcase = ({options, showcaseClose}) => {
               }}
               
             >
+              <div className="closeButton" onClick={showcaseClose}><AiOutlineClose/></div>
               <SwiperSlide>
                 <div className='imageWrapper'>
                   <img className='showcase__navigation_next'  src={portfolio} alt="Project 1" />
@@ -77,7 +78,6 @@ const Showcase = ({options, showcaseClose}) => {
               </SwiperSlide>
          
             </Swiper>
-          <div className="closeButton" onClick={showcaseClose}><AiOutlineClose/></div>
           <div className="btnPrev showcase__navigation_prev"><BsArrowLeftSquareFill/></div>
           <div className="btnNext showcase__navigation_next"><BsArrowRightSquareFill/></div>
     </section>

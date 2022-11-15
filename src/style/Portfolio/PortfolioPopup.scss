@@ -1,4 +1,9 @@
 .portfolioPopup {
     background-color: red;
     position: absolute;
+    top: 0;
+    left: -200px;
+    width: 100vw;
+    height: 50vh;
+    z-index: 999;
 }

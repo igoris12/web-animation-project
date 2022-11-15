@@ -34,8 +34,8 @@ const Gallery = ({disableScrollHandler}) => {
             ))}
         </ul>
         <Showcase options={showcaseActive} showcaseClose={showcaseClose}/>
-        <PortfolioPopup clickTest={clickTest} data={portfolioPopupData.data}/>
       </div>
+          <PortfolioPopup clickTest={clickTest} data={portfolioPopupData.data}/>
     </div>
   );
 };

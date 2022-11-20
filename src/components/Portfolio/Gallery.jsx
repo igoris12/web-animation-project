@@ -22,7 +22,11 @@ const Gallery = ({disableScrollHandler}) => {
   function clickTest (e) {
     portfolioPopupData.data.title === 'A' ? setPortfolioPopupData({...portfolioPopupData, data: {title: 'B'}}) 
     :
-     setPortfolioPopupData({...portfolioPopupData, data: {title: 'A'}})
+     setPortfolioPopupData({...portfolioPopupData, data: {title: 'A'}});
+     e.target.classList.toggle('active')
+    // document.getElementsByClassName('page')[0].classList.toggle('moveToSide');
+    
+    
     
   }
   return (
@@ -34,8 +38,8 @@ const Gallery = ({disableScrollHandler}) => {
             ))}
         </ul>
         <Showcase options={showcaseActive} showcaseClose={showcaseClose}/>
+        <PortfolioPopup clickTest={clickTest} data={portfolioPopupData.data}/>
       </div>
-          <PortfolioPopup clickTest={clickTest} data={portfolioPopupData.data}/>
     </div>
   );
 };

@@ -1,9 +1,22 @@
 .portfolioPopup {
     background-color: red;
-    position: absolute;
+    position:fixed;
     top: 0;
-    left: -200px;
+    right: -100vw;
     width: 100vw;
-    height: 50vh;
-    z-index: 999;
+    height: 100vh;
+    z-index: 4;
+    border: 40px solid black;
+    transition: 0.5s;
+    &.active {
+        background-color: green;
+        right: 0;
+    }
 }
+
+// @media (min-width: 765px) {
+//     .portfolioPopup {
+       
+//     }
+// }
+

@@ -1,0 +1,29 @@
+.portfolioPopup {
+    background-color: $background-dark;
+    position:fixed;
+    top: -40px;
+    right: -100vw;
+    width: 100vw;
+    height: 100vh;
+    z-index: 4;
+    transition: 0.5s;
+    &.active {
+        right: 0;
+    }
+    .header {
+        background-color: $background-darkr;
+        height: 80px;
+        svg {
+            color: white;
+            font-size: 35px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (min-width: 765px) {
+    .portfolioPopup {
+       top:0;
+    }
+}
+

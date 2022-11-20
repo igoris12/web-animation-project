@@ -44,7 +44,7 @@
         flex-direction: column;
         align-items: center;
         transition:0.4s;
-        z-index:2;
+        z-index:4;
         border-right: 1px solid black;
         &.active {
         left: 0;
@@ -178,6 +178,7 @@
            display: none; 
         }
         .navigation {
+            z-index:1;
             .image {
                 span {
                     display: inline-block;

@@ -23,7 +23,7 @@ const Gallery = ({disableScrollHandler}) => {
     portfolioPopupData.data.title === 'A' ? setPortfolioPopupData({...portfolioPopupData, data: {title: 'B'}}) 
     :
      setPortfolioPopupData({...portfolioPopupData, data: {title: 'A'}});
-     e.target.classList.toggle('active')
+    //  e.target.classList.toggle('active')
     // document.getElementsByClassName('page')[0].classList.toggle('moveToSide');
     
     

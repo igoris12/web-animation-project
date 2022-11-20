@@ -19,16 +19,16 @@ const Gallery = ({disableScrollHandler}) => {
     setShowcaseActive({...showcaseActive, class: ''});
   }
 
-  function clickTest (e) {
-    portfolioPopupData.data.title === 'A' ? setPortfolioPopupData({...portfolioPopupData, data: {title: 'B'}}) 
-    :
-     setPortfolioPopupData({...portfolioPopupData, data: {title: 'A'}});
-    //  e.target.classList.toggle('active')
-    // document.getElementsByClassName('page')[0].classList.toggle('moveToSide');
+  // function clickTest (e) {
+  //   portfolioPopupData.data.title === 'A' ? setPortfolioPopupData({...portfolioPopupData, data: {title: 'B'}}) 
+  //   :
+  //    setPortfolioPopupData({...portfolioPopupData, data: {title: 'A'}});
+  //   //  e.target.classList.toggle('active')
+  //   // document.getElementsByClassName('page')[0].classList.toggle('moveToSide');
     
     
     
-  }
+  // }
   return (
     <div className="gallery container-fluid" id="portfolioGallery">
       <div className="row">
@@ -38,7 +38,7 @@ const Gallery = ({disableScrollHandler}) => {
             ))}
         </ul>
         <Showcase options={showcaseActive} showcaseClose={showcaseClose}/>
-        <PortfolioPopup clickTest={clickTest} data={portfolioPopupData.data}/>
+        <PortfolioPopup data={portfolioPopupData.data}/>
       </div>
     </div>
   );

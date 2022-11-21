@@ -1,5 +1,8 @@
 .portfolioPopup {
     background-color: $background-dark;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position:fixed;
     top: -40px;
     right: -100vw;
@@ -10,13 +13,18 @@
     &.active {
         right: 0;
     }
-    .header {
+    .popUpheader {
         background-color: $background-darkr;
+        width: 100%;
         height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         svg {
             color: white;
             font-size: 35px;
             cursor: pointer;
+            margin: 15px;
         }
     }
     .content {
@@ -65,11 +73,39 @@
 }
 
 
-
+@media (min-width: 570px) {
+    .portfolioPopup {
+        .content {
+            width: 510px;
+        }
+    }
+}
 
 @media (min-width: 765px) {
     .portfolioPopup {
        top:0;
+       .content {
+        width: 690px;
+    }
     }
 }
+
+
+@media (min-width: 990px) {
+    .portfolioPopup {
+        .content {
+            width: 930px;
+        }
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .portfolioPopup {
+        .content {
+            width: 1110px;
+        }
+    }
+}
+
 

@@ -32,7 +32,10 @@
             color: white;
             font-size: 35px;
         }
-        
+        .description {
+            text-align: center;
+            line-height: 25px;
+        }
         .info {
             width: 100%;
             padding-top: 40px;
@@ -41,13 +44,19 @@
                 list-style: none;
                 display: flex;
                 justify-content: space-around;
+                flex-wrap: wrap;
+               
                 li{
                     font-size: 18px;
                     font-family: $secondaryFont, sans-serif;
+                    color: white;
+                    margin-top: 10px;
+
                     span {
                         font-weight: bold;
                         color: #00A3E1;
                         font-family: $headerFont, sans-serif;
+                        line-height: 19px;
                     }
                 }
             }

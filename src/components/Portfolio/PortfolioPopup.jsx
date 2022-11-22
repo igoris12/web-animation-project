@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import { RiCloseCircleFill } from 'react-icons/ri';
+import img1 from '../../images/Portfolio/Projects/snakeGame.png';
 
 function PortfolioPopup({data = {}}) {
   const [show, setShow] = useState(true);
@@ -21,6 +22,15 @@ function PortfolioPopup({data = {}}) {
             <li><span>Tools: </span> web, creative, photography</li>
           </ul>
         </div>
+        <ul className="imagis">
+          <figure className="imgContainer">
+            <img src={img1} alt="Project" />
+          </figure>
+          <figure className="imgContainer">
+            <img src={img1} alt="Project" />
+          </figure>
+
+        </ul>
       </div>
     </div>
   )

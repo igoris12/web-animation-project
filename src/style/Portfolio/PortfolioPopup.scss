@@ -10,6 +10,8 @@
     height: 100vh;
     z-index: 4;
     transition: 0.5s;
+    overflow-y: scroll;
+ 
     &.active {
         right: 0;
     }
@@ -69,6 +71,17 @@
                 }
             }
         }
+        .imgContainer {
+            width: 100%;
+            max-height: 100%;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
     }
 }
 
@@ -77,6 +90,9 @@
     .portfolioPopup {
         .content {
             width: 510px;
+            .imgContainer {
+                height: 255px;
+            }
         }
     }
 }
@@ -86,6 +102,9 @@
        top:0;
        .content {
         width: 690px;
+        .imgContainer {
+            height: 285px;
+        }
     }
     }
 }
@@ -95,6 +114,9 @@
     .portfolioPopup {
         .content {
             width: 930px;
+            .imgContainer {
+                height: 385px;
+            }
         }
     }
 }
@@ -104,6 +126,9 @@
     .portfolioPopup {
         .content {
             width: 1110px;
+            .imgContainer {
+                height: 460px;
+            }
         }
     }
 }

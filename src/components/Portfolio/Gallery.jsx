@@ -9,7 +9,15 @@ const Gallery = ({disableScrollHandler}) => {
   const { galleryData } = useContext(GalleryDataContext);
   const [showcaseActive, setShowcaseActive] = useState({class: ''});
   const [portfolioPopupData, setPortfolioPopupData] = useState({active: true, data: {title: 'A'}});
+  const [showPopup, setShowPopup] = useState(true);
 
+  const hidePopup = () => {
+    setShowPopup(false)
+  }
+
+  const openPopup = () => {
+    setShowPopup(true)
+  }
   function showcaseOpen () {
     disableScrollHandler();
     setShowcaseActive({...showcaseActive, class: 'active'});
@@ -19,26 +27,16 @@ const Gallery = ({disableScrollHandler}) => {
     setShowcaseActive({...showcaseActive, class: ''});
   }
 
-  // function clickTest (e) {
-  //   portfolioPopupData.data.title === 'A' ? setPortfolioPopupData({...portfolioPopupData, data: {title: 'B'}}) 
-  //   :
-  //    setPortfolioPopupData({...portfolioPopupData, data: {title: 'A'}});
-  //   //  e.target.classList.toggle('active')
-  //   // document.getElementsByClassName('page')[0].classList.toggle('moveToSide');
-    
-    
-    
-  // }
   return (
     <div className="gallery container-fluid" id="portfolioGallery">
       <div className="row">
         <ul  className="col-12 gridBox">
           {galleryData.map((data) => (
-            <GalleryItem key={data.id} project={data} showcaseOpen={showcaseOpen}  />
+            <GalleryItem key={data.id} project={data} showcaseOpen={openPopup}  />
             ))}
         </ul>
         <Showcase options={showcaseActive} showcaseClose={showcaseClose}/>
-        <PortfolioPopup data={portfolioPopupData.data}/>
+        <PortfolioPopup showPopup={showPopup} closeFunction={hidePopup}  data={portfolioPopupData.data}/>
       </div>
     </div>
   );

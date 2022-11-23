@@ -8,21 +8,21 @@ import Showcase from './Showcase';
 const Gallery = ({disableScrollHandler}) => {
   const { galleryData } = useContext(GalleryDataContext);
   const [showcaseActive, setShowcaseActive] = useState({class: ''});
-  const [portfolioPopupData, setPortfolioPopupData] = useState({active: true, data: {title: 'A'}});
-  const [showPopup, setShowPopup] = useState(true);
+  const [portfolioPopupSettings, setPortfolioPopupSettings] = useState({showPopup: false, data: {}});
 
   const hidePopup = () => {
-    setShowPopup(false)
-  }
+    setPortfolioPopupSettings({...portfolioPopupSettings, showPopup: false });
 
-  const openPopup = () => {
-    setShowPopup(true)
+  }
+  const openPopup = (data) => {
+    setPortfolioPopupSettings({...portfolioPopupSettings, showPopup: true, data: data });
+    
   }
   function showcaseOpen () {
     disableScrollHandler();
     setShowcaseActive({...showcaseActive, class: 'active'});
   }
-  function showcaseClose (e) {
+  function showcaseClose () {
     disableScrollHandler();
     setShowcaseActive({...showcaseActive, class: ''});
   }
@@ -32,11 +32,11 @@ const Gallery = ({disableScrollHandler}) => {
       <div className="row">
         <ul  className="col-12 gridBox">
           {galleryData.map((data) => (
-            <GalleryItem key={data.id} project={data} showcaseOpen={openPopup}  />
+            <GalleryItem key={data.id} project={data} openDetails={openPopup}  />
             ))}
         </ul>
         <Showcase options={showcaseActive} showcaseClose={showcaseClose}/>
-        <PortfolioPopup showPopup={showPopup} closeFunction={hidePopup}  data={portfolioPopupData.data}/>
+        <PortfolioPopup showPopup={portfolioPopupSettings.showPopup} closeFunction={hidePopup}  data={portfolioPopupSettings.data}/>
       </div>
     </div>
   );

@@ -13,7 +13,7 @@ import simpleForm from '../../images/Portfolio/Projects/simpleForm.png';
 import webProject from '../../images/Portfolio/Projects/webProject.png';
 
 
-function GalleryItem({ project, showcaseOpen }) {
+function GalleryItem({ project, openDetails }) {
   const { optionsState } = useContext(OptionsContext);
 
   const getImage = (image) => {
@@ -45,7 +45,7 @@ function GalleryItem({ project, showcaseOpen }) {
   return (
     <li
     className={'galleryItem '  + tools + project.layout }
-    onClick={()=> showcaseOpen(project.id)}
+    onClick={()=> openDetails(project)}
     
     >
         <span className="t_over"></span>

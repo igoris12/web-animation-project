@@ -8,7 +8,19 @@ import Showcase from './Showcase';
 const Gallery = ({disableScrollHandler}) => {
   const { galleryData } = useContext(GalleryDataContext);
   const [showcaseActive, setShowcaseActive] = useState({class: ''});
-  const [portfolioPopupSettings, setPortfolioPopupSettings] = useState({showPopup: false, data: {}});
+  const defultPopupData = {  
+    title: '',
+    tools: [],
+    img: '',
+    link: 'https://igoris12.github.io/portfolio_website/',
+    id: 0,
+    type: 'doc',
+    active: true,
+    layout: '',
+    client: 'My own project',
+    description: ''
+  }
+  const [portfolioPopupSettings, setPortfolioPopupSettings] = useState({showPopup: false, data: defultPopupData});
 
   const hidePopup = () => {
     setPortfolioPopupSettings({...portfolioPopupSettings, showPopup: false });

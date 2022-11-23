@@ -57,6 +57,10 @@
                 flex-wrap: wrap;
                
                 li{
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
                     font-size: 18px;
                     font-family: $secondaryFont, sans-serif;
                     color: white;

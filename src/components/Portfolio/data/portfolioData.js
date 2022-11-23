@@ -5,9 +5,11 @@ let data = [
         img: 'portfolio',
         link: 'https://igoris12.github.io/portfolio_website/',
         id: 0,
-        type: 'doc',
+        type: 'video',
         active: true,
-        layout: 'height--2'
+        layout: 'height--2',
+        client: 'My own project',
+        description: ''
     },
     {
         title: 'Web proejct',
@@ -17,7 +19,9 @@ let data = [
         id: 1,
         type: 'img',
         active: true,
-        layout: ''
+        layout: '',
+        client: 'My own project',
+        description: ''
 
     },
     {
@@ -28,7 +32,9 @@ let data = [
         id: 2,
         type: 'video',
         active: true,
-        layout: 'height--2'
+        layout: 'height--2',
+        client: 'My own project',
+        description: ''
 
     }
     ,
@@ -40,7 +46,9 @@ let data = [
         id: 4,
         type: 'img',
         active: true,
-        layout: 'height--2'
+        layout: 'height--2',
+        client: 'My own project',
+        description: ''
 
     },
     {
@@ -51,7 +59,9 @@ let data = [
         id: 3,
         type: 'doc',
         active: true,
-        layout: ''
+        layout: '',
+        client: 'My own project',
+        description: 'In this project I make something similar to vinted.lt website using React.js. It have main page where are all selling items are and individual product card where are all info about product. In product info are fancy box for item images. The main goal was to get better in React.js'
 
     }
     ,
@@ -61,11 +71,11 @@ let data = [
         img: 'simpleForm',
         link: 'https://igoris12.github.io/simple_form/',
         id: 5,
-        type: 'video',
+        type: 'doc',
         active: true,
-        layout: ''
-
-
+        layout: '',
+        client: 'My own project',
+        description: 'Project was started for getting more skill in JavaScript and make progress in frontend. This have six steps for getting about lizing. In the end of form is a summary section where you can see all information. Information is not sending anywhere. This one was one of the first in my self study path.'
     }
 
 ];

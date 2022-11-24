@@ -18,7 +18,8 @@ const Gallery = ({disableScrollHandler}) => {
     active: true,
     layout: '',
     client: 'My own project',
-    description: ''
+    description: '',
+    images: []
   }
   const [portfolioPopupSettings, setPortfolioPopupSettings] = useState({showPopup: false, data: defultPopupData});
 

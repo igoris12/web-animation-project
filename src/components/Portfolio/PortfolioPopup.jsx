@@ -1,7 +1,14 @@
 import React, { useContext} from 'react'
 import { RiCloseCircleFill } from 'react-icons/ri';
-import img1 from '../../images/Portfolio/Projects/snakeGame.png';
+import defaultImg from '../../images/Portfolio/Projects/portfolio.png';
 import OptionsContext from '../../reducers/OptionsContext';
+import vintedCopy1 from '../../images/Portfolio/Projects/vintedCopy.png';
+import vintedCopy2 from '../../images/Portfolio/Projects/vintedCopy2.png';
+
+import simpleForm1 from '../../images/Portfolio/Projects/simpleForm.png';
+import simpleForm2 from '../../images/Portfolio/Projects/simpleForm2.png';
+
+
 
 function PortfolioPopup({data = { a:'a'}, showPopup , closeFunction}) {
   const { optionsState } = useContext(OptionsContext);
@@ -14,7 +21,7 @@ function PortfolioPopup({data = { a:'a'}, showPopup , closeFunction}) {
 
     return string;
   }
-  // console.log(data);
+  console.log(data.images);
 
   return (
     <div className={showPopup === true ? 'portfolioPopup active' : 'portfolioPopup'}>
@@ -31,10 +38,10 @@ function PortfolioPopup({data = { a:'a'}, showPopup , closeFunction}) {
         </div>
         <ul className="imagis">
           <figure className="imgContainer">
-            <img src={img1} alt="Project" />
+            <img src={data.images[0] === "vintedCopy1" ?  vintedCopy1 : data.images[0] === 'simpleForm1'? simpleForm1 : defaultImg} alt="Project" />
           </figure>
           <figure className="imgContainer">
-            <img src={img1} alt="Project" />
+            <img src={data.images[1] === "vintedCopy2" ?  vintedCopy2 : data.images[1] === 'simpleForm2'? simpleForm2 : defaultImg} alt="Project" />
           </figure>
 
         </ul>

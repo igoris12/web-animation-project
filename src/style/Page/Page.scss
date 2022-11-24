@@ -6,4 +6,9 @@
  left: 0;
  right: 0;
  overflow: hidden;
+ transition: 0.5s;
+ transition-delay: 0.3s;
+    // &.moveToSide {
+    //     left: -200px;
+    // }
 }

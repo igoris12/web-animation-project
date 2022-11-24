@@ -1,0 +1,195 @@
+.galleryItem {
+    
+    .t_over{
+        width: 33.333%;
+        height: 33.333%;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .t_over:nth-child(1){ left: 0; top: 0; }
+    .t_over:nth-child(2){ left: 33.333%; top: 0; }
+    .t_over:nth-child(3){ left: 66.666%; top: 0; }
+    .t_over:nth-child(4){ left: 0; top: 33.333%; }
+    .t_over:nth-child(5){ left: 33.333%; top: 33.333%; }
+    .t_over:nth-child(6){ left: 66.666%; top: 33.333%; }
+    .t_over:nth-child(7){ left: 0; top: 66.666%; }
+    .t_over:nth-child(8){ left: 33.333%; top: 66.666%; }
+    .t_over:nth-child(9){ left: 66.666%; top: 66.666%; }
+    
+     .t_over:nth-child(1):hover{         
+      ~ img  {
+            transform:rotateX(-5deg) rotateY(5deg);
+        }
+      ~ .hoverEffect {
+        transform:rotateX(-5deg) rotateY(5deg);
+      }
+      ~ .sectionSecondaryHeader {
+        transform:rotateX(-5deg) rotateY(5deg);
+      }
+      ~ .tools {
+        transform:rotateX(-5deg) rotateY(5deg);
+      }
+      ~ .icon {
+        transform:rotateX(-5deg) rotateY(5deg);
+      }
+    }
+    .t_over:nth-child(2):hover{         
+      ~ img  {
+            transform:rotateX(-5deg) rotateY(0deg);
+        }
+      ~ .hoverEffect {
+        transform:rotateX(-5deg) rotateY(0deg);
+      }
+      ~ .sectionSecondaryHeader {
+        transform:rotateX(-5deg) rotateY(0deg);
+      }
+      ~ .tools {
+        transform:rotateX(-5deg) rotateY(0deg);
+      }
+      ~ .icon {
+        transform:rotateX(-5deg) rotateY(0deg);
+      }
+    }
+    .t_over:nth-child(3):hover{         
+        ~ img  {
+              transform:rotateX(-5deg) rotateY(-5deg);
+          }
+        ~ .hoverEffect {
+          transform:rotateX(-5deg) rotateY(-5deg);
+        }
+        ~ .sectionSecondaryHeader {
+            transform:rotateX(-5deg) rotateY(-5deg);
+          }
+          ~ .tools {
+            transform:rotateX(-5deg) rotateY(-5deg);
+          }
+          ~ .icon {
+            transform:rotateX(-5deg) rotateY(-5deg);
+          }
+    }
+    .t_over:nth-child(4):hover{         
+        ~ img  {
+              transform:rotateX(0deg) rotateY(5deg);
+          }
+        ~ .hoverEffect {
+          transform:rotateX(0deg) rotateY(5deg);
+          box-shadow: 10px -10px 100px 10px rgba($color: #ffffff, $alpha: 0.6) inset;
+
+        }
+        ~ .sectionSecondaryHeader {
+            transform:rotateX(0deg) rotateY(5deg);
+          }
+          ~ .tools {
+            transform:rotateX(0deg) rotateY(5deg);
+          }
+          ~ .icon {
+            transform:rotateX(0deg) rotateY(5deg);
+          }
+    
+    }
+    .t_over:nth-child(5):hover{         
+        ~ img  {
+              transform:rotateX(0deg) rotateY(0deg);
+          }
+        ~ .hoverEffect {
+          transform:rotateX(0deg) rotateY(0deg);
+          box-shadow:-5px -10px 100px 10px rgba($color: #ffffff, $alpha: 0.6) inset;
+
+        }
+        ~ .sectionSecondaryHeader {
+            transform:rotateX(0deg) rotateY(0deg);
+          }
+          ~ .tools {
+            transform:rotateX(0deg) rotateY(0deg);
+          }
+          ~ .icon {
+            transform:rotateX(0deg) rotateY(0deg);
+          }
+    
+    }
+    .t_over:nth-child(6):hover{         
+        ~ img  {
+              transform:rotateX(0deg) rotateY(-5deg);
+          }
+        ~ .hoverEffect {
+          transform:rotateX(0deg) rotateY(-5deg);
+          box-shadow:-10px -10px 100px 10px rgba($color: #ffffff, $alpha: 0.6) inset;
+
+        }
+        ~ .sectionSecondaryHeader {
+            transform:rotateX(0deg) rotateY(-5deg);
+          }
+          ~ .tools {
+            transform:rotateX(0deg) rotateY(-5deg);
+          }
+          ~ .icon {
+            transform:rotateX(0deg) rotateY(-5deg);
+          }
+    
+    }
+    .t_over:nth-child(7):hover{         
+        ~ img  {
+              transform:rotateX(5deg) rotateY(5deg);
+          }
+        ~ .hoverEffect {
+          transform:rotateX(5deg) rotateY(5deg);
+          box-shadow: 30px -20px 100px 10px rgba($color: #ffffff, $alpha: 0.6) inset;
+
+        }
+        ~ .sectionSecondaryHeader {
+            transform:rotateX(5deg) rotateY(5deg);
+          }
+          ~ .tools {
+            transform:rotateX(5deg) rotateY(5deg);
+          }
+          ~ .icon {
+            transform:rotateX(5deg) rotateY(5deg);
+          }
+    
+    }
+    .t_over:nth-child(8):hover{         
+        ~ img  {
+              transform:rotateX(5deg) rotateY(0deg);
+          }
+        ~ .hoverEffect {
+          transform:rotateX(5deg) rotateY(0deg);
+          box-shadow:-10px -50px 100px 10px rgba($color: #ffffff, $alpha: 0.6) inset;
+        }
+        ~ .sectionSecondaryHeader {
+            transform:rotateX(5deg) rotateY(0deg);
+
+          }
+          ~ .tools {
+            transform:rotateX(5deg) rotateY(0deg);
+
+          }
+          ~ .icon {
+            transform:rotateX(5deg) rotateY(0deg);
+
+          }
+    
+    }
+    .t_over:nth-child(9):hover{         
+        ~ img  {
+              transform:rotateX(5deg) rotateY(-5deg);
+          }
+        ~ .hoverEffect {
+          transform:rotateX(5deg) rotateY(-5deg);
+          box-shadow:-50px -20px 100px 10px rgba($color: #ffffff, $alpha: 0.6) inset;
+        }
+        ~ .sectionSecondaryHeader {
+            transform:rotateX(5deg) rotateY(-5deg);
+
+          }
+          ~ .tools {
+            transform:rotateX(5deg) rotateY(-5deg);
+
+          }
+          ~ .icon {
+            transform:rotateX(5deg) rotateY(-5deg);
+
+          }
+    
+    }
+}

@@ -1,0 +1,140 @@
+.portfolioPopup {
+    background-color: $background-dark;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:fixed;
+    top: -40px;
+    right: -100vw;
+    width: 100vw;
+    height: 100vh;
+    z-index: 4;
+    transition: 0.5s;
+    overflow-y: scroll;
+ 
+    &.active {
+        right: 0;
+    }
+    .popUpheader {
+        background-color: $background-darkr;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+            color: white;
+            font-size: 35px;
+            cursor: pointer;
+            margin: 15px;
+        }
+    }
+    .content {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
+        .title {
+            color: white;
+            font-size: 35px;
+        }
+        .description {
+            text-align: center;
+            line-height: 25px;
+        }
+        .info {
+            width: 100%;
+            padding-top: 40px;
+            ul {
+                width: 100%;
+                list-style: none;
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+               
+                li{
+                    a {
+                        text-decoration: none;
+                        color: white;
+                    }
+                    font-size: 18px;
+                    font-family: $secondaryFont, sans-serif;
+                    color: white;
+                    margin-top: 10px;
+
+                    span {
+                        font-weight: bold;
+                        color: #00A3E1;
+                        font-family: $headerFont, sans-serif;
+                        line-height: 19px;
+                    }
+                }
+            }
+        }
+        .imgContainer {
+            width: 100%;
+            max-height: 100%;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 570px) {
+    .portfolioPopup {
+        .content {
+            width: 510px;
+            .imgContainer {
+                height: 255px;
+            }
+        }
+    }
+}
+
+@media (min-width: 765px) {
+    .portfolioPopup {
+       top:0;
+       .content {
+        width: 690px;
+        .imgContainer {
+            height: 285px;
+        }
+    }
+    }
+}
+
+
+@media (min-width: 990px) {
+    .portfolioPopup {
+        .content {
+            width: 930px;
+            .imgContainer {
+                height: 385px;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .portfolioPopup {
+        .content {
+            width: 1110px;
+            .imgContainer {
+                height: 460px;
+            }
+        }
+    }
+}
+
+

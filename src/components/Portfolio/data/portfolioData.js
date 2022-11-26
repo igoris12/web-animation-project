@@ -10,7 +10,8 @@ let data = [
         layout: 'height--2',
         client: 'My own project',
         description: '',
-        images: []
+        images: [],
+        video: 'https://www.youtube.com/watch?v=k_okcNVZqqI&feature=emb_logo'
     },
     {
         title: 'Web proejct',
@@ -23,7 +24,8 @@ let data = [
         layout: '',
         client: 'My own project',
         description: '',
-        images: []
+        images: [],
+        video: null
 
     },
     {
@@ -37,7 +39,8 @@ let data = [
         layout: 'height--2',
         client: 'My own project',
         description: '',
-        images: []
+        images: [],
+        video: 'https://www.youtube.com/watch?v=k_okcNVZqqI&feature=emb_logo'
 
     }
     ,
@@ -52,7 +55,8 @@ let data = [
         layout: 'height--2',
         client: 'My own project',
         description: '',
-        images: []
+        images: [],
+        video: null
 
     },
     {
@@ -66,7 +70,8 @@ let data = [
         layout: '',
         client: 'My own project',
         description: 'In this project I make something similar to vinted.lt website using React.js. It have main page where are all selling items are and individual product card where are all info about product. In product info are fancy box for item images. The main goal was to get better in React.js',
-        images: ['vintedCopy1','vintedCopy2']
+        images: ['vintedCopy1','vintedCopy2'],
+        video: null
     }
     ,
     {
@@ -80,7 +85,8 @@ let data = [
         layout: '',
         client: 'My own project',
         description: 'Project was started for getting more skill in JavaScript and make progress in frontend. This have six steps for getting about lizing. In the end of form is a summary section where you can see all information. Information is not sending anywhere. This one was one of the first in my self study path.',
-        images: ['simpleForm1','simpleForm2']
+        images: ['simpleForm1','simpleForm2'],
+        video: null
     }
 
 ];

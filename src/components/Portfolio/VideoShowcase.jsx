@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination} from 'swiper';
 import { BsArrowLeftSquareFill, BsArrowRightSquareFill} from 'react-icons/bs';
 import { AiOutlineClose } from 'react-icons/ai';
+import { data } from 'isotope-layout';
 
 const VideoShowcase = ({options, showcaseClose}) => {
 
@@ -31,14 +32,14 @@ const VideoShowcase = ({options, showcaseClose}) => {
               <div className="closeButton" onClick={showcaseClose}><AiOutlineClose/></div>
               <SwiperSlide>
                 <div className='imageWrapper'>
-                  slide one
-               
+                <iframe width="900px" height="500px" src="https://www.youtube.com/embed/nhZyPQzx7JI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div className="pagination"></div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className='imageWrapper'>
-                slide two
+                <iframe  width="900px" height="500px" src="https://www.youtube.com/embed/nhZyPQzx7JI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
                 </div>
                 <div className="pagination"></div>
               </SwiperSlide>

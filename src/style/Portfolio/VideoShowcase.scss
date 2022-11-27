@@ -1,0 +1,11 @@
+.showcase {
+
+    &.videoShowcase{
+        .swiper-slide {
+            .imageWrapper{
+                width: 100%;
+                height: 70%;
+            }
+        } 
+    }
+}

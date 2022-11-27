@@ -60,7 +60,7 @@ const Gallery = ({disableScrollHandler}) => {
             <GalleryItem key={data.id} project={data} openDetails={videoShowcaseOpen}  />
             ))}
         </ul>
-        {/* <Showcase options={videoShowcaseActive} showcaseClose={videoShowcaseClose}/> */}
+
         <VideoShowcase options={videoShowcaseActive} showcaseClose={videoShowcaseClose}/>
         <Showcase options={showcaseActive} showcaseClose={showcaseClose}/>
 

@@ -21,7 +21,6 @@ function PortfolioPopup({data = { a:'a'}, showPopup , closeFunction}) {
 
     return string;
   }
-  console.log(data.images);
 
   return (
     <div className={showPopup === true ? 'portfolioPopup active' : 'portfolioPopup'}>

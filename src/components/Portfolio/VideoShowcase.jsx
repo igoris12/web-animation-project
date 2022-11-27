@@ -14,7 +14,7 @@ const VideoShowcase = ({options, showcaseClose}) => {
         showcaseClose();
       } 
   return (
-    <section onClick={clickHendeler} className={"showcase " + options.class}>
+    <section onClick={clickHendeler} className={"showcase  videoShowcase " + options.class}>
             <Swiper
               loop="true"
               modules={[Navigation, Pagination]}
@@ -22,7 +22,6 @@ const VideoShowcase = ({options, showcaseClose}) => {
               centeredSlides="true"
               speed={0}
               spaceBetween={300}
-
               navigation={{
                 nextEl: '.showcase__navigation_next',
                 prevEl: '.showcase__navigation_prev',
@@ -32,13 +31,13 @@ const VideoShowcase = ({options, showcaseClose}) => {
               <div className="closeButton" onClick={showcaseClose}><AiOutlineClose/></div>
               <SwiperSlide>
                 <div className='imageWrapper'>
-                <iframe width="900px" height="500px" src="https://www.youtube.com/embed/nhZyPQzx7JI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="900px" height="500px" src="https://www.youtube.com/embed/nhZyPQzx7JI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
                 <div className="pagination"></div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className='imageWrapper'>
-                <iframe  width="900px" height="500px" src="https://www.youtube.com/embed/nhZyPQzx7JI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe  width="900px" height="500px" src="https://www.youtube.com/embed/nhZyPQzx7JI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 
                 </div>
                 <div className="pagination"></div>

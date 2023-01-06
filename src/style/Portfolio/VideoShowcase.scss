@@ -9,7 +9,27 @@
             .imageWrapper{
                 width: 100%;
                 height: 70%;
+                iframe {
+                    width: 70%;
+                    height: 500px;
+                }
             }
         } 
+    }
+}
+
+@media (max-width: 765px) {
+    .showcase {
+        &.videoShowcase{
+            left: 0;
+            .swiper-slide {
+                .imageWrapper{
+                    iframe {
+                        width: 100%;
+                        height: 300px;
+                    }
+                }
+            }
+        }
     }
 }

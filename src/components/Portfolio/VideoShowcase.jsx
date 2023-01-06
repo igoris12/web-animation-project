@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination} from 'swiper';
 import { BsArrowLeftSquareFill, BsArrowRightSquareFill} from 'react-icons/bs';
 import { AiOutlineClose } from 'react-icons/ai';
-import { data } from 'isotope-layout';
+// import { data } from 'isotope-layout'; // in furure will be used to get right video 
 
 const VideoShowcase = ({options, showcaseClose}) => {
 

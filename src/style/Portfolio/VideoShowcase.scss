@@ -1,6 +1,10 @@
 .showcase {
-
     &.videoShowcase{
+        position: fixed;
+        left: -200px;
+        width: 100vw;
+        height: 100vh;
+        z-index: 4;
         .swiper-slide {
             .imageWrapper{
                 width: 100%;

@@ -15,7 +15,11 @@ import webProject from '../../images/Portfolio/Projects/webProject.png';
 
 function GalleryItem({ project, openDetails }) {
   const { optionsState } = useContext(OptionsContext);
-
+  let tools = '';
+  project.tools.forEach(element => {
+    tools += element + ' ';
+  });
+  
   const getImage = (image) => {
     switch (image) {
       case 'portfolio':
@@ -35,17 +39,15 @@ function GalleryItem({ project, openDetails }) {
     }
   };
 
-  let tools = '';
-
-  project.tools.forEach(element => {
-    tools += element + ' ';
-  });
-
+  const clickHandler = (functionsList , data)=> {
+    data.type === 'video' ? functionsList.openVideoShowcase() : data.type === 'img' ?
+     functionsList.openShowcase() : functionsList.openPopup(data) 
+  }
 
   return (
     <li
     className={'galleryItem '  + tools + project.layout }
-    onClick={()=> openDetails(project)}
+    onClick={()=> clickHandler(openDetails, project)}
     
     >
         <span className="t_over"></span>

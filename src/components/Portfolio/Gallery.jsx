@@ -26,6 +26,7 @@ const Gallery = ({disableScrollHandler}) => {
   }
   const [portfolioPopupSettings, setPortfolioPopupSettings] = useState({showPopup: false, data: defultPopupData});
 
+
   const hidePopup = () => {
     setPortfolioPopupSettings({...portfolioPopupSettings, showPopup: false });
 
@@ -51,13 +52,20 @@ const Gallery = ({disableScrollHandler}) => {
     disableScrollHandler();
     setVideoShowcaseActive({...showcaseActive, class: ''});
   }
+  const openDetails = {
+    
+   openPopup: openPopup,
+   openShowcase: showcaseOpen,
+   openVideoShowcase: videoShowcaseOpen
+  }
+ 
 
   return (
     <div className="gallery container-fluid" id="portfolioGallery">
       <div className="row">
         <ul  className="col-12 gridBox">
           {galleryData.map((data) => (
-            <GalleryItem key={data.id} project={data} openDetails={videoShowcaseOpen}  />
+            <GalleryItem key={data.id} project={data} openDetails={openDetails}  />
             ))}
         </ul>
 

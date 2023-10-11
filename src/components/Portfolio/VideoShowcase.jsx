@@ -34,7 +34,7 @@ const VideoShowcase = ({options, showcaseClose}) => {
               <div className="closeButton" onClick={showcaseClose}><AiOutlineClose/></div>
               <SwiperSlide>
                 <div className='imageWrapper'>
-                  <video autoPlay controls>
+                  <video  controls>
                     <source src={testVideo} type="video/mp4"></source>
                   </video>
                 </div>

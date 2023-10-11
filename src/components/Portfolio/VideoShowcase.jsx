@@ -4,11 +4,14 @@ import { Navigation, Pagination} from 'swiper';
 import { BsArrowLeftSquareFill, BsArrowRightSquareFill} from 'react-icons/bs';
 import { AiOutlineClose } from 'react-icons/ai';
 // import { data } from 'isotope-layout'; // in furure will be used to get right video 
+import testVideo from '../../video/portfolio.mp4';
+import secondTestVideo from '../../video/snakegame.mp4';
+
 
 const VideoShowcase = ({options, showcaseClose}) => {
 
     const clickHendeler = (e) => {
-        if (e.target.tagName === 'IMG' || e.target.tagName === 'path') {
+        if (e.target.tagName === 'VIDEO' || e.target.tagName === 'path') {
           return;
         }
         showcaseClose();
@@ -31,13 +34,17 @@ const VideoShowcase = ({options, showcaseClose}) => {
               <div className="closeButton" onClick={showcaseClose}><AiOutlineClose/></div>
               <SwiperSlide>
                 <div className='imageWrapper'>
-                <iframe  src="https://www.youtube.com/embed/k_okcNVZqqI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                  <video autoPlay controls>
+                    <source src={testVideo} type="video/mp4"></source>
+                  </video>
                 </div>
                 <div className="pagination"></div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className='imageWrapper'>
-                <iframe  src="https://www.youtube.com/embed/oOkGmK3_Hdg" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+                <video autoPlay controls>
+                    <source src={secondTestVideo} type="video/mp4"></source>
+                  </video>
                 </div>
                 <div className="pagination"></div>
               </SwiperSlide>

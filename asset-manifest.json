@@ -1,12 +1,14 @@
 {
   "files": {
-    "main.css": "/web-animation-project/static/css/main.634465c0.css",
-    "main.js": "/web-animation-project/static/js/main.fa28bdc1.js",
+    "main.css": "/web-animation-project/static/css/main.64692a1c.css",
+    "main.js": "/web-animation-project/static/js/main.d7319b34.js",
     "static/js/937.f4cd42b5.chunk.js": "/web-animation-project/static/js/937.f4cd42b5.chunk.js",
+    "static/media/portfolio.mp4": "/web-animation-project/static/media/portfolio.cb69fff747f7e8aed13e.mp4",
     "static/media/slider3d.png": "/web-animation-project/static/media/slider3d.e04191d43d5142a1f45e.png",
     "static/media/vintedCopy2.png": "/web-animation-project/static/media/vintedCopy2.641ac932e75a0543cfd4.png",
     "static/media/vintedCopy.png": "/web-animation-project/static/media/vintedCopy.bcfa6758a7f76a5e1ff4.png",
     "static/media/avatar.png": "/web-animation-project/static/media/avatar.e3cc57bdb67d61d2da9b.png",
+    "static/media/snakegame.mp4": "/web-animation-project/static/media/snakegame.e9a2a4f2da8e1c253b6a.mp4",
     "static/media/webProject.png": "/web-animation-project/static/media/webProject.aa012edd8454d6c4e111.png",
     "static/media/home-bg.jpg": "/web-animation-project/static/media/home-bg.076fbdf26f56ba61597b.jpg",
     "static/media/portfolio.png": "/web-animation-project/static/media/portfolio.73b7c1ee3cd9c5bfd1e1.png",
@@ -23,12 +25,12 @@
     "static/media/client-09.png": "/web-animation-project/static/media/client-09.8fef02a629671215e468.png",
     "static/media/client-06.png": "/web-animation-project/static/media/client-06.cf0046e35b09f290ccb8.png",
     "index.html": "/web-animation-project/index.html",
-    "main.634465c0.css.map": "/web-animation-project/static/css/main.634465c0.css.map",
-    "main.fa28bdc1.js.map": "/web-animation-project/static/js/main.fa28bdc1.js.map",
+    "main.64692a1c.css.map": "/web-animation-project/static/css/main.64692a1c.css.map",
+    "main.d7319b34.js.map": "/web-animation-project/static/js/main.d7319b34.js.map",
     "937.f4cd42b5.chunk.js.map": "/web-animation-project/static/js/937.f4cd42b5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.634465c0.css",
-    "static/js/main.fa28bdc1.js"
+    "static/css/main.64692a1c.css",
+    "static/js/main.d7319b34.js"
   ]
 }

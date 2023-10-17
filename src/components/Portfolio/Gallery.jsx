@@ -60,7 +60,6 @@ const Gallery = ({ disableScrollHandler }) => {
     openShowcase: showcaseOpen,
     openVideoShowcase: videoShowcaseOpen,
   };
-
   return (
     <div className="gallery container-fluid" id="portfolioGallery">
       <div className="row">
@@ -77,6 +76,7 @@ const Gallery = ({ disableScrollHandler }) => {
         <VideoShowcase
           options={videoShowcaseActive}
           showcaseClose={videoShowcaseClose}
+          data={galleryData}
         />
         <Showcase options={showcaseActive} showcaseClose={showcaseClose} />
 

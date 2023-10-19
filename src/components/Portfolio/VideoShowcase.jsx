@@ -5,6 +5,7 @@ import { BsArrowLeftSquareFill, BsArrowRightSquareFill } from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
 
 const VideoShowcase = ({ options, showcaseClose, data }) => {
+
   const clickHendeler = (e) => {
     if (e.target.tagName === "IFRAME") {
     }
@@ -52,6 +53,7 @@ const VideoShowcase = ({ options, showcaseClose, data }) => {
             </SwiperSlide>
           ) : null
         )}
+     
       </Swiper>
       <div className="btnPrev showcase__navigation_prev">
         <BsArrowLeftSquareFill />

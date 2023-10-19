@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import SectionHeader from '../Base/SectionHeader';
 import SkillsItem from './SkillsItem';
 

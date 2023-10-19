@@ -50,6 +50,7 @@ const Gallery = ({ disableScrollHandler }) => {
   function videoShowcaseOpen() {
     disableScrollHandler();
     setVideoShowcaseActive({ ...showcaseActive, class: "active" });
+
   }
   function videoShowcaseClose() {
     disableScrollHandler();

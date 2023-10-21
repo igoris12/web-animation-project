@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function BlogSection() {
-  return (
-    <section>
-      BlogSection
-    </section>
-  )
+  return <section className="blogSection">BlogSection</section>;
 }
 
-export default BlogSection
+export default BlogSection;

@@ -1,8 +1,15 @@
 .blogSection {
     background-color: rgb(82, 31, 31);
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-
+    .content {
+        background-color: rgb(29, 22, 139);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
 }

@@ -7,7 +7,9 @@ function BlogSection() {
   return (
     <section className="blogSection">
       <Header text="My Blogs." icon={<BiBookAlt />} />
+      <div className="content">
       <BlogItem />
+      </div>
       
     </section>
   );

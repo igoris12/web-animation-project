@@ -1,0 +1,36 @@
+.blogItem {
+  background-color: orange;
+  margin-bottom: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid gray;
+  .img {
+    width: 100%;
+    height: 150px;
+    background-color: green;
+    img {
+    }
+  }
+
+  .blogItemContent {
+    background-color: purple;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-30px);
+    .secondaryTitle {
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+
+    .blogTitle {
+    }
+
+    .blogData {
+      font-style: italic;
+    }
+  }
+}

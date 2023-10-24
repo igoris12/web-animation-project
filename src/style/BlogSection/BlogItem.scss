@@ -4,11 +4,15 @@
   cursor: pointer;
   img {
   }
-  .cat {
-  }
-  .blogTitle {
-  }
-  .blogData {
-    font-style: italic;
+  .blogItemContent {
+    .secondaryTitle {
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+    .blogTitle {
+    }
+    .blogData {
+      font-style: italic;
+    }
   }
 }

@@ -2,7 +2,7 @@ import React from 'react'
 
 function BlogItem() {
   return (
-    <div className='blogItem'>
+    <div className='blogItem col-12 col-sm-6 col-lg-4'>
       <img src="%" alt="#" />
       <div className='blogItemContent'>
         <span className='cat'>Web desing</span>

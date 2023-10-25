@@ -25,25 +25,35 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: -40px;
-    text-wrap:pretty;
+    padding: 10px 16px 10px 16px;
+    text-align: center;
     .secondaryTitle {
       text-transform: uppercase;
       font-size: 12px;
       font-weight: bolder;
       letter-spacing: 1px;
       margin-top: 30px;
-      margin-bottom: 10px;
+      text-align: center;
+
     }
 
     .blogTitle {
-      
+      text-transform: capitalize;
+      letter-spacing: .5px;
+      font-weight: 500;
+      text-wrap: wrap;
+      word-break: break-word;
+      text-align: center;
+      line-height: 1.5;
+      margin-bottom: 10px;
     }
 
-    .blogData {
-      color: red;
+    .blogDate {
+      color: $color-light;
       font-family: serif;
       font-style: italic;
       font-size: 14px;
+      font-weight: 400;
     }
   }
 }

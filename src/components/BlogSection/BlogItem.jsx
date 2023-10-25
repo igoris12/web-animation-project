@@ -17,9 +17,9 @@ function BlogItem() {
           Web desing
         </span>
         <h4 cl className="blogTitle sectionSecondaryHeader">
-          Best Way to Design
+          Best way to design
         </h4>
-        <div className="blogDate">2000.02.21</div>
+        <div className="blogDate">August 15, 2018</div>
       </div>
     </div>
   );

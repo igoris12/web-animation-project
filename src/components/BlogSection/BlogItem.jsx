@@ -19,7 +19,7 @@ function BlogItem() {
         <h4 cl className="blogTitle sectionSecondaryHeader">
           Best Way to Design
         </h4>
-        <div className="blogDate sectionParagraph">2000.02.21</div>
+        <div className="blogDate">2000.02.21</div>
       </div>
     </div>
   );

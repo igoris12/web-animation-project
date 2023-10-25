@@ -6,10 +6,12 @@
   flex-direction: column;
   align-items: center;
   border: 1px solid gray;
+  position: relative;
   .img {
     width: 100%;
     height: 150px;
     background-color: green;
+
     img {
     }
   }
@@ -20,17 +22,28 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    transform: translateY(-30px);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -40px;
+    text-wrap:pretty;
     .secondaryTitle {
       text-transform: uppercase;
       font-size: 12px;
+      font-weight: bolder;
+      letter-spacing: 1px;
+      margin-top: 30px;
+      margin-bottom: 10px;
     }
 
     .blogTitle {
+      
     }
 
     .blogData {
+      color: red;
+      font-family: serif;
       font-style: italic;
+      font-size: 14px;
     }
   }
 }

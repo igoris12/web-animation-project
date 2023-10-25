@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import OptionsContext from "../../reducers/OptionsContext";
+import img from '../../images/BlogSection/design.png'
 
 function BlogItem() {
   const { optionsState } = useContext(OptionsContext);
@@ -7,7 +8,7 @@ function BlogItem() {
   return (
     <div className="blogItem col-12 col-sm-6 col-lg-4">
       <div className="img">
-        <img src="%" alt="#" />
+        <img src={img} alt="#" />
       </div>
       <div className="blogItemContent">
         <span

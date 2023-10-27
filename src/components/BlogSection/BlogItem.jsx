@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import OptionsContext from "../../reducers/OptionsContext";
 import img from '../../images/BlogSection/design.png'
 
-function BlogItem() {
+function BlogItem({title}) {
   const { optionsState } = useContext(OptionsContext);
   console.log(optionsState);
   return (
@@ -18,7 +18,7 @@ function BlogItem() {
           Web desing
         </span>
         <h4 cl className="blogTitle sectionSecondaryHeader">
-          Best way to design
+           {title}
         </h4>
         <div className="blogDate">August 15, 2018</div>
       </div>

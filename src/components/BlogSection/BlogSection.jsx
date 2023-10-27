@@ -9,11 +9,11 @@ function BlogSection() {
       <Header text="My Blogs." icon={<BiBookAlt />} />
       <div className="content container-fluid">
         <div className="row">
-          <BlogItem />
-          <BlogItem />
-          <BlogItem />
-          <BlogItem />
-          <BlogItem />
+          <BlogItem title={'Best way to designdddddddddddddddddddddddddddddddddddddddddds'}/>
+          <BlogItem title={'Things I Need to Get Started dddddddddddddddddd'}/>
+          <BlogItem title={'Best way to design'}/>
+          <BlogItem title={'Best way to desidgn'}/>
+          <BlogItem title={'Best way to design'}/>
 
         </div>
       </div>

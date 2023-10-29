@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import AboutMe from '../AboutMe/AboutMe';
-import Home from '../Home/Home';
-import Portfolio from '../Portfolio/Portfolio';
-import Resume from '../Resume/Resume';
-import BlogSection from '../BlogSection/BlogSection';
+import React, { useState } from "react";
+import AboutMe from "../AboutMe/AboutMe";
+import Home from "../Home/Home";
+import Portfolio from "../Portfolio/Portfolio";
+import Resume from "../Resume/Resume";
+import BlogSection from "../BlogSection/BlogSection";
 
 const Blog = () => {
   return (
@@ -12,8 +12,7 @@ const Blog = () => {
       {/* <AboutMe /> */}
       {/* <Resume /> */}
       {/* <Portfolio /> */}
-      
-      <BlogSection/>
+      <BlogSection />
     </section>
   );
 };

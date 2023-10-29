@@ -6,13 +6,13 @@ import BlogSectionData from "./data/BlogSectionData";
 import BlogShowcase from "./BlogShowcase";
 
 function BlogSection() {
-  const [showcseActive, setShowcseActive] = useState(true);
+  const [showcseActive, setShowcseActive] = useState(false);
+  const [showcseData, setShowcseData] = useState("");
+
   const showcseClose = () => {
-    setShowcseActive(false)
-  }
-  const showcseOpen = (id) => {
-    setShowcseActive(true)
-  }
+    setShowcseActive(false);
+  };
+
   return (
     <section className="blogSection">
       <Header text="My Blogs." icon={<BiBookAlt />} />
@@ -32,13 +32,20 @@ function BlogSection() {
                 subtitle={data.subtitle}
                 img={data.img}
                 date={data.date}
-                showcaseOpen={showcseOpen}
+                showcaseOpen={() => {
+                  setShowcseActive(true);
+                  setShowcseData(data)
+                }}
               />
             );
           })}
         </div>
       </div>
-      <BlogShowcase active={showcseActive} close={showcseClose} />
+      <BlogShowcase
+        active={showcseActive}
+        close={showcseClose}
+        data={showcseData}
+      />
     </section>
   );
 }

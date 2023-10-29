@@ -1,6 +1,7 @@
 import React from "react";
 
-function BlogShowcase({active, close}) {
+function BlogShowcase({active, close, data}) {
+    console.log(data);
   return (
     <div className={active === true ? 'blogShowcase active': 'blogShowcase hidden'}>
       <div className="content">

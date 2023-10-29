@@ -6,7 +6,10 @@ import BlogSectionData from "./data/BlogSectionData";
 import BlogShowcase from "./BlogShowcase";
 
 function BlogSection() {
-  const [showcseActive, setShowcseActive] = useState(false);
+  const [showcseActive, setShowcseActive] = useState(true);
+  const showcseClose = () => {
+    setShowcseActive(false)
+  }
   return (
     <section className="blogSection">
       <Header text="My Blogs." icon={<BiBookAlt />} />
@@ -31,7 +34,7 @@ function BlogSection() {
           })}
         </div>
       </div>
-      <BlogShowcase active={showcseActive} />
+      <BlogShowcase active={showcseActive} close={showcseClose} />
     </section>
   );
 }

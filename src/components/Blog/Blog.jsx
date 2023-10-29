@@ -3,7 +3,6 @@ import AboutMe from '../AboutMe/AboutMe';
 import Home from '../Home/Home';
 import Portfolio from '../Portfolio/Portfolio';
 import Resume from '../Resume/Resume';
-import BlogSection from '../BlogSection/BlogSection';
 
 const Blog = () => {
   return (

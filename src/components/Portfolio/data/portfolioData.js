@@ -11,14 +11,14 @@ let data = [
         client: 'My own project',
         description: '',
         images: [],
-        video: 'https://www.youtube.com/watch?v=k_okcNVZqqI&feature=emb_logo'
+        video: 'https://www.youtube.com/embed/CBSMTJuDxjg?si=iNUUdUXZqFJ4fNXe'
     },
     {
         title: 'Web proejct',
         tools: ['React', 'JavaScript', 'SASS'],
         img: 'webProject',
         link: 'https://igoris12.github.io/web-animation-project/',
-        id: 1,
+        id: 2,
         type: 'img',
         active: true,
         layout: '',
@@ -33,14 +33,14 @@ let data = [
         tools: ['JavaScript', 'CSS'],
         img: 'snakeGame',
         link: 'https://igoris12.github.io/Gallery/',
-        id: 2,
+        id: 1,
         type: 'video',
         active: true,
         layout: 'height--2',
         client: 'My own project',
         description: '',
         images: [],
-        video: 'https://www.youtube.com/watch?v=k_okcNVZqqI&feature=emb_logo'
+        video: 'https://www.youtube.com/embed/j5N51JI0W1s?si=hE-ozkBqztuH4Cvo'
 
     }
     ,

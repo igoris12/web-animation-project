@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../Base/Header";
 import { BiBookAlt } from "react-icons/bi";
 import BlogItem from "./BlogItem";
+import BlogSectionData from "./data/BlogSectionData";
 
 function BlogSection() {
   return (
@@ -9,12 +10,17 @@ function BlogSection() {
       <Header text="My Blogs." icon={<BiBookAlt />} />
       <div className="content container-fluid">
         <div className="row">
-          <BlogItem title={'Best way to designdddddddddddddddddddddddddddddddddddddddddds'}/>
-          <BlogItem title={'Things I Need to Get Started dddddddddddddddddd'}/>
-          <BlogItem title={'Best way to design'}/>
-          <BlogItem title={'Best way to desidgn'}/>
-          <BlogItem title={'Best way to design'}/>
-
+          {BlogSectionData.map((data) => {
+            return (
+              <BlogItem 
+                key={data.id}
+                title={data.title}
+                subtitle={data.subtitle}
+                img={data.img}
+                date={data.date}
+              />
+            );
+          })}
         </div>
       </div>
     </section>

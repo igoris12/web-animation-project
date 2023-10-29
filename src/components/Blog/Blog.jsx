@@ -10,7 +10,9 @@ const Blog = () => {
       {/* <Home /> */}
       {/* <AboutMe /> */}
       {/* <Resume /> */}
-      <Portfolio />
+      {/* <Portfolio /> */}
+      
+      <BlogSection/>
     </section>
   );
 };

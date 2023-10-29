@@ -10,6 +10,9 @@ function BlogSection() {
   const showcseClose = () => {
     setShowcseActive(false)
   }
+  const showcseOpen = (id) => {
+    setShowcseActive(true)
+  }
   return (
     <section className="blogSection">
       <Header text="My Blogs." icon={<BiBookAlt />} />
@@ -29,6 +32,7 @@ function BlogSection() {
                 subtitle={data.subtitle}
                 img={data.img}
                 date={data.date}
+                showcaseOpen={showcseOpen}
               />
             );
           })}

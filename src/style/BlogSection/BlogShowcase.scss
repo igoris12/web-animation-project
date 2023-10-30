@@ -1,5 +1,6 @@
 .blogShowcase {
   display: flex;
+  flex-direction: column;
   overflow: auto;
   position: absolute;
   top: 0;
@@ -8,21 +9,41 @@
   left: 100%;
   overflow: auto;
   z-index: 3;
-  background-color: gray;
+  background-color: $background-dark;
   opacity: 0;
-  transition: all 1s;
-  
-  .content {
-    width: 100%;
-    height: 130%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: gray;
-  }
+  transition: all 0.5s;
   &.active {
     display: flex;
     left: 0;
     opacity: 1;
+  }
+
+  .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
+  .imageContainer{
+    background-color: blue;
+    width: 100%;
+    height: 300px;
+
+    img {
+      object-fit: fill;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .content {
+    width: 100%;
+    height: 130%;
+    display: flex;
+    flex-direction: column; 
+    padding: 0 80px 0 80px;
+    .blogHeader {
+      background-color: orange;
+    }
+
   }
 }

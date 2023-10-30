@@ -25,7 +25,6 @@
     cursor: pointer;
   }
   .imageContainer{
-    background-color: blue;
     width: 100%;
     height: 300px;
 
@@ -42,8 +41,55 @@
     flex-direction: column; 
     padding: 0 80px 0 80px;
     .blogHeader {
-      background-color: orange;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: $background-dark;
+      padding: 40px 80px 40px 80px;
+      margin-top: -100px; //don't forget to drop of it after screen get smaller size
+      .subtitle {
+        text-transform: uppercase;
+        font-size:12px;
+        font-weight: bolder;
+        letter-spacing: 2px;
+      }
+      .title {
+        text-align: center;
+
+        font-size: 40px;
+      word-break: break-word;
+
+      }
+      .date {
+        font-size: 14px;
+        font-weight: 300;
+        font-family: serif;
+        letter-spacing:1px;
+      }
     }
 
   }
 }
+
+@media screen and (max-width: 1000px) {
+ .blogShowcase {
+  .content {
+    .blogHeader {
+      margin-top: 0;
+    }
+  }
+ }
+}
+
+@media screen and (max-width: 750px) {
+  .blogShowcase {
+    .content {
+      padding: 0 15px 0 15px;
+      .blogHeader {
+       padding: 40px 0 40px 0;
+       margin-top: 0;
+     }
+   }
+  }
+ }
+ 

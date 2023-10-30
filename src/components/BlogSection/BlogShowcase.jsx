@@ -15,11 +15,11 @@ function BlogShowcase({ active, close, data }) {
       <div className="imageContainer">
         <img src={wallImage} alt="blog wall paper" />
       </div>
-      <div className="content container-fluid">
+      <div className="content">
         <div className="blogHeader">
-          <spam className="subtitle">data</spam>
-          <h2 className="title">Hi Iam a blog header</h2>
-          <i className="date">July 23,2332</i>
+          <spam className="subtitle sectionParagraph">Fashion</spam>
+          <h2 className="title sectionSecondaryHeader">Welcome to my blog</h2>
+          <i className="date sectionParagraph">January 20, 2018</i>
         </div>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit enim
@@ -55,9 +55,7 @@ function BlogShowcase({ active, close, data }) {
           <div>2</div>
           <div>3</div>
         </div>
-        <div className="form">
-          some form 
-        </div>
+        <div className="form">some form</div>
       </div>
     </div>
   );

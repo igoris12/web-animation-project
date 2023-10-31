@@ -21,7 +21,13 @@ function BlogShowcase({ active, close, data }) {
           <h2 className="title sectionSecondaryHeader">Welcome to my blog</h2>
           <i className="date sectionParagraph">January 20, 2018</i>
         </div>
-        <p>
+        <p className="sectionParagraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit enim
+          qui, itaque ut beatae blanditiis nemo cupiditate cum praesentium,
+          labore, animi dolores! Quibusdam optio, non, rerum ipsam eaque rem
+          blanditiis a reprehenderit officiis, incidunt ipsa dolore corporis
+          pariatur facilis ut ullam itaque necessitatibus tempore repellendus at
+          enim accusamus! Maiores, tenetur.
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit enim
           qui, itaque ut beatae blanditiis nemo cupiditate cum praesentium,
           labore, animi dolores! Quibusdam optio, non, rerum ipsam eaque rem
@@ -29,7 +35,13 @@ function BlogShowcase({ active, close, data }) {
           pariatur facilis ut ullam itaque necessitatibus tempore repellendus at
           enim accusamus! Maiores, tenetur.
         </p>
-        <p>
+        <p  className="sectionParagraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit enim
+          qui, itaque ut beatae blanditiis nemo cupiditate cum praesentium,
+          labore, animi dolores! Quibusdam optio, non, rerum ipsam eaque rem
+          blanditiis a reprehenderit officiis, incidunt ipsa dolore corporis
+          pariatur facilis ut ullam itaque necessitatibus tempore repellendus at
+          enim accusamus! Maiores, tenetur.
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit enim
           qui, itaque ut beatae blanditiis nemo cupiditate cum praesentium,
           labore, animi dolores! Quibusdam optio, non, rerum ipsam eaque rem
@@ -37,12 +49,21 @@ function BlogShowcase({ active, close, data }) {
           pariatur facilis ut ullam itaque necessitatibus tempore repellendus at
           enim accusamus! Maiores, tenetur.
         </p>
-        <blockquote>
+        <blockquote  className="sectionParagraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+          necessitatibus cumque possimus ipsum dolores itaque explicabo
+          consequuntur, aliquam assumenda voluptatem!
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
           necessitatibus cumque possimus ipsum dolores itaque explicabo
           consequuntur, aliquam assumenda voluptatem!
         </blockquote>
-        <p>
+        <p  className="sectionParagraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit enim
+          qui, itaque ut beatae blanditiis nemo cupiditate cum praesentium,
+          labore, animi dolores! Quibusdam optio, non, rerum ipsam eaque rem
+          blanditiis a reprehenderit officiis, incidunt ipsa dolore corporis
+          pariatur facilis ut ullam itaque necessitatibus tempore repellendus at
+          enim accusamus! Maiores, tenetur.
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit enim
           qui, itaque ut beatae blanditiis nemo cupiditate cum praesentium,
           labore, animi dolores! Quibusdam optio, non, rerum ipsam eaque rem
@@ -50,13 +71,13 @@ function BlogShowcase({ active, close, data }) {
           pariatur facilis ut ullam itaque necessitatibus tempore repellendus at
           enim accusamus! Maiores, tenetur.
         </p>
+      </div>
         <div className="postComents">
           <div>1</div>
           <div>2</div>
           <div>3</div>
         </div>
         <div className="form">some form</div>
-      </div>
     </div>
   );
 }

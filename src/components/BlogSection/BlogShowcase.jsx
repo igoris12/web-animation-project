@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import wallImage from "../../images/BlogSection/blogPageShowcase.jpg";
 import OptionsContext from "../../reducers/OptionsContext";
+import BlogShowcaseCommentItem from "./BlogShowcaseCommentItem";
 
 function BlogShowcase({ active, close, data }) {
   console.log(data);
@@ -84,9 +85,9 @@ function BlogShowcase({ active, close, data }) {
         </p>
       </div>
       <div className="postComents">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
+        <BlogShowcaseCommentItem/>
+        <BlogShowcaseCommentItem/>
+        <BlogShowcaseCommentItem/>
       </div>
       <div className="form">some form</div>
     </div>

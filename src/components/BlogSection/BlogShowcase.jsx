@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import wallImage from "../../images/BlogSection/blogPageShowcase.jpg";
+import OptionsContext from "../../reducers/OptionsContext";
 
 function BlogShowcase({ active, close, data }) {
   console.log(data);
+  const { optionsState } = useContext(OptionsContext);
   return (
     <div
       className={
@@ -17,7 +19,12 @@ function BlogShowcase({ active, close, data }) {
       </div>
       <div className="content">
         <div className="blogHeader">
-          <spam className="subtitle sectionParagraph">Fashion</spam>
+          <spam
+            className="subtitle sectionParagraph"
+            style={{ color: optionsState.color }}
+          >
+            Fashion
+          </spam>
           <h2 className="title sectionSecondaryHeader">Welcome to my blog</h2>
           <i className="date sectionParagraph">January 20, 2018</i>
         </div>
@@ -27,57 +34,61 @@ function BlogShowcase({ active, close, data }) {
           labore, animi dolores! Quibusdam optio, non, rerum ipsam eaque rem
           blanditiis a reprehenderit officiis, incidunt ipsa dolore corporis
           pariatur facilis ut ullam itaque necessitatibus tempore repellendus at
-          enim accusamus! Maiores, tenetur.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit enim
-          qui, itaque ut beatae blanditiis nemo cupiditate cum praesentium,
-          labore, animi dolores! Quibusdam optio, non, rerum ipsam eaque rem
-          blanditiis a reprehenderit officiis, incidunt ipsa dolore corporis
-          pariatur facilis ut ullam itaque necessitatibus tempore repellendus at
-          enim accusamus! Maiores, tenetur.
+          enim accusamus! Maiores, tenetur. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Suscipit enim qui, itaque ut beatae
+          blanditiis nemo cupiditate cum praesentium, labore, animi dolores!
+          Quibusdam optio, non, rerum ipsam eaque rem blanditiis a reprehenderit
+          officiis, incidunt ipsa dolore corporis pariatur facilis ut ullam
+          itaque necessitatibus tempore repellendus at enim accusamus! Maiores,
+          tenetur.
         </p>
-        <p  className="sectionParagraph">
+        <p className="sectionParagraph">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit enim
           qui, itaque ut beatae blanditiis nemo cupiditate cum praesentium,
           labore, animi dolores! Quibusdam optio, non, rerum ipsam eaque rem
           blanditiis a reprehenderit officiis, incidunt ipsa dolore corporis
           pariatur facilis ut ullam itaque necessitatibus tempore repellendus at
-          enim accusamus! Maiores, tenetur.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit enim
-          qui, itaque ut beatae blanditiis nemo cupiditate cum praesentium,
-          labore, animi dolores! Quibusdam optio, non, rerum ipsam eaque rem
-          blanditiis a reprehenderit officiis, incidunt ipsa dolore corporis
-          pariatur facilis ut ullam itaque necessitatibus tempore repellendus at
-          enim accusamus! Maiores, tenetur.
+          enim accusamus! Maiores, tenetur. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Suscipit enim qui, itaque ut beatae
+          blanditiis nemo cupiditate cum praesentium, labore, animi dolores!
+          Quibusdam optio, non, rerum ipsam eaque rem blanditiis a reprehenderit
+          officiis, incidunt ipsa dolore corporis pariatur facilis ut ullam
+          itaque necessitatibus tempore repellendus at enim accusamus! Maiores,
+          tenetur.
         </p>
-        <blockquote  className="sectionParagraph">
+        <blockquote
+          className="sectionParagraph"
+          
+        > 
+        <span style={{ backgroundColor: optionsState.color }}></span>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
           necessitatibus cumque possimus ipsum dolores itaque explicabo
-          consequuntur, aliquam assumenda voluptatem!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
-          necessitatibus cumque possimus ipsum dolores itaque explicabo
-          consequuntur, aliquam assumenda voluptatem!
+          consequuntur, aliquam assumenda voluptatem! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Dolorem necessitatibus cumque possimus
+          ipsum dolores itaque explicabo consequuntur, aliquam assumenda
+          voluptatem!
         </blockquote>
-        <p  className="sectionParagraph">
+        <p className="sectionParagraph">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit enim
           qui, itaque ut beatae blanditiis nemo cupiditate cum praesentium,
           labore, animi dolores! Quibusdam optio, non, rerum ipsam eaque rem
           blanditiis a reprehenderit officiis, incidunt ipsa dolore corporis
           pariatur facilis ut ullam itaque necessitatibus tempore repellendus at
-          enim accusamus! Maiores, tenetur.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit enim
-          qui, itaque ut beatae blanditiis nemo cupiditate cum praesentium,
-          labore, animi dolores! Quibusdam optio, non, rerum ipsam eaque rem
-          blanditiis a reprehenderit officiis, incidunt ipsa dolore corporis
-          pariatur facilis ut ullam itaque necessitatibus tempore repellendus at
-          enim accusamus! Maiores, tenetur.
+          enim accusamus! Maiores, tenetur. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Suscipit enim qui, itaque ut beatae
+          blanditiis nemo cupiditate cum praesentium, labore, animi dolores!
+          Quibusdam optio, non, rerum ipsam eaque rem blanditiis a reprehenderit
+          officiis, incidunt ipsa dolore corporis pariatur facilis ut ullam
+          itaque necessitatibus tempore repellendus at enim accusamus! Maiores,
+          tenetur.
         </p>
       </div>
-        <div className="postComents">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-        </div>
-        <div className="form">some form</div>
+      <div className="postComents">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+      <div className="form">some form</div>
     </div>
   );
 }

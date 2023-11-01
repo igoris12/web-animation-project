@@ -82,8 +82,8 @@ function BlogShowcase({ active, close, data }) {
           tenetur.
         </p>
         <BlogShowcaseComments />
-      </div>
       <div className="form">some form</div>
+      </div>
     </div>
   );
 }

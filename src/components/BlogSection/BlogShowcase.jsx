@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import wallImage from "../../images/BlogSection/blogPageShowcase.jpg";
 import OptionsContext from "../../reducers/OptionsContext";
 import BlogShowcaseCommentItem from "./BlogShowcaseCommentItem";
+import BlogShowcaseComments from "./BlogShowcaseComments";
 
 function BlogShowcase({ active, close, data }) {
   console.log(data);
@@ -57,11 +58,8 @@ function BlogShowcase({ active, close, data }) {
           itaque necessitatibus tempore repellendus at enim accusamus! Maiores,
           tenetur.
         </p>
-        <blockquote
-          className="sectionParagraph"
-          
-        > 
-        <span style={{ backgroundColor: optionsState.color }}></span>
+        <blockquote className="sectionParagraph">
+          <span style={{ backgroundColor: optionsState.color }}></span>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
           necessitatibus cumque possimus ipsum dolores itaque explicabo
           consequuntur, aliquam assumenda voluptatem! Lorem ipsum dolor sit amet
@@ -83,13 +81,9 @@ function BlogShowcase({ active, close, data }) {
           itaque necessitatibus tempore repellendus at enim accusamus! Maiores,
           tenetur.
         </p>
-      </div>
-      <div className="postComents">
-        <BlogShowcaseCommentItem/>
-        <BlogShowcaseCommentItem/>
-        <BlogShowcaseCommentItem/>
-      </div>
+        <BlogShowcaseComments />
       <div className="form">some form</div>
+      </div>
     </div>
   );
 }

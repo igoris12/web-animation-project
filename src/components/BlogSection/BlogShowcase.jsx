@@ -5,7 +5,6 @@ import BlogShowcaseCommentItem from "./BlogShowcaseCommentItem";
 import BlogShowcaseComments from "./BlogShowcaseComments";
 
 function BlogShowcase({ active, close, data }) {
-  console.log(data);
   const { optionsState } = useContext(OptionsContext);
   return (
     <div
@@ -81,9 +80,9 @@ function BlogShowcase({ active, close, data }) {
           itaque necessitatibus tempore repellendus at enim accusamus! Maiores,
           tenetur.
         </p>
-        <BlogShowcaseComments />
-      <div className="form">some form</div>
       </div>
+      <BlogShowcaseComments />
+      <div className="form">some form</div>
     </div>
   );
 }

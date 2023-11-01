@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
 import wallImage from "../../images/BlogSection/blogPageShowcase.jpg";
 import OptionsContext from "../../reducers/OptionsContext";
-import BlogShowcaseCommentItem from "./BlogShowcaseCommentItem";
 import BlogShowcaseComments from "./BlogShowcaseComments";
+import BlogShowcaseForm from "./BlogShowcaseForm";
 
 function BlogShowcase({ active, close, data }) {
   const { optionsState } = useContext(OptionsContext);
@@ -82,7 +82,7 @@ function BlogShowcase({ active, close, data }) {
         </p>
       </div>
       <BlogShowcaseComments />
-      <div className="form">some form</div>
+      <BlogShowcaseForm/>
     </div>
   );
 }

@@ -2,8 +2,8 @@ import React from 'react'
 
 function Textarea({name, id , cols= 30, rows= 10 ,width='100%'}) {
   return (
-    <div className='textarea'>
-      <textarea name={name} id={id} cols={cols} rows={rows}   style={{ width: width }}></textarea>
+    <div className='textarea' style={{ width: width }}>
+      <textarea name={name} id={id} cols={cols} rows={rows}   ></textarea>
       <label>Your comment</label>
     </div>
   )

@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Button = ({ type = 'button', text, color }) => {
+const Button = ({ type = 'button', text, color, width= '100%'}) => {
   return (
     <button
-      style={{ color: color, borderColor: color }}
+      style={{ color: color, borderColor: color, width: width }}
       className="button"
       type={type}
     >

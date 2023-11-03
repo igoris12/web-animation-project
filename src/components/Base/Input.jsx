@@ -1,12 +1,12 @@
-import React from 'react'
+import React from "react";
 
-function Input({name}) {
+function Input({ name, type = "text", placeholder = "input", width = "100%" }) {
   return (
-    <div className='input'>
-      <input  type="text" placeholder='inout' name={name} />
-      <label htmlFor={name}>name</label>
+    <div className="input" style={{ width: width }}>
+      <input type={type} placeholder={placeholder} name={name} />
+      <label>{placeholder}</label>
     </div>
-  )
+  );
 }
 
-export default Input
+export default Input;

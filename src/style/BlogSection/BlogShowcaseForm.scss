@@ -14,6 +14,12 @@
       .info {
         display: flex;
         justify-content: space-between;
+        .input {
+          width: 45%;
+        }
+      }
+      .postButton {
+        width: 35%;
       }
     }
 }
@@ -28,6 +34,17 @@
   @media screen and (max-width: 750px) {
     .blogShowcaseForm {
       width: 100%;
-  
+      form {
+        
+        .info {
+          flex-direction: column;
+          .input {
+            width: 100%;
+          }
+        }
+        .postButton {
+          width: 35%;
+        }
+      }
     }
   }

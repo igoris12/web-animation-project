@@ -9,11 +9,19 @@ function BlogShowcaseForm() {
       <h4 className="sectionSecondaryHeader">Leave a reply</h4>
       <form>
         <div className="info">
-        <Input name="name" placeholder="Name" width="45%" />
-        <Input name="email" placeholder="Email" width="45%" />
+          <div className="input">
+            <Input name="name" placeholder="Name" />
+          </div>
+          <div className="input">
+            <Input name="email" placeholder="Email" />
+          </div>
         </div>
-        <Textarea />
-        <Button text="Post comment" width="30%" />
+        <div className="commentarea">
+        <Textarea placeholder='Your Comment' />
+        </div>
+        <div className="postButton">
+          <Button text="Post comment"  />
+        </div>
       </form>
     </div>
   );

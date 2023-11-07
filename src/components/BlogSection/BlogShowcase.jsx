@@ -3,6 +3,7 @@ import wallImage from "../../images/BlogSection/blogPageShowcase.jpg";
 import OptionsContext from "../../reducers/OptionsContext";
 import BlogShowcaseComments from "./BlogShowcaseComments";
 import BlogShowcaseForm from "./BlogShowcaseForm";
+import { RiCloseCircleFill } from 'react-icons/ri';
 
 function BlogShowcase({ active, close, data }) {
   const { optionsState } = useContext(OptionsContext);
@@ -13,7 +14,7 @@ function BlogShowcase({ active, close, data }) {
       }
     >
       <span className="close" onClick={close}>
-        X
+        <RiCloseCircleFill/>
       </span>
       <div className="imageContainer">
         <img src={wallImage} alt="blog wall paper" />

@@ -6,7 +6,7 @@
   right: 0;
   bottom: 0;
   left: 100%;
-  overflow: auto;
+  overflow-x: hidden;
   z-index: 3;
   background-color: $background-dark;
   opacity: 0;
@@ -15,6 +15,25 @@
     display: flex;
     left: 0;
     opacity: 1;
+    .content {
+      .blogHeader {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      p,
+      blockquote {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    .postComments {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .blogShowcaseForm {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 
   .close {
@@ -43,6 +62,7 @@
     display: flex;
     flex-direction: column;
     padding: 0 150px 50px 150px;
+    transition: 0.5s all;
     .blogHeader {
       display: flex;
       flex-direction: column;
@@ -50,6 +70,10 @@
       background-color: $background-dark;
       padding: 40px 80px 40px 80px;
       margin-top: -100px; //don't forget to drop of it after screen get smaller size
+      transition: inherit;
+      transition-delay: 0.3s;
+      opacity: 0;
+      transform: translateX(500px);
       .subtitle {
         text-transform: uppercase;
         font-size: 12px;
@@ -75,6 +99,10 @@
       margin-bottom: 15px;
       line-height: 1.5;
       color: $color-light;
+      transition: inherit;
+      transition-delay: 0.4s;
+      opacity: 0;
+      transform: translateX(500px);
     }
     blockquote {
       display: flex;
@@ -97,7 +125,7 @@
 @media screen and (max-width: 1000px) {
   .blogShowcase {
     .content {
-     padding: 0 80px 50px 80px;
+      padding: 0 80px 50px 80px;
 
       .blogHeader {
         margin-top: 0;
@@ -105,9 +133,6 @@
     }
   }
 }
-
-
-
 
 @media screen and (max-width: 750px) {
   .blogShowcase {

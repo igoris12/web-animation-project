@@ -8,6 +8,10 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+  transition: inherit;
+  transition-delay: 0.6s;
+  opacity: 0;
+  transform: translateX(500px);
   form {
     display: flex;
     flex-direction: column;
@@ -48,7 +52,6 @@
 @media screen and (max-width: 1000px) {
   .blogShowcaseForm {
     width: calc(100% - 120px);
-    
   }
 }
 
@@ -70,9 +73,7 @@
 }
 @media screen and (max-width: 400px) {
   .blogShowcaseForm {
-   
     form {
-   
       .postButton {
         width: 100%;
       }

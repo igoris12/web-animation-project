@@ -7,6 +7,10 @@
   width: calc(100% - 450px);
   margin-left: auto;
   margin-right: auto;
+  transition: inherit;
+  transition-delay: 0.5s;
+  opacity: 0;
+  transform: translateX(500px);
 }
 
 @media screen and (max-width: 1150px) {
@@ -20,10 +24,8 @@
   }
 }
 
-
 @media screen and (max-width: 750px) {
   .postComments {
     width: 100%;
-
   }
 }

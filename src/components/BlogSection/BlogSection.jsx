@@ -4,6 +4,7 @@ import { BiBookAlt } from "react-icons/bi";
 import BlogItem from "./BlogItem";
 import BlogSectionData from "./data/BlogSectionData";
 import BlogShowcase from "./BlogShowcase";
+import LoadingPage from "../LoadingPage/LoadingPage";
 
 function BlogSection() {
   const [showcseActive, setShowcseActive] = useState(false);
@@ -34,12 +35,15 @@ function BlogSection() {
                 date={data.date}
                 showcaseOpen={() => {
                   setShowcseActive(true);
-                  setShowcseData(data)
+                  setShowcseData(data);
                 }}
               />
             );
           })}
         </div>
+      </div>
+      <div className={showcseActive === true ? "loader active" : "loader "}>
+        <LoadingPage def={false} />
       </div>
       <BlogShowcase
         active={showcseActive}

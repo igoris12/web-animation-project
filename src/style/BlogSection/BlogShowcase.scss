@@ -7,7 +7,7 @@
   bottom: 0;
   left: 100%;
   overflow-x: hidden;
-  z-index: 3;
+  z-index: 11;
   background-color: $background-dark;
   opacity: 0;
   transition: all 0.5s;
@@ -19,6 +19,7 @@
     color: white;
     font-size: 40px;
     transition: 0.4s;
+    z-index: 11;
     &:hover {
       color: gray;
     }

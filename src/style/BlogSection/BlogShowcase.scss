@@ -11,31 +11,6 @@
   background-color: $background-dark;
   opacity: 0;
   transition: all 0.5s;
-  &.active {
-    display: flex;
-    left: 0;
-    opacity: 1;
-    .content {
-      .blogHeader {
-        opacity: 1;
-        transform: translateX(0);
-      }
-      p,
-      blockquote {
-        opacity: 1;
-        transform: translateX(0);
-      }
-    }
-    .postComments {
-      opacity: 1;
-      transform: translateX(0);
-    }
-    .blogShowcaseForm {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-
   .close {
     position: absolute;
     right: 50%;
@@ -62,7 +37,7 @@
     display: flex;
     flex-direction: column;
     padding: 0 150px 50px 150px;
-    transition: 0.5s all;
+
     .blogHeader {
       display: flex;
       flex-direction: column;
@@ -72,7 +47,7 @@
       margin-top: -100px; //don't forget to drop of it after screen get smaller size
       transition: inherit;
       transition-delay: 0.3s;
-      opacity: 0;
+      // opacity: 0;
       transform: translateX(500px);
       .subtitle {
         text-transform: uppercase;
@@ -118,6 +93,31 @@
         height: 100%;
         margin-right: 10px;
       }
+    }
+  }
+  &.active {
+    display: flex;
+    left: 0;
+    opacity: 1;
+    .content {
+      transition: 0.5s all;
+      .blogHeader {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      p,
+      blockquote {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+    .postComments {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .blogShowcaseForm {
+      opacity: 1;
+      transform: translateX(0);
     }
   }
 }

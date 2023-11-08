@@ -10,7 +10,9 @@ function BlogSection() {
   const [showcseData, setShowcseData] = useState("");
 
   const showcseClose = () => {
-    setShowcseActive(false);
+    // setShowcseActive(false);
+    setShowcseActive(!showcseActive);
+
   };
 
   return (

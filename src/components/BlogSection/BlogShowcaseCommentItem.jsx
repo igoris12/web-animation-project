@@ -1,11 +1,10 @@
 import React from "react";
-import author from '../../images/AboutMe/Testimonials/author-1.jpg';
 
-function BlogShowcaseCommentItem() {
+function BlogShowcaseCommentItem({image}) {
   return (
     <div className="blogShowcaseCommentItem">
       <div className="commentItemImageContainer">
-        <img src={author} alt="Person foto" />
+        <img src={image} alt="Person foto" />
       </div>
       <div className="commentContent">
         <div className="name sectionSecondaryHeader">Jane Doe</div>

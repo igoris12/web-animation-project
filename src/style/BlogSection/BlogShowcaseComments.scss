@@ -1,0 +1,31 @@
+.postComments {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 0 30px;
+  margin-top: 50px;
+  width: calc(100% - 450px);
+  margin-left: auto;
+  margin-right: auto;
+  transition: inherit;
+  transition-delay: 0.5s;
+  opacity: 0;
+  transform: translateX(500px);
+}
+
+@media screen and (max-width: 1150px) {
+  .postComments {
+    width: calc(100% - 250px);
+  }
+}
+@media screen and (max-width: 1000px) {
+  .postComments {
+    width: calc(100% - 120px);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .postComments {
+    width: 100%;
+  }
+}

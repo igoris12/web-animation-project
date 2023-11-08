@@ -1,0 +1,71 @@
+.input,
+.textarea {
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 20px;
+  input,
+  textarea {
+    font-family: $secondaryFont;
+    width: 100%;
+    border: 2px solid #999;
+    outline: 0;
+    padding: 5px 10px;
+    background: transparent;
+    transition: border-color all 0.2s;
+    color: white;
+    resize: none;
+
+    &::placeholder {
+      color: transparent;
+    }
+    &:focus {
+      ~ label {
+        top: -20px;
+        left: 0;
+        font-size: 16px;
+        color: white;
+      }
+      border-color: white;
+  }
+  }
+  label {
+    font-family: $secondaryFont;
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    color: #999;
+    font-size: 18px;
+    display: block;
+    transition: 0.2s;
+    text-transform: capitalize;
+    outline: none;
+    z-index: -1;
+  }
+  &.focus {
+    input,
+    textarea {
+      font-family: $secondaryFont;
+      width: 100%;
+      border: 2px solid #999;
+      outline: 0;
+      padding: 5px 10px;
+      background: transparent;
+      transition: border-color all 0.2s;
+      color: white;
+      resize: none;
+      &::placeholder {
+        color: transparent;
+      }
+    }
+    label {
+      top: -20px;
+      left: 0;
+      font-size: 16px;
+      color: white;
+    }
+    input {
+      border-color: white;
+    }
+  }
+}

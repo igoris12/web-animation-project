@@ -4,6 +4,7 @@ import Home from "../Home/Home";
 import Portfolio from "../Portfolio/Portfolio";
 import Resume from "../Resume/Resume";
 import BlogSection from "../BlogSection/BlogSection";
+import Contact from "../Contact/Contact";
 
 const Blog = () => {
   return (
@@ -12,7 +13,8 @@ const Blog = () => {
       {/* <AboutMe /> */}
       {/* <Resume /> */}
       {/* <Portfolio /> */}
-      <BlogSection />
+      {/* <BlogSection /> */}
+      <Contact/>
     </section>
   );
 };

@@ -4,7 +4,7 @@ function ConctactInfoItem({icno, text}) {
   return (
     <div className='contactInfoItem'>
     <span className='icon'>{icno}</span>
-     <p>{text}</p>
+     <p className='sectionSecondaryHeader'>{text}</p>
     </div>
   )
 }

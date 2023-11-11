@@ -1,9 +1,10 @@
 import React from 'react'
 
-function ConctactInfoItem() {
+function ConctactInfoItem({icno, text}) {
   return (
     <div className='contactInfoItem'>
-      item
+    <span className='icon'>{icno}</span>
+     <p>{text}</p>
     </div>
   )
 }

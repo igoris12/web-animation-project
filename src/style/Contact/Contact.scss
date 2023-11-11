@@ -4,4 +4,16 @@
     left: 0;
     right: 0;
     bottom: 0;
+    padding: 0 60px 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+@media screen and (max-width: 600px) {
+    .contact {
+        padding: 0 15px 0 15px;
+
+    }
+  }
+  

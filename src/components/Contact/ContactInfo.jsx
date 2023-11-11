@@ -8,7 +8,7 @@ import {  AiFillPhone} from 'react-icons/ai';
 function ContactInfo() {
   return (
     <section className='contactInfo'>
-      <ConctactInfoItem text={'igoris.x@inbox.lt'} icno={<IoIosSend/>}/>
+      <ConctactInfoItem text={'igoris.x@inbox.lt'} icno={<IoIosSend/>} type='email'/>
       <ConctactInfoItem text={'Lithuania Zaraai'} icno={<ImLocation/>}/>
       <ConctactInfoItem text={'(+1) 123 456 7890'}  icno={<AiFillPhone/>}/>
     </section>

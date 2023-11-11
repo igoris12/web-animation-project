@@ -9,17 +9,18 @@ function ContactFrom() {
     <div className="contactFrom">
       <SectionHeader text={"Let's talk"} />
       <form>
-       
+        <div className="info">
         <div className="input">
-        <Input  name="name" placeholder="Name"/>
+          <Input name="name" placeholder="Name" />
         </div>
         <div className="input">
-        <Input  name="email" placeholder="Email"/>
+          <Input name="email" placeholder="Email" />
+        </div>
         </div>
         <div className="commentarea">
-        <Textarea placeholder='How can we help you?' />
+          <Textarea placeholder="How can we help you?" />
         </div>
-       <Button text={'Send massage'} width="200px" />
+        <Button text={"Send massage"} width="200px" />
       </form>
     </div>
   );

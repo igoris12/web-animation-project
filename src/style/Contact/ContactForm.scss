@@ -4,4 +4,21 @@
    flex-direction: column;
    width: 100%;
    gap: 30px;
+   form {
+    width: 70%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    .info {
+        display: flex;
+        justify-content: space-between;
+        .input {
+            width:45%;
+        }
+    }
+    button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+   }
 }

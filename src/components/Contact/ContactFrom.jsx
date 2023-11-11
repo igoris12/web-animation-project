@@ -1,9 +1,10 @@
 import React from 'react'
+import SectionHeader from '../Base/SectionHeader'
 
 function ContactFrom() {
   return (
     <div className='contactFrom'>
-      <h2 className="sectionSecondaryHeader ">Let's talk</h2>
+      <SectionHeader text={"Let's talk"}/>
         <form>
           <input type="text" />
           <input type="text" />

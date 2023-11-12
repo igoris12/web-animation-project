@@ -3,9 +3,8 @@ import SectionHeader from '../Base/SectionHeader';
 import TestimonialsItem from './TestimonialsItem';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper';
-import 'swiper/swiper-bundle.min.css'
-import 'swiper/swiper.min.css'
-
+import 'swiper/css';
+import 'swiper/css/bundle';
 import image1 from '../../images/AboutMe/Testimonials/author-1.jpg';
 import image2 from '../../images/AboutMe/Testimonials/author-2.jpg';
 import image3 from '../../images/AboutMe/Testimonials/author-3.jpg';

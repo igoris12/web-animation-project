@@ -8,19 +8,17 @@ import {
   BsLayoutTextWindowReverse,
   BsLinkedin,
   BsGithub,
+
 } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import avatar from "../../images/navigation/avatar.png";
 import OptionsContext from "../../reducers/OptionsContext";
 import { Link } from "react-router-dom";
 
+
 const HeaderContent = ({ active, activeHandler }) => {
   const [activeLink, setActiveLink] = useState(0);
   const { optionsDispatch, optionsState } = useContext(OptionsContext);
-
-  // const activeNav = (link) => {
-  //   setActiveLink(link);
-  // };
   return (
     <header className="header">
       <h2>Igoris Ivanovas</h2>
@@ -34,6 +32,7 @@ const HeaderContent = ({ active, activeHandler }) => {
           <p>Igoris Ivanovas</p>
         </div>
         <nav className="butList">
+
           <Link
             to="/web-animation-project/"
             className={
@@ -94,7 +93,7 @@ const HeaderContent = ({ active, activeHandler }) => {
           >
             <AiOutlineMail />
             <p>Contact</p>
-          </Link>
+          </a>
         </nav>
         <ul className="socialsList">
           <div className="links">

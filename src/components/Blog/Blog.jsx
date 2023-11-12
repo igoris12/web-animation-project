@@ -10,11 +10,11 @@ const Blog = () => {
   return (
     <section className="blog-page ">
       {/* <Home /> */}
-      {/* <AboutMe /> */}
+      <AboutMe />
       {/* <Resume /> */}
       {/* <Portfolio /> */}
       {/* <BlogSection /> */}
-      <Contact/>
+      {/* <Contact/> */}
     </section>
   );
 };

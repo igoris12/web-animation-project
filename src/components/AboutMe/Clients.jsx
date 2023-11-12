@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import SectionHeader from '../Base/SectionHeader';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper';
-import 'swiper/css';
-import 'swiper/css/bundle';
+import 'swiper/swiper-bundle.min.css'
+import 'swiper/swiper.min.css'
 import client1 from '../../images/AboutMe/Clients/client-01.png';
 import client2 from '../../images/AboutMe/Clients/client-02.png';
 import client3 from '../../images/AboutMe/Clients/client-03.png';

@@ -14,8 +14,6 @@ const Portfolio = () => {
       <Header text="Portfolio." icon={<BsBriefcase />} />
       <PortfolioFilter />
       <Gallery  disableScrollHandler={disableScrollHandler}/>
-     
-
     </section>
   );
 };

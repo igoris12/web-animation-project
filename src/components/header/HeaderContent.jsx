@@ -1,5 +1,5 @@
-import React, { useContext, useState } from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
+import React, { useContext } from 'react';
+import { GiHamburgerMenu } from 'react-icons/gi';
 import {
   BsHouse,
   BsPerson,
@@ -8,92 +8,52 @@ import {
   BsLayoutTextWindowReverse,
   BsLinkedin,
   BsGithub,
-
-} from "react-icons/bs";
-import { AiOutlineMail } from "react-icons/ai";
-import avatar from "../../images/navigation/avatar.png";
-import OptionsContext from "../../reducers/OptionsContext";
-import { Link } from "react-router-dom";
-
+} from 'react-icons/bs';
+import { AiOutlineMail } from 'react-icons/ai';
+import avatar from '../../images/navigation/avatar.png';
+import OptionsContext from '../../reducers/OptionsContext';
+import { Link } from 'react-router-dom';
 
 const HeaderContent = ({ active, activeHandler }) => {
-  const [activeLink, setActiveLink] = useState(0);
   const { optionsDispatch, optionsState } = useContext(OptionsContext);
+
   return (
     <header className="header">
       <h2>Igoris Ivanovas</h2>
       <div className="hamburger" onClick={activeHandler}>
         <GiHamburgerMenu />
       </div>
-      <div className={active ? "navigation active" : "navigation"}>
+      <div className={active ? 'navigation active' : 'navigation'}>
         <div className="image">
           <img src={avatar} alt="My foto" />
           <span style={{ backgroundColor: optionsState.color }}></span>
           <p>Igoris Ivanovas</p>
         </div>
         <nav className="butList">
-
-          <Link
-            to="/web-animation-project/"
-            className={
-              activeLink === 0 ? "butList-item active" : "butList-item"
-              
-            }
-            onClick={ ()=> setActiveLink(0)}
-          >
+          <Link to="/web-animation-project/" className="butList-item active">
             <BsHouse />
             <p>Home</p>
           </Link>
-          <Link
-            to="/web-animation-project/aboutMe"
-            className={
-              activeLink === 1 ? "butList-item active" : "butList-item"
-            }
-            onClick={ ()=> setActiveLink(1)}
-          >
+          <Link to="/web-animation-project/aboutMe" className="butList-item">
             <BsPerson />
             <p>About me</p>
           </Link>
-          <Link
-            to="/web-animation-project/resume"
-            className={
-              activeLink === 2 ? "butList-item active" : "butList-item"
-            }
-            onClick={ ()=> setActiveLink(2)}
-          >
+          <Link to="/web-animation-project/resume" className="butList-item">
             <BsNewspaper />
             <p>Resume</p>
           </Link>
-          <Link
-            to="/web-animation-project/portfolio"
-            className={
-              activeLink === 3 ? "butList-item active" : "butList-item"
-            }
-            onClick={ ()=> setActiveLink(3)}
-          >
+          <Link to="/web-animation-project/portfolio" className="butList-item">
             <BsBriefcase />
             <p>Portfolio</p>
           </Link>
-          <Link
-            to="/web-animation-project/blogSection"
-            className={
-              activeLink === 4 ? "butList-item active" : "butList-item"
-            }
-            onClick={ ()=> setActiveLink(4)}
-          >
+          <Link to="/web-animation-project/blogSection" className="butList-item">
             <BsLayoutTextWindowReverse />
             <p>Blog</p>
           </Link>
-          <Link
-            to="/web-animation-project/contact"
-            className={
-              activeLink === 5 ? "butList-item active" : "butList-item"
-            }
-            onClick={ ()=> setActiveLink(5)}
-          >
+          <Link to="/web-animation-project/contact" className="butList-item">
             <AiOutlineMail />
             <p>Contact</p>
-          </a>
+          </Link>
         </nav>
         <ul className="socialsList">
           <div className="links">

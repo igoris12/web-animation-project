@@ -12,6 +12,7 @@ import {
 import { AiOutlineMail } from 'react-icons/ai';
 import avatar from '../../images/navigation/avatar.png';
 import OptionsContext from '../../reducers/OptionsContext';
+import { Link } from 'react-router-dom';
 
 const HeaderContent = ({ active, activeHandler }) => {
   const { optionsDispatch, optionsState } = useContext(OptionsContext);
@@ -29,30 +30,30 @@ const HeaderContent = ({ active, activeHandler }) => {
           <p>Igoris Ivanovas</p>
         </div>
         <nav className="butList">
-          <a href="#" className="butList-item active">
+          <Link to="/web-animation-project/" className="butList-item active">
             <BsHouse />
             <p>Home</p>
-          </a>
-          <a href="#" className="butList-item">
+          </Link>
+          <Link to="/web-animation-project/aboutMe" className="butList-item">
             <BsPerson />
             <p>About me</p>
-          </a>
-          <a href="#" className="butList-item">
+          </Link>
+          <Link to="/web-animation-project/resume" className="butList-item">
             <BsNewspaper />
             <p>Resume</p>
-          </a>
-          <a href="#" className="butList-item">
+          </Link>
+          <Link to="/web-animation-project/portfolio" className="butList-item">
             <BsBriefcase />
             <p>Portfolio</p>
-          </a>
-          <a href="#" className="butList-item">
+          </Link>
+          <Link to="/web-animation-project/blogSection" className="butList-item">
             <BsLayoutTextWindowReverse />
             <p>Blog</p>
-          </a>
-          <a href="#" className="butList-item">
+          </Link>
+          <Link to="/web-animation-project/contact" className="butList-item">
             <AiOutlineMail />
             <p>Contact</p>
-          </a>
+          </Link>
         </nav>
         <ul className="socialsList">
           <div className="links">

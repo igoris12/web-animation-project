@@ -43,10 +43,10 @@ function GalleryItem({ project, openDetails }) {
     data.type === 'video' ? functionsList.openVideoShowcase() : data.type === 'img' ?
      functionsList.openShowcase() : functionsList.openPopup(data) 
   }
-
+ console.log(project);
   return (
     <li
-    className={'galleryItem '  + tools + project.layout }
+    className={'galleryItem grid-item '  + tools + project.layout }
     onClick={()=> clickHandler(openDetails, project)}
     
     >

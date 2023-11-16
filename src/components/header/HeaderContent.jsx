@@ -65,7 +65,10 @@ const HeaderContent = ({ active, activeHandler }) => {
             className={
               activeLink === 3 ? "butList-item active" : "butList-item"
             }
-            onClick={() => setActiveLink(3)}
+            onClick={() => {
+              setActiveLink(3);
+              window.reload();
+            }}
           >
             <BsBriefcase />
             <p>Portfolio</p>

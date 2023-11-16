@@ -1,15 +1,22 @@
-import React, { useContext } from 'react';
-import { Typewriter } from 'react-simple-typewriter';
-import Particles from 'react-tsparticles';
-import { loadFull } from 'tsparticles';
-import OptionsContext from '../../reducers/OptionsContext';
+import React, { useContext } from "react";
+import { useTypewriter } from "react-simple-typewriter";
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
+import OptionsContext from "../../reducers/OptionsContext";
 const Home = () => {
-  const { optionsDispatch, optionsState } = useContext(OptionsContext);
+  const { optionsState } = useContext(OptionsContext);
   const particlesInit = async (main) => {
     await loadFull(main);
   };
-
+  const { text } = useTypewriter({
+    words: ["Freelancer", "Web Developer", "Frontend Developer"],
+    loop: true,
+    typeSpeed: 30,
+    deleteSpeed: 30,
+    delaySpeed: 3000,
+  });
   const particlesLoaded = (container) => {};
+
   return (
     <section className="homeSection">
       <div className="homepageContent">
@@ -24,12 +31,12 @@ const Home = () => {
             },
             fpsLimit: 60,
             interactivity: {
-              detectsOn: 'canvas',
+              detectsOn: "canvas",
               events: {
-                onClick: { enable: true, mode: 'push' },
+                onClick: { enable: true, mode: "push" },
                 onHover: {
                   enable: false,
-                  mode: 'trail',
+                  mode: "trail",
                   parallax: { enable: false, force: 2, smooth: 10 },
                 },
                 resize: true,
@@ -49,18 +56,18 @@ const Home = () => {
               },
             },
             particles: {
-              color: { value: '#fff' },
+              color: { value: "#fff" },
               links: {
-                color: '#ffffff',
+                color: "#ffffff",
                 distance: 500,
                 enable: false,
                 opacity: 0.4,
                 width: 2,
               },
               move: {
-                direction: 'top',
+                direction: "top",
                 enable: true,
-                outMode: 'out',
+                outMode: "out",
                 random: true,
                 size: true,
                 speed: 3,
@@ -72,7 +79,7 @@ const Home = () => {
                 value: 0.5,
               },
               shape: {
-                type: 'circle',
+                type: "circle",
               },
               size: {
                 random: true,
@@ -93,13 +100,10 @@ const Home = () => {
               className="dynamicText"
               style={{ borderBottomColor: optionsState.color }}
             >
-              <Typewriter
-                words={['Freelancer', 'Web Developer', 'Frontend Developer']}
-                loop
-                typeSpeed={30}
-                deleteSpeed={20}
-                delaySpeed={2000}
-              />
+              <span>
+
+              {text}
+              </span>
             </span>
           </div>
         </div>

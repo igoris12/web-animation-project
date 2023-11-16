@@ -43,7 +43,6 @@ function GalleryItem({ project, openDetails }) {
     data.type === 'video' ? functionsList.openVideoShowcase() : data.type === 'img' ?
      functionsList.openShowcase() : functionsList.openPopup(data) 
   }
- console.log(project);
   return (
     <li
     className={'galleryItem grid-item '  + tools + project.layout }

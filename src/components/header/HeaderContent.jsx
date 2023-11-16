@@ -67,7 +67,7 @@ const HeaderContent = ({ active, activeHandler }) => {
             }
             onClick={() => {
               setActiveLink(3);
-              window.reload();
+              // window.reload();
             }}
           >
             <BsBriefcase />

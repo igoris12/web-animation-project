@@ -1,22 +1,24 @@
-import React, { useContext } from "react";
+import React, { useContext, useMemo } from "react";
 import { useTypewriter } from "react-simple-typewriter";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import OptionsContext from "../../reducers/OptionsContext";
+import DynamicText from "./DynamicText";
 const Home = () => {
   const { optionsState } = useContext(OptionsContext);
+  // const particlesInit = useMemo(
+  //   () => async (main) => {
+  //     await loadFull(main);
+  //   },
+  //   []
+  // );
   const particlesInit = async (main) => {
     await loadFull(main);
   };
-  const { text } = useTypewriter({
-    words: ["Freelancer", "Web Developer", "Frontend Developer"],
-    loop: true,
-    typeSpeed: 30,
-    deleteSpeed: 30,
-    delaySpeed: 3000,
-  });
-  const particlesLoaded = (container) => {};
 
+
+  const particlesLoaded = (container) => {};
+  console.log('a');
   return (
     <section className="homeSection">
       <div className="homepageContent">
@@ -100,10 +102,7 @@ const Home = () => {
               className="dynamicText"
               style={{ borderBottomColor: optionsState.color }}
             >
-              <span>
-
-              {text}
-              </span>
+              <span><DynamicText/></span>
             </span>
           </div>
         </div>

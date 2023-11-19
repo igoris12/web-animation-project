@@ -13,6 +13,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
+
 const Clients = () => {
   const [perView, setPerView] = useState(2);
   useEffect(() => {
@@ -44,8 +45,7 @@ console.log('b');
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
-        }}
-
+        }}      
         spaceBetween={0}
         slidesPerView={perView}
         loop={true}

@@ -34,7 +34,7 @@ const Showcase = ({ options, showcaseClose }) => {
   return (
     <section onClick={clickHendeler} className={"showcase " + options.class}>
       <Swiper
-        loop="true"
+        loop={true}
         modules={[Navigation, Pagination]}
         slidesPerView={1}
         centeredSlides="true"

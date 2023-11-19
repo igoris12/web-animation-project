@@ -1,17 +1,11 @@
-import React, { useContext, useMemo } from "react";
-import { useTypewriter } from "react-simple-typewriter";
+import React, { useContext} from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import OptionsContext from "../../reducers/OptionsContext";
 import DynamicText from "./DynamicText";
 const Home = () => {
   const { optionsState } = useContext(OptionsContext);
-  // const particlesInit = useMemo(
-  //   () => async (main) => {
-  //     await loadFull(main);
-  //   },
-  //   []
-  // );
+
   const particlesInit = async (main) => {
     await loadFull(main);
   };

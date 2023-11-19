@@ -5,7 +5,7 @@ import BlogShowcaseComments from "./BlogShowcaseComments";
 import BlogShowcaseForm from "./BlogShowcaseForm";
 import { RiCloseCircleFill } from 'react-icons/ri';
 
-function BlogShowcase({ active, close, data }) {
+function BlogShowcase({ active, close }) {
   const { optionsState } = useContext(OptionsContext);
   return (
     <div
@@ -21,12 +21,12 @@ function BlogShowcase({ active, close, data }) {
       </div>
       <div className="content">
         <div className="blogHeader">
-          <spam
+          <span
             className="subtitle sectionParagraph"
             style={{ color: optionsState.color }}
           >
             Fashion
-          </spam>
+          </span>
           <h2 className="title sectionSecondaryHeader">Welcome to my blog</h2>
           <i className="date sectionParagraph">January 20, 2018</i>
         </div>
@@ -82,6 +82,7 @@ function BlogShowcase({ active, close, data }) {
           tenetur.
         </p>
       </div>
+  
       <BlogShowcaseComments />
       <BlogShowcaseForm/>
     </div>

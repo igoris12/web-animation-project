@@ -1,51 +1,51 @@
-import React, { useEffect, useState } from 'react';
-import SectionHeader from '../Base/SectionHeader';
-// import { Swiper, SwiperSlide } from 'swiper/react';
-// import { Autoplay } from 'swiper';
-// import 'swiper/swiper-bundle.min.css';
-// import 'swiper/swiper.min.css';
-// import 'swiper/swiper.scss';
-import client1 from '../../images/AboutMe/Clients/client-01.png';
-import client2 from '../../images/AboutMe/Clients/client-02.png';
-import client3 from '../../images/AboutMe/Clients/client-03.png';
-import client4 from '../../images/AboutMe/Clients/client-04.png';
-import client5 from '../../images/AboutMe/Clients/client-05.png';
-import client6 from '../../images/AboutMe/Clients/client-06.png';
-import client7 from '../../images/AboutMe/Clients/client-07.png';
-import client8 from '../../images/AboutMe/Clients/client-08.png';
-import client9 from '../../images/AboutMe/Clients/client-09.png';
-
+import React, { useEffect, useState } from "react";
+import SectionHeader from "../Base/SectionHeader";
+import client1 from "../../images/AboutMe/Clients/client-01.png";
+import client2 from "../../images/AboutMe/Clients/client-02.png";
+import client3 from "../../images/AboutMe/Clients/client-03.png";
+import client4 from "../../images/AboutMe/Clients/client-04.png";
+import client5 from "../../images/AboutMe/Clients/client-05.png";
+import client6 from "../../images/AboutMe/Clients/client-06.png";
+import client7 from "../../images/AboutMe/Clients/client-07.png";
+import client8 from "../../images/AboutMe/Clients/client-08.png";
+import client9 from "../../images/AboutMe/Clients/client-09.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/autoplay";
 const Clients = () => {
-  // const [perView, setPerView] = useState(2);
-  // useEffect(() => {
-  //   window.addEventListener('resize', (e) => {
-  //     if (e.target.innerWidth < 500) setPerView(2);
+  const [perView, setPerView] = useState(2);
+  useEffect(() => {
+    window.addEventListener('resize', (e) => {
+      if (e.target.innerWidth < 500) setPerView(2);
 
-  //     if (e.target.innerWidth > 500) setPerView(3);
+      if (e.target.innerWidth > 500) setPerView(3);
 
-  //     if (e.target.innerWidth > 700) setPerView(4);
+      if (e.target.innerWidth > 700) setPerView(4);
 
-  //     if (e.target.innerWidth > 1000) setPerView(6);
-  //   });
+      if (e.target.innerWidth > 1000) setPerView(6);
+    });
 
-  //   window.innerWidth < 500 && setPerView(2);
-  //   window.innerWidth > 500 && setPerView(3);
-  //   window.innerWidth > 700 && setPerView(4);
-  //   window.innerWidth > 1000 && setPerView(6);
-  // }, []);
-
+    window.innerWidth < 500 && setPerView(2);
+    window.innerWidth > 500 && setPerView(3);
+    window.innerWidth > 700 && setPerView(4);
+    window.innerWidth > 1000 && setPerView(6);
+    console.log('a');
+  }, []);
+console.log('b');
   return (
     <section className="Clients container-fluid">
       <div className="row">
-        <SectionHeader text={'Clients'} />
+        <SectionHeader text={"Clients"} />
       </div>
-      {/* <Swiper
+      <Swiper
         modules={[Autoplay]}
         className="row swiper"
         autoplay={{
-          delay: 500,
+          delay: 2500,
           disableOnInteraction: false,
         }}
+
         spaceBetween={0}
         slidesPerView={perView}
         loop={true}
@@ -96,7 +96,7 @@ const Clients = () => {
             <img src={client9} alt="logo-9" />
           </a>
         </SwiperSlide>
-      </Swiper> */}
+      </Swiper>
     </section>
   );
 };

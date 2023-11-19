@@ -1,19 +1,22 @@
 .Clients {
-    .swiper {
-        margin-top: 30px;
-        text-align: center;
-        .swiper-wrapper {
-            .swiper-slide {
-                a {
-                    img {
-                        width: 100px;
-                        height: 100px;
-                        object-fit: cover;
-                        color: $color-light;
-                        filter: invert(100%)
-                    }
-                }
-            }
+  
+  .swiper {
+    overflow: hidden;
+    margin-top: 30px;
+    text-align: center;
+    .swiper-wrapper {
+      display: flex;
+      .swiper-slide {
+        a {
+          img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            color: $color-light;
+            filter: invert(100%);
+          }
         }
+      }
     }
+  }
 }

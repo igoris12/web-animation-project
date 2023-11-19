@@ -1,6 +1,6 @@
 import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination} from 'swiper';
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import { Navigation, Pagination} from 'swiper';
 import portfolio from '../../images/Portfolio/Projects/portfolio.png';
 import snakeGame from '../../images/Portfolio/Projects/snakeGame.png';
 import vintedCopy from '../../images/Portfolio/Projects/vintedCopy.png';
@@ -25,7 +25,7 @@ const Showcase = ({options, showcaseClose}) => {
 }
   return (
     <section onClick={clickHendeler} className={"showcase " + options.class}>
-            <Swiper
+            {/* <Swiper
               loop="true"
               modules={[Navigation, Pagination]}
               slidesPerView={1}
@@ -77,7 +77,7 @@ const Showcase = ({options, showcaseClose}) => {
                 <div className="pagination"></div>
               </SwiperSlide>
          
-            </Swiper>
+            </Swiper> */}
           <div className="btnPrev showcase__navigation_prev"><BsArrowLeftSquareFill/></div>
           <div className="btnNext showcase__navigation_next"><BsArrowRightSquareFill/></div>
     </section>

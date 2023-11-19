@@ -7,7 +7,6 @@ import Resume from "../Resume/Resume";
 import BlogSection from "../BlogSection/BlogSection";
 import Contact from "../Contact/Contact";
 
-
 const Blog = () => {
   return (
     <section className="blog-page ">

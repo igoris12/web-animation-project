@@ -62,11 +62,12 @@ const HeaderContent = ({ active, activeHandler }) => {
           </Link>
           <Link
             to="/web-animation-project/portfolio"
-            reloadDocument
+            // reloadDocument
             className={
               activeLink === 3 ? "butList-item active" : "butList-item"
             }
             onClick={() => {
+              window. reload()
               setActiveLink(3);
             }}
           >

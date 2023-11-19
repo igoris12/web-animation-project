@@ -12,7 +12,7 @@ const AboutMe = () => {
       <About />
       <Services />
       <Clients />
-      {/* <Testimonials /> */}
+      <Testimonials />
     </section>
   );
 };

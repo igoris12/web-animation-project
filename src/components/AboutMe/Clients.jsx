@@ -31,9 +31,7 @@ const Clients = () => {
     window.innerWidth > 500 && setPerView(3);
     window.innerWidth > 700 && setPerView(4);
     window.innerWidth > 1000 && setPerView(6);
-    console.log('a');
   }, []);
-console.log('b');
   return (
     <section className="Clients container-fluid">
       <div className="row">

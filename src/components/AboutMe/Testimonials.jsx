@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/autoplay";
 import SectionHeader from '../Base/SectionHeader';
 import TestimonialsItem from './TestimonialsItem';
-// import { Swiper, SwiperSlide } from 'swiper/react';
-// import { Autoplay } from 'swiper';
-// import 'swiper/swiper-bundle.min.css'
-// import 'swiper/swiper.min.css'
-
 import image1 from '../../images/AboutMe/Testimonials/author-1.jpg';
 import image2 from '../../images/AboutMe/Testimonials/author-2.jpg';
 import image3 from '../../images/AboutMe/Testimonials/author-3.jpg';
@@ -31,23 +30,23 @@ const massagesInfo = [
   },
 ];
 const Testimonials = () => {
-  // const [perView, setPerView] = useState(1);
-  // useEffect(() => {
-  //   window.addEventListener('resize', (e) => {
-  //     if (e.target.innerWidth < 1000) setPerView(1);
-  //     if (e.target.innerWidth > 1000) setPerView(2);
-  //   });
+  const [perView, setPerView] = useState(1);
+  useEffect(() => {
+    window.addEventListener('resize', (e) => {
+      if (e.target.innerWidth < 1000) setPerView(1);
+      if (e.target.innerWidth > 1000) setPerView(2);
+    });
 
-  //   window.innerWidth < 1000 && setPerView(1);
-  //   window.innerWidth > 1000 && setPerView(2);
-  // }, []);
+    window.innerWidth < 1000 && setPerView(1);
+    window.innerWidth > 1000 && setPerView(2);
+  }, []);
 
   return (
     <section className="Testimonials container-fluid">
       <div className="row">
         <SectionHeader text="Testimonials" />
       </div>
-      {/* <Swiper
+      <Swiper
         modules={[Autoplay]}
         className="row"
         autoplay={{
@@ -64,7 +63,7 @@ const Testimonials = () => {
             <TestimonialsItem info={info} />
           </SwiperSlide>
         ))}
-      </Swiper> */}
+      </Swiper>
     </section>
   );
 };

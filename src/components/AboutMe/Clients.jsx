@@ -41,8 +41,7 @@ const Clients = () => {
         modules={[Autoplay]}
         className="row swiper"
         autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
+          delay: 3000,
         }}      
         spaceBetween={0}
         slidesPerView={perView}

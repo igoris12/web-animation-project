@@ -1,4 +1,4 @@
-import data from '../components/Portfolio/data/portfolioData';
+
 const GalleryDataReducer = (state, action) => {
     switch (action.type) {
         case 'FILTER':

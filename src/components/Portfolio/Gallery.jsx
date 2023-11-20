@@ -9,9 +9,7 @@ const Gallery = ({ disableScrollHandler }) => {
   const { galleryData } = useContext(GalleryDataContext);
   const [showcaseActive, setShowcaseActive] = useState({ class: "" });
   const [videoShowcaseActive, setVideoShowcaseActive] = useState({ class: "" });
-  // function refreshPage() {
-  //   window.location.reload(false);
-  // }
+
   const defultPopupData = {
     title: "",
     tools: [],

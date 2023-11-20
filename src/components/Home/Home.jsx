@@ -12,7 +12,6 @@ const Home = () => {
 
 
   const particlesLoaded = (container) => {};
-  console.log('a');
   return (
     <section className="homeSection">
       <div className="homepageContent">

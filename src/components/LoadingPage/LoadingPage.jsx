@@ -1,22 +1,30 @@
 import React from "react";
 import { useState } from "react";
 
-const LoadingPage = ({def= true}) => {
+const LoadingPage = ({ def = true }) => {
   const [loading, setLoading] = useState(true);
   const [animation, setAnimation] = useState(false);
-   
-  function defult(active) {
-    if (active) {
-      window.addEventListener("load", (event) => {
-        setAnimation(!animation);
-        setTimeout(() => {
-          setLoading(false);
-        }, 1000);
+
+
+  if (document.readyState === "complete") {
+    if (animation === false) {
+      setAnimation(true);
+      setTimeout(() => {
+        setLoading(false);
+      }, 1000);
+      console.log("a");
+    }
+   }else {
+     window.addEventListener("load", (event) => {
+       if (animation === false) {
+          setAnimation(true);
+          setTimeout(() => {
+            setLoading(false);
+          }, 1000);
+          console.log("c");
+        }
       });
     }
-    else return;
-  }
-   defult(def) 
   return (
     <div className={loading ? "loadingPage" : "loadingPage hidden"}>
       <p style={animation ? { opacity: 0 } : { opacity: 1 }}>Igoris Ivanovas</p>

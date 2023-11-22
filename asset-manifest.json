@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/web-animation-project/static/css/main.c7e44ac0.css",
-    "main.js": "/web-animation-project/static/js/main.98da6a2e.js",
+    "main.js": "/web-animation-project/static/js/main.157eb8ab.js",
     "static/js/937.f4cd42b5.chunk.js": "/web-animation-project/static/js/937.f4cd42b5.chunk.js",
     "static/media/slider3d.png": "/web-animation-project/static/media/slider3d.e04191d43d5142a1f45e.png",
     "static/media/vintedCopy2.png": "/web-animation-project/static/media/vintedCopy2.641ac932e75a0543cfd4.png",
@@ -33,11 +33,11 @@
     "static/media/client-07.png": "/web-animation-project/static/media/client-07.88451cc17d26c64fb004.png",
     "index.html": "/web-animation-project/index.html",
     "main.c7e44ac0.css.map": "/web-animation-project/static/css/main.c7e44ac0.css.map",
-    "main.98da6a2e.js.map": "/web-animation-project/static/js/main.98da6a2e.js.map",
+    "main.157eb8ab.js.map": "/web-animation-project/static/js/main.157eb8ab.js.map",
     "937.f4cd42b5.chunk.js.map": "/web-animation-project/static/js/937.f4cd42b5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c7e44ac0.css",
-    "static/js/main.98da6a2e.js"
+    "static/js/main.157eb8ab.js"
   ]
 }

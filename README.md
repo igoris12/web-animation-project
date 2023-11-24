@@ -14,7 +14,7 @@ I had a lot of hard challenges that I manage to overcome. =)
 
 Site published at: [https://igoris12.github.io/vinted-project/](https://igoris12.github.io/web-animation-project/)
 
-Design: [watson-vcard]([https://www.vinted.lt/](https://watson-vcard.netlify.app/index-dark-particles1.html))
+Design: [watson-vcard]([https://www.vinted.lt/](https://watson-vcard.netlify.app/index-dark-particles1.html)
 
 ### Built With
 

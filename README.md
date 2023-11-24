@@ -12,9 +12,9 @@ This project took a lot of my time because I work on it at my free time.
 But it was worth doing, I learned a lot of new things, new tools, and how use them with each other that.
 I had a lot of hard challenges that I manage to overcome. =)
 
-Site published at: [https://igoris12.github.io/vinted-project/](https://igoris12.github.io/web-animation-project/)
+Site published at: [Project](https://igoris12.github.io/web-animation-project/)
 
-Design: [watson-vcard]([https://www.vinted.lt/](https://watson-vcard.netlify.app/index-dark-particles1.html)
+Design: [watson-vcard](https://watson-vcard.netlify.app/index-dark-particles1.html)
 
 ### Built With
 

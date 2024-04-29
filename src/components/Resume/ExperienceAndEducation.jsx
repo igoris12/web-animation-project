@@ -15,7 +15,7 @@ const experienceAndEducation = () => {
                 to="2024"
                 title="pomodoro_app"
                 location="home, self-work"
-                text="This project was supposed to update my React.js skills. In this project, I get a bunch of new things and techniques. In the end I get fun and experience and new knowledge."
+                text="This project was supposed to update my React.js skills. In this project, I get a bunch of new things and techniques. In the end I get fun, experience and new knowledge."
               />
               <TimeStampElement
                 from="2022"

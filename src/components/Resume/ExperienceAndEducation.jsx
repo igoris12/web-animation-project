@@ -10,6 +10,13 @@ const experienceAndEducation = () => {
           <div className="experience col-12 col-lg-6">
             <SectionHeader text={'experience'} />
             <ul className="col-12">
+            <TimeStampElement
+                from="2023"
+                to="2024"
+                title="pomodoro_app"
+                location="home, self-work"
+                text="This project was supposed to update my React.js skills. In this project, I get a bunch of new things and techniques. In the end I get fun, experience and new knowledge."
+              />
               <TimeStampElement
                 from="2022"
                 to="2022"
@@ -20,7 +27,7 @@ const experienceAndEducation = () => {
               <TimeStampElement
                 from="2021"
                 to="2022"
-                title="vinted-project"
+                title="vinted_project"
                 location="home, self-work"
                 text="In this project I try to make something similar to vinted.lt website using React.js. Working on this project I gain useful experience."
               />
